@@ -1,2 +1,7 @@
 this is a test of the fire committee
 look an additional test
+
+
+```{r}
+print(rnorm(5))
+```
