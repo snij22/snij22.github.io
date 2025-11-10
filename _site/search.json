@@ -78,7 +78,7 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "today",
+    "title": "Franklin Forward",
     "section": "",
     "text": "This is a test for the website"
   },
@@ -104,6 +104,18 @@
       "City Council",
       "Workshops",
       "Placeholder Workshop Here"
+    ]
+  },
+  {
+    "objectID": "City Council/Committees/Fire test.html",
+    "href": "City Council/Committees/Fire test.html",
+    "title": "Franklin Forward",
+    "section": "",
+    "text": "this is a test of the fire committee",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "Fire test"
     ]
   }
 ]
