@@ -81,5 +81,29 @@
     "title": "today",
     "section": "",
     "text": "This is a test for the website"
+  },
+  {
+    "objectID": "City Council/Meetings/meeting_2025_11_09.html",
+    "href": "City Council/Meetings/meeting_2025_11_09.html",
+    "title": "today",
+    "section": "",
+    "text": "aasdl;asdml;as",
+    "crumbs": [
+      "City Council",
+      "Meetings",
+      "Meeting 2025 11 09"
+    ]
+  },
+  {
+    "objectID": "City Council/Workshops/placeholder_workshop_here.html",
+    "href": "City Council/Workshops/placeholder_workshop_here.html",
+    "title": "today",
+    "section": "",
+    "text": "This is a test for placehodlers",
+    "crumbs": [
+      "City Council",
+      "Workshops",
+      "Placeholder Workshop Here"
+    ]
   }
 ]
