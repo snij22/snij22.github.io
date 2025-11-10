@@ -1,5 +1,15 @@
 [
   {
+    "objectID": "About.html",
+    "href": "About.html",
+    "title": "\nWelcome!\n",
+    "section": "",
+    "text": "Welcome!\n\n\nPurpose\n\nThis is a publig blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\n\nWho is this for?\n\n\nThe People\n\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda.",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
     "objectID": "Franklin Facts/City Owned Property.html",
     "href": "Franklin Facts/City Owned Property.html",
     "title": "Franklin Forward",
@@ -8,18 +18,6 @@
     "crumbs": [
       "Franklin Facts",
       "City Owned Property"
-    ]
-  },
-  {
-    "objectID": "City Council/Workshops/placeholder_workshop_here.html",
-    "href": "City Council/Workshops/placeholder_workshop_here.html",
-    "title": "Franklin Forward",
-    "section": "",
-    "text": "This is a test for placehodlers",
-    "crumbs": [
-      "City Council",
-      "Workshops",
-      "Placeholder Workshop Here"
     ]
   },
   {
@@ -35,16 +33,6 @@
     ]
   },
   {
-    "objectID": "About.html",
-    "href": "About.html",
-    "title": "\nWelcome!\n",
-    "section": "",
-    "text": "Welcome!\n\n\nPurpose\n\nThis is a publig blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\n\nWho is this for?\n\n\nThe People\n\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda.",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
     "objectID": "City Council/Meetings/2025 November.html",
     "href": "City Council/Meetings/2025 November.html",
     "title": "\nLocation: Franklin Elks\n",
@@ -54,6 +42,18 @@
       "City Council",
       "Meetings",
       "2025 November"
+    ]
+  },
+  {
+    "objectID": "City Council/Workshops/placeholder_workshop_here.html",
+    "href": "City Council/Workshops/placeholder_workshop_here.html",
+    "title": "Franklin Forward",
+    "section": "",
+    "text": "This is a test for placehodlers",
+    "crumbs": [
+      "City Council",
+      "Workshops",
+      "Placeholder Workshop Here"
     ]
   },
   {
