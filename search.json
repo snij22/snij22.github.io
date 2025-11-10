@@ -25,7 +25,7 @@
     "href": "City Council/Committees/Fire test.html",
     "title": "Franklin Forward",
     "section": "",
-    "text": "this is a test of the fire committee look an additional test",
+    "text": "this is a test of the fire committee look an additional test\n\nprint(rnorm(5))\n\n[1] -0.09928993 -1.58664409 -0.66494112 -0.43355061  0.39244926",
     "crumbs": [
       "City Council",
       "Committees",
