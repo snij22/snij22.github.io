@@ -85,7 +85,7 @@
   {
     "objectID": "City Council/Meetings/meeting_2025_11_09.html",
     "href": "City Council/Meetings/meeting_2025_11_09.html",
-    "title": "today",
+    "title": "Franklin Forward",
     "section": "",
     "text": "aasdl;asdml;as",
     "crumbs": [
@@ -116,6 +116,29 @@
       "City Council",
       "Committees",
       "Fire test"
+    ]
+  },
+  {
+    "objectID": "City Council/Meetings/2025 November.html",
+    "href": "City Council/Meetings/2025 November.html",
+    "title": "\nLocation: Franklin Elks\n",
+    "section": "",
+    "text": "Location: Franklin Elks\n\n\nTime: 6:00 PM\n\nAgenda\nPacket",
+    "crumbs": [
+      "City Council",
+      "Meetings",
+      "2025 November"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/City Owned Property.html",
+    "href": "Franklin Facts/City Owned Property.html",
+    "title": "Franklin Forward",
+    "section": "",
+    "text": "This is a placeholder for a gis discussion on where the city owns propery and its value.",
+    "crumbs": [
+      "Franklin Facts",
+      "City Owned Property"
     ]
   }
 ]
