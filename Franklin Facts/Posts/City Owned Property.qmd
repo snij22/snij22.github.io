@@ -1,0 +1,58 @@
+This is a placeholder for a gis discussion on where the city owns propery and its value. 
+
+
+
+```{r}
+
+library(tidyverse)
+library(sf)
+library(tmap)
+
+ttm()
+```
+
+```{r}
+parcel_polys_fp<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/parcel_polys.shp")
+parcel_polys<- st_read(parcel_polys_fp)
+zone_fp<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/zone_polys.shp")
+zone_polys<- st_read(zone_fp)
+
+
+zone_polys %>% filter(str_detect(NAME, "Frank")) %>% st_cast("MULTIPOLYGON") %>% 
+tm_shape() + 
+    tm_polygons(fill = "NAME")
+
+zone_polys %>% 
+tm_shape() + 
+    tm_polygons(fill = "NAME")
+
+parcel_polys%>% 
+tm_shape() + 
+    tm_polygons()
+
+```
+
+```{r}
+fp2<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/caidump.DBF")
+dat<- foreign::read.dbf(fp2) %>%as_tibble()
+
+d2<- dat %>%
+   mutate(across(.cols = c(MAP, LOT),.fns =  ~str_sub(., -3)),
+          SUB = str_sub(SUB, -2)) %>%
+ 
+  mutate(PARCEL_ = paste(MAP, LOT, SUB, sep="-"))
+
+comb<- parcel_polys %>%
+  left_join(d2)  %>% drop_na(MAP) %>%
+  mutate(across(ends_with("VAL"), as.numeric)) %>%
+  mutate(year_sale = year(SALEDATE),
+         years_since_sale = 2025-year_sale)
+
+comb %>% filter(STATE != "NH")%>%
+  tm_shape() +
+  tm_fill("STATE")
+
+
+
+
+```
