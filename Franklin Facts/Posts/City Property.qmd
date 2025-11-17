@@ -2,7 +2,7 @@ This is a placeholder for a gis discussion on where the city owns propery and it
 
 
 
-```{r}
+```{r load libs}
 
 library(tidyverse)
 library(sf)
@@ -11,10 +11,16 @@ library(tmap)
 ttm()
 ```
 
-```{r}
-parcel_polys_fp<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/parcel_polys.shp")
-parcel_polys<- st_read(parcel_polys_fp)
-zone_fp<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/zone_polys.shp")
+```{r read in data}
+print(getwd())
+
+fp2<-  here::here("data/20251116_geo_dat/caidump.DBF")
+dat<- foreign::read.dbf(fp2) %>%as_tibble()
+
+
+parcel_polys_fp<- here::here("data/20251116_geo_dat/parcel_polys.shp")
+parcel_polys<- st_read(dsn = parcel_polys_fp)
+zone_fp<- here::here("data/20251116_geo_dat/zone_polys.shp")
 zone_polys<- st_read(zone_fp)
 
 
@@ -32,9 +38,7 @@ tm_shape() +
 
 ```
 
-```{r}
-fp2<- paste0(getwd(), "/Franklin Facts/in_data/Franklin/caidump.DBF")
-dat<- foreign::read.dbf(fp2) %>%as_tibble()
+```{r map it}
 
 d2<- dat %>%
    mutate(across(.cols = c(MAP, LOT),.fns =  ~str_sub(., -3)),
@@ -51,8 +55,6 @@ comb<- parcel_polys %>%
 comb %>% filter(STATE != "NH")%>%
   tm_shape() +
   tm_fill("STATE")
-
-
 
 
 ```
