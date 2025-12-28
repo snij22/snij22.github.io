@@ -1,5 +1,12 @@
-This is a placeholder for a gis discussion on where the city owns propery and its value. 
-
+---
+title: "How Much Property does the city own?"
+description: "Using the axis GIS to figure out where and how much property the city owns"
+author: "S Jacobson "
+date: "2025-12-27"
+categories:
+  - analysis
+---
+test text
 
 
 ```{r load libs}
@@ -12,7 +19,6 @@ ttm()
 ```
 
 ```{r read in data}
-print(getwd())
 
 fp2<-  here::here("data/20251116_geo_dat/caidump.DBF")
 dat<- foreign::read.dbf(fp2) %>%as_tibble()
@@ -28,9 +34,9 @@ zone_polys %>% filter(str_detect(NAME, "Frank")) %>% st_cast("MULTIPOLYGON") %>%
 tm_shape() + 
     tm_polygons(fill = "NAME")
 
-zone_polys %>% 
-tm_shape() + 
-    tm_polygons(fill = "NAME")
+#zone_polys %>% 
+#  tm_shape() + 
+#    tm_polygons(fill = "NAME")
 
 parcel_polys%>% 
 tm_shape() + 

@@ -1,15 +1,14 @@
 library(tidyverse)
 
-existing_fp<- list.files(here::here("data/"), "assess", full.names = T)
+existing_fp<- list.files(here::here("data/"), "assess_ts_comb", full.names = T)
 
 existing<- existing_fp %>% map(data.table::fread) %>% bind_rows()
 
-a<-  existing %>% mutate(across(c(`Bill Amount`, Principal, Interest, Penalties, `Total Due`), parse_number), 
-                        date = mdy(`Due Date`))
+a<-  existing %>% mutate(date = mdy(`Due Date`))
   
-a %>%filter(str_detect(`Current Owner`, "PARICHAND")) %>% 
+a %>%filter(str_detect(`Current Owner`, "COTE, ELIZABETH")| str_detect(`Current Owner`, "JACOBSON")) %>% 
   filter(str_detect(Type, "Property")) %>% 
-  ggplot(aes(x = date, y = `Bill Amount`)) + 
+  ggplot(aes(x = date, y = `Bill Amount`, color = `Current Owner`)) + 
   geom_path() + 
   geom_point()
 
@@ -18,7 +17,7 @@ b<- a %>% filter( `Map-Lot-Sub` != "") %>%
           lot_num = str_split_i( `Map-Lot-Sub`, "-", 2) %>% str_sub(., -3),
           sub_num = str_split_i( `Map-Lot-Sub`, "-", 3) %>% str_sub(., -2), 
           PARCEL_ = paste(map_num, lot_num, sub_num, sep="-")) 
-data.table::fwrite(b, "data/assess_ts_comb.csv")
+#data.table::fwrite(b, "data/assess_ts_comb.csv")
 
 
 card_fp<- list.files(here::here("data/20251116_geo_dat"), "combined.csv$", full.names = T)
