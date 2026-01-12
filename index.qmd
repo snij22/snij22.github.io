@@ -4,4 +4,7 @@ listing:
   contents: City Council
   categories: true
   sort: date desc
+  feed: true
 ---
+
+Below is a list of posts.
