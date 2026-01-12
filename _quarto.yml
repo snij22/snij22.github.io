@@ -3,7 +3,7 @@ project:
 
 website:
   title: "Franklin Forward"
-  site-url: https://www.franklinfacts.org
+  site-url: "https://www.franklinfacts.org"
   description: "Facts from Franklin NH"
   sidebar:
     style: "docked"
