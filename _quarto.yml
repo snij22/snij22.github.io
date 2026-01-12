@@ -13,7 +13,7 @@ website:
     right:
       - icon: rss
         href: index.qmd
-  margin-header: subscribe.html
+  margin-footer: subscribe.html
 
 format:
   html:
