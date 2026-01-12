@@ -10,9 +10,33 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Sun, 04 Jan 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 11 Jan 2026 00:00:00 GMT</lastBuildDate>
 <item>
-  <title>January 5, 2026</title>
+  <title>January 20, 2026 - Budget Visioning</title>
+  <link>https://www.franklinfacts.org/City Council/Workshops/20260120_budget.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="time-600-pm" class="level1">
+<h1>Time: 6:00 PM</h1>
+<p>This is a chance for a workshop meeting between the City council, Mayor, and City manager to discuss budget priorities heading into Fiscal Year 2027. This is inteded to be the start of the budget process, giving the professional staff (City manager, department heads) something to aim at. It also provides a time early in the budgeting process for the City manager to raise known issues and strategies.</p>
+<p>City councilors will have last year’s budget to start from. I expect this will be broadcast on zoom - the franklin city website is the best place to look for that. <a href="https://www.franklinnh.gov/city-council-mayor/pages/city-council-meeting-information">link to city website</a>.</p>
+<p>Hope to see you there.</p>
+
+
+</section>
+
+ ]]></description>
+  <guid>https://www.franklinfacts.org/City Council/Workshops/20260120_budget.html</guid>
+  <pubDate>Sun, 11 Jan 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>January 5, 2026 City Council</title>
   <link>https://www.franklinfacts.org/City Council/Meetings/2026 January.html</link>
   <description><![CDATA[ 
 
@@ -183,7 +207,7 @@
   <pubDate>Sun, 04 Jan 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
-  <title>November 3, 2025</title>
+  <title>November 3, 2025 City Council</title>
   <link>https://www.franklinfacts.org/City Council/Meetings/2025 November.html</link>
   <description><![CDATA[ 
 
@@ -219,23 +243,7 @@ Time: 6:00 PM
 
  ]]></description>
   <guid>https://www.franklinfacts.org/City Council/Committees/placeholder.html</guid>
-  <pubDate>Mon, 12 Jan 2026 01:00:12 GMT</pubDate>
-</item>
-<item>
-  <title>Workshop Placeholder</title>
-  <link>https://www.franklinfacts.org/City Council/Workshops/placeholder_workshop_here.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is a test for placeholders. updated later in the evening</p>
-
-
-
- ]]></description>
-  <guid>https://www.franklinfacts.org/City Council/Workshops/placeholder_workshop_here.html</guid>
-  <pubDate>Mon, 12 Jan 2026 01:00:12 GMT</pubDate>
+  <pubDate>Mon, 12 Jan 2026 01:28:02 GMT</pubDate>
 </item>
 </channel>
 </rss>
