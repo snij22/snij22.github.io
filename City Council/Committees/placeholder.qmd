@@ -1,1 +1,5 @@
-This is a placeholder
+---
+title: "Committee Placeholder"
+description: "Placeholder for committee previews"
+---
+This is a placeholder.

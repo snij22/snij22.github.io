@@ -1,1 +1,5 @@
+---
+title: "Workshop Placeholder"
+description: "Preview of workshops in advance"
+---
 This is a test for placeholders

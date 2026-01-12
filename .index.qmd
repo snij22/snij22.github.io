@@ -1,6 +1,0 @@
----
-title: "Listing Example"
-listing:
-  contents: Franklin Facts/Posts
-  categories: true
----

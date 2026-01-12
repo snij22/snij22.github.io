@@ -3,12 +3,16 @@ project:
 
 website:
   title: "Franklin Forward"
-  site-url: "https://www.franklinfacts.org"
+  site-url: https://www.franklinfacts.org
   description: "Facts from Franklin NH"
   sidebar:
     style: "docked"
     search: true
     contents: auto
+  navbar:
+    right:
+      - icon: rss
+        href: index.qmd
 
 format:
   html:
