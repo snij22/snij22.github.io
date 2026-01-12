@@ -12,7 +12,7 @@ website:
   navbar:
     right:
       - icon: rss
-        href: index.xml
+        href: index.qmd
 
 format:
   html:
