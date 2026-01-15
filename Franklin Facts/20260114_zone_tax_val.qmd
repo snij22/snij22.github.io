@@ -1,0 +1,154 @@
+---
+title: "Tax Base by Zone"
+description: Looking at all the property in the city, how much tax base is in each zoned category.
+category: Franklin Facts
+format: html
+date: 1/14/26
+
+---
+
+# Zoning and the connection to the Tax base
+During the election campaign, most people I talked to are concerned with their taxes. They want to know how much is being raised, where it is being spent and why they never seem to go down. 
+
+I believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.
+
+I pulled the taxes from our [AxisGIS](https://next.axisgis.com/FranklinNH/) geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from. These data are not perfect but I believe they are good enough for a good-faith discussion. 
+
+```{r ead in data}
+#| warning: false
+#| echo: false
+library(tidyverse)
+library(sf)
+library(gt)
+library(tmap)
+tmap_mode("view")
+prop_data<- read_csv(here::here(".data/20251116_geo_dat/prop_card_data_combined.csv"))
+zone_sf<- read_sf(here::here(".data/20251116_geo_dat/zone_polys.shp")) 
+
+zone_type<- zone_sf %>%st_drop_geometry() %>%select(NAME, LABEL) %>% distinct() %>% mutate(lab2 = str_remove_all(LABEL, "-"))
+
+tax_rate<- 17.63/1000
+
+```
+
+The table below shows where our tax base comes from. I'm assuming all property is taxed the same at the last municipal rate `{r} tax_rate`  or 17.63 per mill and that city property and conservation land is taxed. There are areas that are not zoned in this dataset and some of these properties have been reassessed since I pulled this data. 
+
+```{r}
+#| echo: false
+dat<- prop_data  %>%
+    mutate(zone2 = ZONE, 
+    zone2 = str_remove_all(zone2, "(W&S)|(WORS)|(W/S)")) %>%
+    left_join(zone_type, join_by(zone2 == lab2)) %>% distinct()
+
+
+
+sum_tab<- dat %>%
+    select(NAME, TOTTXVAL) %>%
+    mutate(NAME = str_remove_all(NAME, " District")) %>% 
+    group_by(NAME) %>%
+    summarize(n_prop = n(),
+        total_val = sum(TOTTXVAL, na.rm = T)) %>% 
+            mutate(tot_city = sum(total_val), 
+            tax = total_val *tax_rate, 
+            pct = round(total_val/ tot_city,4), )  %>%
+                select(-tot_city, -total_val) %>%
+                replace_na(list(NAME =  "Missing Zoning"))
+
+sum_gt<- sum_tab %>% summarize(across(where(is.numeric), sum)) %>%
+     gt() |>
+    cols_label(.list = c(n_prop = "Number of Properties", 
+    #total_val = "Total Tax Value", 
+    pct = "Percent of Total Tax Revenue", 
+    tax = "Estimated Tax")) %>%
+    fmt_number(c(#total_val,
+     tax)) %>%
+    fmt_integer(n_prop) %>% 
+    fmt_percent(pct) %>% opt_interactive(use_pagination = FALSE)
+sum_gt
+```
+
+At the highest level, we have close to 3500 properties on the tax rolls, and generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city's operation. The [FY26 budgeted](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/fy2026_council_adopted_budget_1.pdf) revenues adopted by the council is $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, this shows that our dataset is still close enough to draw some conclusions. This difference is a limitation in using publicly available data, not mismanagement by the city. 
+
+
+# Residential Taxes Contribute the Majority of City Taxes
+Splitting this number up by zone shows where the majority of the tax burden lies. 
+
+```{r }
+#| echo: false
+gt_labs<- c(n_prop = "Number of Properties", 
+    #total_val = "Total Tax Value", 
+    pct = "Percent of Total Tax Revenue", 
+    tax = "Estimated Tax", 
+    NAME = "Zoned Property Type") 
+
+tab<- sum_tab %>%
+    arrange(-pct) %>% 
+    gt() %>%
+    cols_label(.list = gt_labs)%>% 
+    fmt_number(c(#total_val,
+     tax)) %>%
+    fmt_integer(n_prop) %>% 
+    fmt_percent(pct) %>% 
+    grand_summary_rows(columns = where(is.numeric), fns = Total ~ sum(.), 
+    fmt = c(~ fmt_percent(., columns = pct), 
+            ~ fmt_currency(., tax), 
+            #~ fmt_currency(., columns = total_val),
+            ~fmt_integer(., columns = n_prop))) %>%
+                opt_interactive(use_pagination = F)
+
+
+tab
+```
+
+We can show these data graphically as well. 
+```{r plot the zones}
+sum_tab %>%
+    ggplot(aes(y= fct_reorder(NAME, pct),x = pct)) + 
+    geom_col() + 
+    theme_bw() + 
+    scale_x_continuous(labels = scales::label_percent()) + 
+    labs(x = "Percent of Tax Revenue by Zone", 
+        y = "Zone type")
+```
+
+This table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.  
+
+# Industrial/Commercial Properties Pay the Most Tax Per Property
+
+One other way to look at these data is to divide the total tax value in a given zone by the number of properties in that zone yielding the average tax for a given zoned property. This assumes that every property in given zone is equal - it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type. 
+
+```{r average tax}
+#| echo: false
+
+sum_tab %>%
+    mutate(average_tax = tax/n_prop) %>%
+    ggplot(aes(y= fct_reorder(NAME, pct),x = average_tax)) + 
+    geom_col() +
+    scale_x_continuous(labels = scales::label_comma()) +
+    theme_bw()+ 
+    labs(x = "Average Tax Revenue by Zone", 
+        y = "Zone type")
+
+```
+
+This chart shows that industrial and high and low density commercial already contribute more tax on average than an individual residential property. It also shows on average lake protection district (around Webster Lake) properties are taxed a bit higher than other residential properties, but not by much. Finally this chart shows that multi-family housing on average is taxed relatively low. 
+
+As we head into budget season and budget visioning, a robust understanding of the value drivers of the main source of revenue for the city (taxes) is key for council and public decision making. Below is an interactive zoning map. If you'd like to talk about these data, calculations, or conclusions feel free to email at <sjacobson@franklinnh.gov>.
+
+# Interactive Zoning Map
+```{r}
+#| echo: false
+
+zone_sf<- zone_sf %>% group_by(NAME) %>% 
+    summarize()%>% st_zm()  %>%
+    filter(!str_detect(NAME, "Franklin|Downtown"))
+
+tm_shape(zone_sf) + 
+    tm_polygons(group = "Zones",
+        fill = "NAME",  fill.scale = tm_scale_categorical(values.repeat = F),
+    fill.legend = tm_legend("Zone Type",group ="Zone" )) + 
+        tm_basemap(leaflet::providers$OpenStreetMap) + 
+        tm_title("Franklin Zoning Map")
+
+
+```

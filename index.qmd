@@ -1,10 +1,16 @@
 ---
 title: "City Council Digest"
 listing:
-  contents: City Council
-  categories: true
-  sort: date desc
-  feed: true
+ - id: City Council
+   contents: City Council
+   categories: true
+   sort: date desc
+   feed: true
+ - id: Franklin Facts
+   contents: Franklin Facts
+   categories: true
+   sort: date desc
+   feed: true
 ---
 
-Below is a list of posts.
+Below is a list of posts, City council previews, and deep data dives. 
