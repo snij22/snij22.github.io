@@ -11,29 +11,28 @@
     ]
   },
   {
-    "objectID": "City Council/Workshops/20260120_budget.html",
-    "href": "City Council/Workshops/20260120_budget.html",
-    "title": "January 20, 2026 - Budget Visioning",
+    "objectID": "Franklin Facts/20260114_zone_tax_val.html",
+    "href": "Franklin Facts/20260114_zone_tax_val.html",
+    "title": "Tax Base by Zone",
     "section": "",
-    "text": "Location: Franklin Public Library\n\n\nTime: 6:00 PM\nThis is a chance for a workshop meeting between the City council, Mayor, and City manager to discuss budget priorities heading into Fiscal Year 2027. This is inteded to be the start of the budget process, giving the professional staff (City manager, department heads) something to aim at. It also provides a time early in the budgeting process for the City manager to raise known issues and strategies.\nCity councilors will have last year’s budget to start from. I expect this will be broadcast on zoom - the franklin city website is the best place to look for that. link to city website.\nHope to see you there.",
+    "text": "Zoning and the connection to the Tax base\nDuring the election campaign, most people I talked to are concerned with their taxes. They want to know how much is being raised, where it is being spent and why they never seem to go down.\nI believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.\nI pulled the taxes from our AxisGIS geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from. These data are not perfect but I believe they are good enough for a good-faith discussion.\nThe table below shows where our tax base comes from. I’m assuming all property is taxed the same at the last municipal rate 0.01763 or 17.63 per mill and that city property and conservation land is taxed. There are areas that are not zoned in this dataset and some of these properties have been reassessed since I pulled this data.\n\n\n\n\n\n\n\n\n\nAt the highest level, we have close to 3500 properties on the tax rolls, and generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city’s operation. The FY26 budgeted revenues adopted by the council is $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, this shows that our dataset is still close enough to draw some conclusions. This difference is a limitation in using publicly available data, not mismanagement by the city.\n\n\nResidential Taxes Contribute the Majority of City Taxes\nSplitting this number up by zone shows where the majority of the tax burden lies.\n\n\n\n\n\n\n\n\n\nWe can show these data graphically as well.\n\nsum_tab %&gt;%\n    ggplot(aes(y= fct_reorder(NAME, pct),x = pct)) + \n    geom_col() + \n    theme_bw() + \n    scale_x_continuous(labels = scales::label_percent()) + \n    labs(x = \"Percent of Tax Revenue by Zone\", \n        y = \"Zone type\")\n\n\n\n\n\n\n\n\nThis table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.\n\n\nIndustrial/Commercial Properties Pay the Most Tax Per Property\nOne other way to look at these data is to divide the total tax value in a given zone by the number of properties in that zone yielding the average tax for a given zoned property. This assumes that every property in given zone is equal - it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type.\n\n\n\n\n\n\n\n\n\nThis chart shows that industrial and high and low density commercial already contribute more tax on average than an individual residential property. It also shows on average lake protection district (around Webster Lake) properties are taxed a bit higher than other residential properties, but not by much. Finally this chart shows that multi-family housing on average is taxed relatively low.\nAs we head into budget season and budget visioning, a robust understanding of the value drivers of the main source of revenue for the city (taxes) is key for council and public decision making. Below is an interactive zoning map. If you’d like to talk about these data, calculations, or conclusions feel free to email at sjacobson@franklinnh.gov.\n\n\nInteractive Zoning Map",
     "crumbs": [
       "City Council Digest",
-      "City Council",
-      "Workshops",
-      "January 20, 2026 - Budget Visioning"
+      "Franklin Facts",
+      "Tax Base by Zone"
     ]
   },
   {
-    "objectID": "City Council/Meetings/2025 November.html",
-    "href": "City Council/Meetings/2025 November.html",
-    "title": "November 3, 2025 City Council",
+    "objectID": "City Council/Committees/placeholder.html",
+    "href": "City Council/Committees/placeholder.html",
+    "title": "Committee Placeholder",
     "section": "",
-    "text": "Location: Franklin Elks\n\n\nTime: 6:00 PM\n\nAgenda\nPacket",
+    "text": "This is a placeholder.",
     "crumbs": [
       "City Council Digest",
       "City Council",
-      "Meetings",
-      "November 3, 2025 City Council"
+      "Committees",
+      "Committee Placeholder"
     ]
   },
   {
@@ -154,16 +153,29 @@
     ]
   },
   {
-    "objectID": "City Council/Committees/placeholder.html",
-    "href": "City Council/Committees/placeholder.html",
-    "title": "Committee Placeholder",
+    "objectID": "City Council/Meetings/2025 November.html",
+    "href": "City Council/Meetings/2025 November.html",
+    "title": "November 3, 2025 City Council",
     "section": "",
-    "text": "This is a placeholder.",
+    "text": "Location: Franklin Elks\n\n\nTime: 6:00 PM\n\nAgenda\nPacket",
     "crumbs": [
       "City Council Digest",
       "City Council",
-      "Committees",
-      "Committee Placeholder"
+      "Meetings",
+      "November 3, 2025 City Council"
+    ]
+  },
+  {
+    "objectID": "City Council/Workshops/20260120_budget.html",
+    "href": "City Council/Workshops/20260120_budget.html",
+    "title": "January 20, 2026 - Budget Visioning",
+    "section": "",
+    "text": "Location: Franklin Public Library\n\n\nTime: 6:00 PM\nThis is a chance for a workshop meeting between the City council, Mayor, and City manager to discuss budget priorities heading into Fiscal Year 2027. This is inteded to be the start of the budget process, giving the professional staff (City manager, department heads) something to aim at. It also provides a time early in the budgeting process for the City manager to raise known issues and strategies.\nCity councilors will have last year’s budget to start from. I expect this will be broadcast on zoom - the franklin city website is the best place to look for that. link to city website.\nHope to see you there.",
+    "crumbs": [
+      "City Council Digest",
+      "City Council",
+      "Workshops",
+      "January 20, 2026 - Budget Visioning"
     ]
   },
   {
@@ -171,6 +183,6 @@
     "href": "index.html",
     "title": "City Council Digest",
     "section": "",
-    "text": "Below is a list of posts.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommittee Placeholder\n\n\nPlaceholder for committee previews\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 20, 2026 - Budget Visioning\n\n\nBudget visioning between City Council, Mayor, and City Manager\n\n\n\n\n\nJan 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 5, 2026 City Council\n\n\nPreview of topics for 1/5/26 City Council meeting\n\n\n\n\n\nJan 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNovember 3, 2025 City Council\n\n\nLinks to agenda and packet for 11/3/25 City Council meeting\n\n\n\n\n\nNov 2, 2025\n\n\n\n\n\nNo matching items"
+    "text": "Below is a list of posts, City council previews, and deep data dives.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCommittee Placeholder\n\n\nPlaceholder for committee previews\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 20, 2026 - Budget Visioning\n\n\nBudget visioning between City Council, Mayor, and City Manager\n\n\n\n\n\nJan 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 5, 2026 City Council\n\n\nPreview of topics for 1/5/26 City Council meeting\n\n\n\n\n\nJan 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNovember 3, 2025 City Council\n\n\nLinks to agenda and packet for 11/3/25 City Council meeting\n\n\n\n\n\nNov 2, 2025\n\n\n\n\n\nNo matching items\n\n\n\n\n\n\n\n\n\n\nTax Base by Zone\n\n\nLooking at all the property in the city, how much tax base is in each zoned category.\n\n\n\n\n\nJan 14, 2026\n\n\n\n\n\nNo matching items"
   }
 ]
