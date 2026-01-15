@@ -1,0 +1,63 @@
+---
+title: "Tax Base by Zone"
+description: Looking at all the propert in the city, how much tax base is in each zoned category.
+category: Franklin Facts
+format: html
+date: 1/14/26    
+---
+During the election campaign, most people I talked to are concerned with their taxes. THey want to know how much is being raised, where it is being spent and why they never seem to go down. 
+
+I believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.
+
+I pulled the taxes from our [AxisGIS](https://next.axisgis.com/FranklinNH/) geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from
+
+
+```{r}
+library(tidyverse)
+library(sf)
+library(gt)
+
+
+prop_data<- read_csv(here::here(".data/20251116_geo_dat/prop_card_data_combined.csv"))
+prop_data %>%
+    select(ZONE, TOTTXVAL) %>%
+    group_by(ZONE) %>%
+    summarize(n_prop = n(),
+        total_val = sum(TOTTXVAL, na.rm = T))
+
+zone_type<- read_sf(here::here(".data/20251116_geo_dat/zone_polys.shp")) %>%st_drop_geometry() %>%select(NAME, LABEL) %>% distinct() %>% mutate(lab2 = str_remove_all(LABEL, "-"))
+
+
+dat<- prop_data  %>%
+    mutate(zone2 = ZONE, 
+    zone2 = str_remove_all(zone2, "(W&S)|(WORS)|(W/S)")) %>%
+    left_join(zone_type, join_by(zone2 == lab2)) %>% distinct()
+
+tax_rate<- 17.63/1000
+
+sum_tab<- dat %>%
+    select(NAME, TOTTXVAL) %>%
+    group_by(NAME) %>%
+    summarize(n_prop = n(),
+        total_val = sum(TOTTXVAL, na.rm = T)) %>% 
+            mutate(tot_city = sum(total_val), 
+            pct = round(total_val/ tot_city,4), 
+            tax = total_val *tax_rate)  %>%
+                select(-tot_city)
+
+sum_tab %>%
+    arrange(-pct) %>% 
+    gt(groupname_col = NAME) %>%
+    grand_summary_rows() %>% 
+    fmt_number(c(total_val, tax)) %>%
+    fmt_integer(n_prop) %>% 
+    fmt_percent(pct)  
+
+
+```
+
+
+```{r}
+
+
+
