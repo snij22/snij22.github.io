@@ -102,6 +102,7 @@ tab
 
 We can show these data graphically as well. 
 ```{r plot the zones}
+#| echo: false
 sum_tab %>%
     ggplot(aes(y= fct_reorder(NAME, pct),x = pct)) + 
     geom_col() + 
