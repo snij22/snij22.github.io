@@ -103,13 +103,15 @@ tab
 We can show these data graphically as well. 
 ```{r plot the zones}
 #| echo: false
-sum_tab %>%
+sum_plot<- sum_tab %>%
     ggplot(aes(y= fct_reorder(NAME, pct),x = pct)) + 
     geom_col() + 
     theme_bw() + 
     scale_x_continuous(labels = scales::label_percent()) + 
     labs(x = "Percent of Tax Revenue by Zone", 
         y = "Zone type")
+sum_plot
+
 ```
 
 This table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.  
