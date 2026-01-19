@@ -1,6 +1,7 @@
 ---
 title: "January 5, 2026 City Council"
 description: "Preview of topics for 1/5/26 City Council meeting"
+categories: City Council Meeting
 date: 1/4/26
 ---
 

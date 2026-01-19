@@ -15,6 +15,7 @@ website:
         href: index.qmd
   margin-footer: subscribe.html
 
+
 format:
   html:
     theme: darkly
