@@ -4,13 +4,13 @@ listing:
  - id: cc
    contents: City Council
    categories: true
-   sort: date
+   sort: date desc
    feed: true
 
  - id: ff
    contents: Franklin Facts
    categories: true
-   sort: date
+   sort: date desc
    feed: true
 ---
 
