@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.8.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -34,14 +34,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-4d9afe2b8d18ee9fa5d0d57b5ed4214d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5d028a3f64e6ad112c0fb394c3ad84e3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d754f5070b3fe4b81c6a95682bbed546.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -141,7 +142,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -1245,34 +1246,36 @@ window.Quarto = {
 <h1>City Council</h1>
 <div id="listing-cc" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="V29ya3Nob3A=" data-listing-date-sort="1768798800000" data-listing-file-modified-sort="1768864997958" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
-<div class="thumbnail"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<div class="thumbnail"><a href="./City Council/Committees/20250119_police.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title" data-anchor-id="city-council">
-<a href="./City Council/Workshops/20260120_budget.html" class="no-external">January 20, 2026 - Budget Visioning</a>
+<a href="./City Council/Committees/20250119_police.html" class="no-external">Feb 4, 2026 Police</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('V29ya3Nob3A='); return false;">Workshop</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG9saWNl'); return false;">Police</div>
 
 </div>
-<div class="delink listing-description"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
-<p>Budget visioning between City Council, Mayor, and City Manager</p>
+<div class="delink listing-description"><a href="./City Council/Committees/20250119_police.html" class="no-external">
+<p>First meeting of the Police committee</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="./City Council/Workshops/20260120_budget.html" class="no-external">
+<a href="./City Council/Committees/20250119_police.html" class="no-external">
 <div class="listing-date">
 Jan 19, 2026
 </div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Q29tbWl0dGVl" data-listing-date-sort="1768798800000" data-listing-file-modified-sort="1768872009397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693">
+<div class="quarto-post image-right" data-index="1" data-categories="Q29tbWl0dGVl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693">
 <div class="thumbnail"><a href="./City Council/Committees/2026 Committee assignments.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1299,7 +1302,7 @@ Jan 19, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Q29tbWl0dGVlJTJDUGFya3MlMjAlMjYlMjBSZWM=" data-listing-date-sort="1768798800000" data-listing-file-modified-sort="1768872009397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
+<div class="quarto-post image-right" data-index="2" data-categories="Q29tbWl0dGVlJTJDUGFya3MlMjAlMjYlMjBSZWM=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
 <div class="thumbnail"><a href="./City Council/Committees/20250119_pr.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1328,36 +1331,7 @@ Jan 19, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1768798800000" data-listing-file-modified-sort="1768872009397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail"><a href="./City Council/Committees/20250119_police.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Committees/20250119_police.html" class="no-external">Feb 4, 2026 Police</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UG9saWNl'); return false;">Police</div>
-
-</div>
-<div class="delink listing-description"><a href="./City Council/Committees/20250119_police.html" class="no-external">
-<p>First meeting of the Police committee</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Committees/20250119_police.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="Q29tbWl0dGVlJTJDTGVnaXNsYXRpdmU=" data-listing-date-sort="1768798800000" data-listing-file-modified-sort="1768872009397" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
+<div class="quarto-post image-right" data-index="3" data-categories="Q29tbWl0dGVlJTJDTGVnaXNsYXRpdmU=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
 <div class="thumbnail"><a href="./City Council/Committees/20250119_leg.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1386,7 +1360,34 @@ Jan 19, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1767502800000" data-listing-file-modified-sort="1768872679673" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
+<div class="quarto-post image-right" data-index="4" data-categories="V29ya3Nob3A=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
+<div class="thumbnail"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./City Council/Workshops/20260120_budget.html" class="no-external">January 20, 2026 - Budget Visioning</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('V29ya3Nob3A='); return false;">Workshop</div>
+
+</div>
+<div class="delink listing-description"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
+<p>Budget visioning between City Council, Mayor, and City Manager</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./City Council/Workshops/20260120_budget.html" class="no-external">
+<div class="listing-date">
+Jan 19, 2026
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1767484800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
 <div class="thumbnail"><a href="./City Council/Meetings/2026 January.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1413,7 +1414,7 @@ Jan 4, 2026
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1762056000000" data-listing-file-modified-sort="1768864233166" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="quarto-post image-right" data-index="6" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1762041600000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
 <div class="thumbnail"><a href="./City Council/Meetings/2025 November.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1448,7 +1449,7 @@ Nov 2, 2025
 <h1>Franklin Facts</h1>
 <div id="listing-ff" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Wm9uaW5n" data-listing-date-sort="1768366800000" data-listing-file-modified-sort="1768864197114" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1265">
+<div class="quarto-post image-right" data-index="0" data-categories="Wm9uaW5n" data-listing-date-sort="1768348800000" data-listing-file-modified-sort="1768873567138" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1265">
 <div class="thumbnail"><a href="./Franklin Facts/20260114_zone_tax_val.html" class="no-external">
 
 <p class="card-img-top"><img src="Franklin Facts/20260114_zone_tax_val_files/figure-html/plot the zones-1.png"  class="thumbnail-image card-img"/></p>
@@ -1535,13 +1536,14 @@ Jan 14, 2026
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

@@ -1,5 +1,39 @@
 [
   {
+    "objectID": "About.html",
+    "href": "About.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This is a public blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda. I will also include data and analysis of city issues to try make residents more informed.",
+    "crumbs": [
+      "City Council Digest",
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "About.html#purpose",
+    "href": "About.html#purpose",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This is a public blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda. I will also include data and analysis of city issues to try make residents more informed.",
+    "crumbs": [
+      "City Council Digest",
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260114_zone_tax_val.html",
+    "href": "Franklin Facts/20260114_zone_tax_val.html",
+    "title": "Tax Base by Zone",
+    "section": "",
+    "text": "Zoning and the connection to the Tax base\nDuring the election campaign, most people I talked to are concerned with their taxes. They want to know how much is being raised, where it is being spent and why they never seem to go down.\nI believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.\nI pulled the taxes from our AxisGIS geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from. These data are not perfect but I believe they are good enough for a good-faith discussion.\nThe table below shows where our tax base comes from. I’m assuming all property is taxed the same at the last municipal rate 0.01763 or 17.63 per mill and that city property and conservation land is taxed. There are areas that are not zoned in this dataset and some of these properties have been reassessed since I pulled this data.\n\n\n\n\n\n\n\n\n\nAt the highest level, we have close to 3500 properties on the tax rolls, and generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city’s operation. The FY26 budgeted revenues adopted by the council is $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, this shows that our dataset is still close enough to draw some conclusions. This difference is a limitation in using publicly available data, not mismanagement by the city.\n\n\nResidential Taxes Contribute the Majority of City Taxes\nSplitting this number up by zone shows where the majority of the tax burden lies.\n\n\n\n\n\n\n\n\n\nWe can show these data graphically as well.\n\n\n\n\n\n\n\n\n\nThis table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.\n\n\nIndustrial/Commercial Properties Pay the Most Tax Per Property\nOne other way to look at these data is to divide the total tax value in a given zone by the number of properties in that zone yielding the average tax for a given zoned property. This assumes that every property in given zone is equal - it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type.\n\n\n\n\n\n\n\n\n\nThis chart shows that industrial and high and low density commercial already contribute more tax on average than an individual residential property. It also shows on average lake protection district (around Webster Lake) properties are taxed a bit higher than other residential properties, but not by much. Finally this chart shows that multi-family housing on average is taxed relatively low.\nAs we head into budget season and budget visioning, a robust understanding of the value drivers of the main source of revenue for the city (taxes) is key for council and public decision making. Below is an interactive zoning map. If you’d like to talk about these data, calculations, or conclusions feel free to email at sjacobson@franklinnh.gov.\n\n\nInteractive Zoning Map",
+    "crumbs": [
+      "City Council Digest",
+      "Franklin Facts",
+      "Tax Base by Zone"
+    ]
+  },
+  {
     "objectID": "City Council/Committees/20250119_leg.html",
     "href": "City Council/Committees/20250119_leg.html",
     "title": "Jan 27, 2026 Legislative",
@@ -13,29 +47,29 @@
     ]
   },
   {
-    "objectID": "City Council/Committees/20250119_pr.html",
-    "href": "City Council/Committees/20250119_pr.html",
-    "title": "Jan 28,2026 Parks and Recreation",
+    "objectID": "City Council/Committees/2026 Committee assignments.html",
+    "href": "City Council/Committees/2026 Committee assignments.html",
+    "title": "2026-2027 Committee Assignments",
     "section": "",
-    "text": "Location: Bessie Rowell Community Center\n\n\nDate: January 28, 2026\n\n\nTime: 6:00 PM\n\n\nRough Agenda\nWe are still finalizing the agenda at this time. Below is what I think we’ll talk about:\n\nChair Appointment\nSet meeting schedule\nParks and rec director replacement\nFY2027 Budget Update",
+    "text": "With each election, the committee assignments of councilors can change. Many (though not all) committees that are appointed by the Mayor have their root in the city charter. Most line up with a professional department head (e.g. Fire committee works closely with the fire chief). Committee meetings are the best way for public to engage/observe the discussion of department specific issues. Each committee makes regular reports to the broader council on their business and recommends department specific actions. Below is a list of the committees, description and current members. If you have questions about something that comes before that committee, contact those councilors!\nThese committees are where there is often frank, focused discussion on issues facing a given department. Many have not met in more than 6 months, a practice I hope changes under Mayor Morrill.\n\nFinance\nThe Finance Committee deals with the finances of the city. Think is the city on budget for the year, any foreseeable budget/financial related issues that should be reviewed before being brought to the broader council. THe last meeting occurred in January 2026 (with the new members)!\n\nDelaney Carrier\nAl Warner\nBen Forge\n\n\n\nCity School Liaison\nThe City School Liaison Committee is joint between the city and school board and is meant to enhance communication between both bodies. It has not met in years. The last meeting I can find information from is November 2021.\n\nSusan Hallett-Cook\nEd Prive\nTom Boyce\n\n\n\nPolice\nThe Police Committee works with the chief of police to review department budget and policies. Think things like canine units and body camera usage. The last meeting I can find information from is May 2025.\n\nBen Forge\nEd Prive\nSam Jacobson\n\n\n\nJoint Finance\nThe Joint Finance Committee is made up of 3 City and 3 School Board members. It is intended to enhance communication between the school board and city regarding school finances. The last meeting I can find information from is October 2025.\n\nAl Warner\nDelaney Carrier\nJustine Hoppe\n\n\n\nLegislative\nThe Legislative Committee deals with city ordinances and policies. Think things like the winter parking ban, event permitting etc. The last meeting I can find information from is September 2025.\n\nSam Jacobson\nTim Johnston\nAl Warner\n\n\n\nMunicipal Services\nThe Municipal Services Committee works with the director of municipal services to review department budgets and policy. THink things like road paving schedule, painting needs and capital needs for the department. The last meeting I can find information from is September 2025.\n\nTim Johnston\nDelaney Carrier\nTom Boyce\n\n\n\nFire\nThe Fire Committee works with the fire Chief to review department budgets and policy. Think things like ambulance rates, inspection protocols, and capital needs. The last meeting I can find information from is May 2025.\n\nTom Boyce\nAl Warner\nJustine Hoppe\n\n\n\nParks and Recreation\nThe Parks and Recreation Committee works with the director of parks and recreation to review department budgets and policies. think things like events on city property and Bessie Rowell usage. The last meeting I can find information from is August 2024.\n\nJustine Hoppe\nSam Jacobson\nSusan Hallett-Cook\n\n\n\nCapital Improvements Plan\nThe Capital Improvements Plan (CIP) Committee reviews and recommends changes to the city-wide capital improvements plan. The CIP is a list of all of the repair projects in the city.The last meeting I can find information from is December 2024.\n\nEd Prive\nBen Forge\nSusan Hallett-Cook\n\n\n\nPlanning\nThe mayor appoints one member of the planning board. This councilor joins teh other members of the community that are on the planning board to review applications before the planning board. The Planning board deals with subdivisions and site plans, land use regulations, and creating master plans for the city. The last meeting I can find information from is December 2025.\n\nDelaney Carrier\nTim Johnston (Alternate). Tim may step in when Delaney cannot attend a meeting.\n\n\n\nFranklin Business & Industrial Development Corporation\nThe Franklin Business & Industrial Development Corporation (FBIDC)promotes the expansion of the economic base of the Greater Franklin area through targeted strategies to make the community an increasingly attractive location to conduct business, work and live. The mayor makes one appointment to this organization. FBIDC is similar to a Chamber of Commerce. The last meeting was in January 2026.\n\nSam Jacobson",
     "crumbs": [
       "City Council Digest",
       "City Council",
       "Committees",
-      "Jan 28,2026 Parks and Recreation"
+      "2026-2027 Committee Assignments"
     ]
   },
   {
-    "objectID": "City Council/Workshops/20260120_budget.html",
-    "href": "City Council/Workshops/20260120_budget.html",
-    "title": "January 20, 2026 - Budget Visioning",
+    "objectID": "City Council/Meetings/2025 November.html",
+    "href": "City Council/Meetings/2025 November.html",
+    "title": "November 3, 2025 City Council",
     "section": "",
-    "text": "Location: Franklin Public Library\n\n\nDate: January 20, 2026\n\n\nTime: 6:00 PM\nThis is a chance for a workshop meeting between the City council, Mayor, and City manager to discuss budget priorities heading into Fiscal Year 2027. This is intended to be the start of the budget process, giving the professional staff (City manager, department heads) something to aim at. It also provides a time early in the budgeting process for the City manager to raise known issues and strategies.\nCity councilors will have last year’s budget to start from. I expect this will be broadcast on zoom - the franklin city website is the best place to look for that. link to city website.\nHope to see you there.\n\nHow Sam Sees It:\nThis will be the first budget constructed by City Manager Kloewer.\nDuring the fiscal year(FY) 2026 budget process, acting City manager Clarenbach spoke to the need for the council to consider and guide him on potential service reductions to address deferred maintenance and other longer-term budget issues. From my perspective, the sitting council did not really grapple with that request.\nAt the same time, I’ve heard from many constituents that Franklin has a revenue problem, i.e. we need to figure out how to bring in more money.\nThis process will not be easy, but I’m hoping the Council and City Manager will find common direction coming out of this meeting.\nThis is a high level vision/strategy session, no concrete FY2027 budget numbers will be addressed.",
+    "text": "Location: Franklin Elks\n\n\nTime: 6:00 PM\n\nAgenda\nPacket",
     "crumbs": [
       "City Council Digest",
       "City Council",
-      "Workshops",
-      "January 20, 2026 - Budget Visioning"
+      "Meetings",
+      "November 3, 2025 City Council"
     ]
   },
   {
@@ -156,73 +190,6 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "City Council Digest",
-    "section": "",
-    "text": "Below is a list of posts, City council previews, and deep data dives.\n\nCity Council\n\n\n\n\n\n\n\n\n\n\nJanuary 20, 2026 - Budget Visioning\n\n\n\nWorkshop\n\n\n\nBudget visioning between City Council, Mayor, and City Manager\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n2026-2027 Committee Assignments\n\n\n\nCommittee\n\n\n\nCommittee assignments for all Councilors\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJan 28,2026 Parks and Recreation\n\n\n\nCommittee\n\nParks & Rec\n\n\n\nFirst meeting of the Parks and Recreation committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2026 Police\n\n\n\nCommittee\n\nPolice\n\n\n\nFirst meeting of the Police committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2026 Legislative\n\n\n\nCommittee\n\nLegislative\n\n\n\nFirst meeting of the legislative committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 5, 2026 City Council\n\n\n\nCity Council Meeting\n\n\n\nPreview of topics for 1/5/26 City Council meeting\n\n\n\n\n\nJan 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNovember 3, 2025 City Council\n\n\n\nCity Council Meeting\n\n\n\nLinks to agenda and packet for 11/3/25 City Council meeting\n\n\n\n\n\nNov 2, 2025\n\n\n\n\n\nNo matching items\n\n\n\nFranklin Facts\n\n\n\n\n\n\n\n\n\n\nTax Base by Zone\n\n\n\nZoning\n\n\n\nLooking at all the property in the city, how much tax base is in each zoned category.\n\n\n\n\n\nJan 14, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "About.html",
-    "href": "About.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "This is a public blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda. I will also include data and analysis of city issues to try make residents more informed.",
-    "crumbs": [
-      "City Council Digest",
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "About.html#purpose",
-    "href": "About.html#purpose",
-    "title": "Welcome!",
-    "section": "",
-    "text": "This is a public blog for the residents of Franklin New Hampshire. After the city elections in 2025, I heard that the people of Franklin wanted to hear more from their councilors. I will try to keep this updated before regular city council meetings with a post detailing what I think will be discussed and my understandings of the issues on the agenda. I will work to get this out prior to the meetings - hopefully this will get folks coming to public comment. If not in public comment, then contact me via email at sjacobson@franklinnh.gov.\nThis is for anyone who lives in Franklin that is trying to get a better sense of what is happening, and what may be upcoming on the City agenda. I will also include data and analysis of city issues to try make residents more informed.",
-    "crumbs": [
-      "City Council Digest",
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "Franklin Facts/20260114_zone_tax_val.html",
-    "href": "Franklin Facts/20260114_zone_tax_val.html",
-    "title": "Tax Base by Zone",
-    "section": "",
-    "text": "Zoning and the connection to the Tax base\nDuring the election campaign, most people I talked to are concerned with their taxes. They want to know how much is being raised, where it is being spent and why they never seem to go down.\nI believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.\nI pulled the taxes from our AxisGIS geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from. These data are not perfect but I believe they are good enough for a good-faith discussion.\nThe table below shows where our tax base comes from. I’m assuming all property is taxed the same at the last municipal rate 0.01763 or 17.63 per mill and that city property and conservation land is taxed. There are areas that are not zoned in this dataset and some of these properties have been reassessed since I pulled this data.\n\n\n\n\n\n\n\n\n\nAt the highest level, we have close to 3500 properties on the tax rolls, and generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city’s operation. The FY26 budgeted revenues adopted by the council is $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, this shows that our dataset is still close enough to draw some conclusions. This difference is a limitation in using publicly available data, not mismanagement by the city.\n\n\nResidential Taxes Contribute the Majority of City Taxes\nSplitting this number up by zone shows where the majority of the tax burden lies.\n\n\n\n\n\n\n\n\n\nWe can show these data graphically as well.\n\n\n\n\n\n\n\n\n\nThis table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.\n\n\nIndustrial/Commercial Properties Pay the Most Tax Per Property\nOne other way to look at these data is to divide the total tax value in a given zone by the number of properties in that zone yielding the average tax for a given zoned property. This assumes that every property in given zone is equal - it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type.\n\n\n\n\n\n\n\n\n\nThis chart shows that industrial and high and low density commercial already contribute more tax on average than an individual residential property. It also shows on average lake protection district (around Webster Lake) properties are taxed a bit higher than other residential properties, but not by much. Finally this chart shows that multi-family housing on average is taxed relatively low.\nAs we head into budget season and budget visioning, a robust understanding of the value drivers of the main source of revenue for the city (taxes) is key for council and public decision making. Below is an interactive zoning map. If you’d like to talk about these data, calculations, or conclusions feel free to email at sjacobson@franklinnh.gov.\n\n\nInteractive Zoning Map",
-    "crumbs": [
-      "City Council Digest",
-      "Franklin Facts",
-      "Tax Base by Zone"
-    ]
-  },
-  {
-    "objectID": "City Council/Meetings/2025 November.html",
-    "href": "City Council/Meetings/2025 November.html",
-    "title": "November 3, 2025 City Council",
-    "section": "",
-    "text": "Location: Franklin Elks\n\n\nTime: 6:00 PM\n\nAgenda\nPacket",
-    "crumbs": [
-      "City Council Digest",
-      "City Council",
-      "Meetings",
-      "November 3, 2025 City Council"
-    ]
-  },
-  {
-    "objectID": "City Council/Committees/2026 Committee assignments.html",
-    "href": "City Council/Committees/2026 Committee assignments.html",
-    "title": "2026-2027 Committee Assignments",
-    "section": "",
-    "text": "With each election, the committee assignments of councilors can change. Many (though not all) committees that are appointed by the Mayor have their root in the city charter. Most line up with a professional department head (e.g. Fire committee works closely with the fire chief). Committee meetings are the best way for public to engage/observe the discussion of department specific issues. Each committee makes regular reports to the broader council on their business and recommends department specific actions. Below is a list of the committees, description and current members. If you have questions about something that comes before that committee, contact those councilors!\nThese committees are where there is often frank, focused discussion on issues facing a given department. Many have not met in more than 6 months, a practice I hope changes under Mayor Morrill.\n\nFinance\nThe Finance Committee deals with the finances of the city. Think is the city on budget for the year, any foreseeable budget/financial related issues that should be reviewed before being brought to the broader council. THe last meeting occurred in January 2026 (with the new members)!\n\nDelaney Carrier\nAl Warner\nBen Forge\n\n\n\nCity School Liaison\nThe City School Liaison Committee is joint between the city and school board and is meant to enhance communication between both bodies. It has not met in years. The last meeting I can find information from is November 2021.\n\nSusan Hallett-Cook\nEd Prive\nTom Boyce\n\n\n\nPolice\nThe Police Committee works with the chief of police to review department budget and policies. Think things like canine units and body camera usage. The last meeting I can find information from is May 2025.\n\nBen Forge\nEd Prive\nSam Jacobson\n\n\n\nJoint Finance\nThe Joint Finance Committee is made up of 3 City and 3 School Board members. It is intended to enhance communication between the school board and city regarding school finances. The last meeting I can find information from is October 2025.\n\nAl Warner\nDelaney Carrier\nJustine Hoppe\n\n\n\nLegislative\nThe Legislative Committee deals with city ordinances and policies. Think things like the winter parking ban, event permitting etc. The last meeting I can find information from is September 2025.\n\nSam Jacobson\nTim Johnston\nAl Warner\n\n\n\nMunicipal Services\nThe Municipal Services Committee works with the director of municipal services to review department budgets and policy. THink things like road paving schedule, painting needs and capital needs for the department. The last meeting I can find information from is September 2025.\n\nTim Johnston\nDelaney Carrier\nTom Boyce\n\n\n\nFire\nThe Fire Committee works with the fire Chief to review department budgets and policy. Think things like ambulance rates, inspection protocols, and capital needs. The last meeting I can find information from is May 2025.\n\nTom Boyce\nAl Warner\nJustine Hoppe\n\n\n\nParks and Recreation\nThe Parks and Recreation Committee works with the director of parks and recreation to review department budgets and policies. think things like events on city property and Bessie Rowell usage. The last meeting I can find information from is August 2024.\n\nJustine Hoppe\nSam Jacobson\nSusan Hallett-Cook\n\n\n\nCapital Improvements Plan\nThe Capital Improvements Plan (CIP) Committee reviews and recommends changes to the city-wide capital improvements plan. The CIP is a list of all of the repair projects in the city.The last meeting I can find information from is December 2024.\n\nEd Prive\nBen Forge\nSusan Hallett-Cook\n\n\n\nPlanning\nThe mayor appoints one member of the planning board. This councilor joins teh other members of the community that are on the planning board to review applications before the planning board. The Planning board deals with subdivisions and site plans, land use regulations, and creating master plans for the city. The last meeting I can find information from is December 2025.\n\nDelaney Carrier\nTim Johnston (Alternate). Tim may step in when Delaney cannot attend a meeting.\n\n\n\nFranklin Business & Industrial Development Corporation\nThe Franklin Business & Industrial Development Corporation (FBIDC)promotes the expansion of the economic base of the Greater Franklin area through targeted strategies to make the community an increasingly attractive location to conduct business, work and live. The mayor makes one appointment to this organization. FBIDC is similar to a Chamber of Commerce. The last meeting was in January 2026.\n\nSam Jacobson",
-    "crumbs": [
-      "City Council Digest",
-      "City Council",
-      "Committees",
-      "2026-2027 Committee Assignments"
-    ]
-  },
-  {
     "objectID": "City Council/Committees/20250119_police.html",
     "href": "City Council/Committees/20250119_police.html",
     "title": "Feb 4, 2026 Police",
@@ -234,5 +201,38 @@
       "Committees",
       "Feb 4, 2026 Police"
     ]
+  },
+  {
+    "objectID": "City Council/Committees/20250119_pr.html",
+    "href": "City Council/Committees/20250119_pr.html",
+    "title": "Jan 28,2026 Parks and Recreation",
+    "section": "",
+    "text": "Location: Bessie Rowell Community Center\n\n\nDate: January 28, 2026\n\n\nTime: 6:00 PM\n\n\nRough Agenda\nWe are still finalizing the agenda at this time. Below is what I think we’ll talk about:\n\nChair Appointment\nSet meeting schedule\nParks and rec director replacement\nFY2027 Budget Update",
+    "crumbs": [
+      "City Council Digest",
+      "City Council",
+      "Committees",
+      "Jan 28,2026 Parks and Recreation"
+    ]
+  },
+  {
+    "objectID": "City Council/Workshops/20260120_budget.html",
+    "href": "City Council/Workshops/20260120_budget.html",
+    "title": "January 20, 2026 - Budget Visioning",
+    "section": "",
+    "text": "Location: Franklin Public Library\n\n\nDate: January 20, 2026\n\n\nTime: 6:00 PM\nThis is a chance for a workshop meeting between the City council, Mayor, and City manager to discuss budget priorities heading into Fiscal Year 2027. This is intended to be the start of the budget process, giving the professional staff (City manager, department heads) something to aim at. It also provides a time early in the budgeting process for the City manager to raise known issues and strategies.\nCity councilors will have last year’s budget to start from. I expect this will be broadcast on zoom - the franklin city website is the best place to look for that. link to city website.\nHope to see you there.\n\nHow Sam Sees It:\nThis will be the first budget constructed by City Manager Kloewer.\nDuring the fiscal year(FY) 2026 budget process, acting City manager Clarenbach spoke to the need for the council to consider and guide him on potential service reductions to address deferred maintenance and other longer-term budget issues. From my perspective, the sitting council did not really grapple with that request.\nAt the same time, I’ve heard from many constituents that Franklin has a revenue problem, i.e. we need to figure out how to bring in more money.\nThis process will not be easy, but I’m hoping the Council and City Manager will find common direction coming out of this meeting.\nThis is a high level vision/strategy session, no concrete FY2027 budget numbers will be addressed.",
+    "crumbs": [
+      "City Council Digest",
+      "City Council",
+      "Workshops",
+      "January 20, 2026 - Budget Visioning"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "City Council Digest",
+    "section": "",
+    "text": "Below is a list of posts, City council previews, and deep data dives.\n\nCity Council\n\n\n\n\n\n\n\n\n\n\nFeb 4, 2026 Police\n\n\n\nCommittee\n\nPolice\n\n\n\nFirst meeting of the Police committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\n2026-2027 Committee Assignments\n\n\n\nCommittee\n\n\n\nCommittee assignments for all Councilors\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJan 28,2026 Parks and Recreation\n\n\n\nCommittee\n\nParks & Rec\n\n\n\nFirst meeting of the Parks and Recreation committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJan 27, 2026 Legislative\n\n\n\nCommittee\n\nLegislative\n\n\n\nFirst meeting of the legislative committee\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 20, 2026 - Budget Visioning\n\n\n\nWorkshop\n\n\n\nBudget visioning between City Council, Mayor, and City Manager\n\n\n\n\n\nJan 19, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nJanuary 5, 2026 City Council\n\n\n\nCity Council Meeting\n\n\n\nPreview of topics for 1/5/26 City Council meeting\n\n\n\n\n\nJan 4, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nNovember 3, 2025 City Council\n\n\n\nCity Council Meeting\n\n\n\nLinks to agenda and packet for 11/3/25 City Council meeting\n\n\n\n\n\nNov 2, 2025\n\n\n\n\n\nNo matching items\n\n\n\nFranklin Facts\n\n\n\n\n\n\n\n\n\n\nTax Base by Zone\n\n\n\nZoning\n\n\n\nLooking at all the property in the city, how much tax base is in each zoned category.\n\n\n\n\n\nJan 14, 2026\n\n\n\n\n\nNo matching items"
   }
 ]
