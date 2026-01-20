@@ -1,6 +1,6 @@
 ---
 title: "2026-2027 Committee Assignments"
-description: "Committee assignments for all Counselors"
+description: "Committee assignments for all Councilors"
 categories: Committee
 date: 1/19/2025
 ---
