@@ -2,7 +2,7 @@
 title: "Feb 4, 2026 Police"
 description: "First meeting of the Police committee"
 categories: [Committee, Police]
-date: 1/19/2025
+date: 1/19/2026
 ---
 
 # Location: Franklin Public Library
