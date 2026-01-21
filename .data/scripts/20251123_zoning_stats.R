@@ -94,4 +94,4 @@ tmap::tmap_save(interactive_map, "data/outputs/20251123_interactive_map.html")
 pdf("data/outputs/20251123_maps.pdf", width= 8, height = 11)
 aa
 dev.off()
-library(tmap)
+

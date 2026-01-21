@@ -14,53 +14,63 @@ test text
 library(tidyverse)
 library(sf)
 library(tmap)
+tmap_mode("view")
 
-ttm()
 ```
 
 ```{r read in data}
 
-fp2<-  here::here("data/20251116_geo_dat/caidump.DBF")
-dat<- foreign::read.dbf(fp2) %>%as_tibble()
-
-
-parcel_polys_fp<- here::here("data/20251116_geo_dat/parcel_polys.shp")
+parcel_polys_fp<- here::here(".data/20251116_geo_dat/parcel_polys.shp")
 parcel_polys<- st_read(dsn = parcel_polys_fp)
-zone_fp<- here::here("data/20251116_geo_dat/zone_polys.shp")
+zone_fp<- here::here(".data/20251116_geo_dat/zone_polys.shp")
 zone_polys<- st_read(zone_fp)
 
+dat<- read_csv(here::here(".data/outputs/prop_data_with_zone.csv"))
 
-zone_polys %>% filter(str_detect(NAME, "Frank")) %>% st_cast("MULTIPOLYGON") %>% 
-tm_shape() + 
-    tm_polygons(fill = "NAME")
-
-#zone_polys %>% 
-#  tm_shape() + 
-#    tm_polygons(fill = "NAME")
-
-parcel_polys%>% 
-tm_shape() + 
-    tm_polygons()
+city_data<- dat %>% filter(OwnerName == "FRANKLIN, CITY OF" ) 
 
 ```
+
+
+Let's look at city property. The owns a series of parcels around within the municipality. This land may be conservation land, it may have been taken for tax purposes or it may be used for other city purposes. An important priorty stated by our City manager is returning property to the tax rolls. 
 
 ```{r map it}
 
-d2<- dat %>%
-   mutate(across(.cols = c(MAP, LOT),.fns =  ~str_sub(., -3)),
-          SUB = str_sub(SUB, -2)) %>%
- 
-  mutate(PARCEL_ = paste(MAP, LOT, SUB, sep="-"))
+city_data%>%
+  summarize(n = n(),
+  av_size= mean(ACRES, na.rm= T), 
+  av_tax_val = mean(TOTTXVAL, na.rm =T), 
+  med_size= median(ACRES, na.rm= T), 
+  med_tax_val = median(TOTTXVAL, na.rm =T))
 
-comb<- parcel_polys %>%
-  left_join(d2)  %>% drop_na(MAP) %>%
-  mutate(across(ends_with("VAL"), as.numeric)) %>%
-  mutate(year_sale = year(SALEDATE),
-         years_since_sale = 2025-year_sale)
+##looks like this includes roads###
+city_shp<- city_data %>%
+  left_join(parcel_polys) %>% st_as_sf()
 
-comb %>% filter(STATE != "NH")%>%
-  tm_shape() +
-  tm_fill("STATE")
-
+tm_shape(city_shp) + 
+  tm_polygons() + 
+  tm_basemap(leaflet::providers$OpenStreetMap) + 
+  tm_title("Franklin City Property")
 
 ```
+
+This table shows that the city owns about 149 different parcels throughout the city! That's a lot of parcels. I've included the average and median size and value of the parcels as well. Looking at the map above you can see there is a wide range in what that city owns. Some (like 266 flag hole road) are large and represent 366 acres of land. Others (like some of the properties on East bow Street) are small (0.08) acres.
+
+Another way to look at this is to look at the zone tha these parcels fall in - if returned to the rolls, how much is conservation, light industrial etc? 
+
+```{r }
+city_data%>% group_by(NAME) %>% 
+  replace_na(list(NAME = "Missing Zone")) %>% 
+  summarize(n = n(),
+  av_size= mean(ACRES, na.rm= T), 
+  av_tax_val = mean(TOTTXVAL, na.rm =T), 
+  med_size= median(ACRES, na.rm= T), 
+  med_tax_val = median(TOTTXVAL, na.rm =T))
+
+
+
+tm_shape(city_shp) + 
+  tm_polygons("NAME",  fill.scale = tm_scale_categorical(values.repeat = F)) +  
+  tm_basemap(leaflet::providers$OpenStreetMap) + 
+  tm_title("Franklin City Property")
+
