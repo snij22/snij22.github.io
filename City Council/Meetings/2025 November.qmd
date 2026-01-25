@@ -3,6 +3,7 @@ title: "November 3, 2025 City Council"
 description: "Links to agenda and packet for 11/3/25 City Council meeting"
 categories: City Council Meeting
 date: 11/2/2025
+date-modified: 11/2/2025
 ---
 
 <h1>Location: Franklin Elks</h1>

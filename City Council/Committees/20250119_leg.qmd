@@ -3,6 +3,7 @@ title: "Jan 27, 2026 Legislative"
 description: "First meeting of the legislative committee"
 categories: [Committee, Legislative]
 date: 1/19/2026
+date-modified: 1/25/26
 ---
 
 # Location: Franklin Public Library
@@ -12,9 +13,35 @@ date: 1/19/2026
 # Time: 6:00 PM
 
 # Rough Agenda
-We are still finalizing the agenda at this time. Below is what I think we'll talk about: 
+As of Friday Jan 23, I've finalized the legislative committee meeting agenda. Below is what we plan to discuss: 
+
 
 1. Chair Appointment
-2. Set meeting schedule
+2. Set 2026 Meeting Schedule
 3. Continuing Business
-    - Permit process review
+
+## Old Business
+
+### Permit process review
+- This item deals with the permit process issues identified in January. Currently, permits to use city land/facilties go through a review by various department heads and the City Manager. In January, the Mayor was added to this group of people. Also in January, the City Manager recommended this come back to legislative as the permit process did not have a place in the charter.
+
+### Winter parking ordinance
+- In November of last year, there was a winter parking forum with various proposed changes kicked to legislative. My memory is that these were still outstanding.
+
+### Economic development committee
+- Councilor Johnston recalled a discussion to establish an economic development city committee. This discussion was before the legislative committee approximately 1 year ago, when Councilor Johnston was working with Councilor Zinke. This agenda item seeks to figure out where that left off. 
+
+### Human Resources (HR) position description
+- In the 2026 budget, the City Council included money for a part time HR position, as there currently is not an HR person in the city. This position has not been posted because the City Council kicked a position description for the HR position to the legislative committee. This agenda item will confirm the status of the position description. 
+
+## New Business
+
+### Tax cap referral
+- During the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the [charter](https://ecode360.com/10175836?highlight=tax&highlight=taxes&searchId=9744524952871378#10175836) defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council's actions might encumber the following council and requested referral to the legislative committee. 
+
+### Enumerating changes to charter and code
+
+- Councilor Warner raised this agenda item via email. I am unsure to what he is referring. 
+
+### Changes to ordinance approval process 
+- During the January 20, 2026 City Council workshop, the City Manager asked that the process for ordinance changes be reviewed.

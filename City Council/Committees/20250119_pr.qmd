@@ -3,18 +3,20 @@ title: "Jan 28,2026 Parks and Recreation"
 description: "First meeting of the Parks and Recreation committee"
 categories: [Committee, Parks & Rec]
 date: 1/19/2026
+date-modified: 1/25/2026
 ---
 
 # Location: Bessie Rowell Community Center
 
 # Date: January 28, 2026
 
-# Time: 6:00 PM
+# Time: 5:30 PM
 
 # Rough Agenda
-We are still finalizing the agenda at this time. Below is what I think we'll talk about: 
+As of Tuesday Jan 20, Councilor Hoppe finalized the legislative committee meeting agenda. Below is what we plan to discuss: 
 
 1. Chair Appointment
-2. Set meeting schedule
+2. Set 2026 meeting schedule
 3. Parks and rec director replacement
+- Director Alpers is leaving for another opportunity in mid February. The council will need to work with the City Manager to find a replacement.
 4. FY2027 Budget Update

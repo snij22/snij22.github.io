@@ -4,15 +4,16 @@ description: Looking at all the property in the city, how much tax base is in ea
 categories: Zoning
 format: html
 date: 1/14/26
+date-modified: 1/25/2026
 
 ---
 
-# Zoning and the connection to the Tax base
-During the election campaign, most people I talked to are concerned with their taxes. They want to know how much is being raised, where it is being spent and why they never seem to go down. 
+# Zoning and the connection to the tax base
+During the election campaign, most people I talked to were concerned with their taxes. Residents want to know how much money is being raised, where it is being spent, and why taxes never seem to go down. 
 
-I believe that in a tax capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. At the highest level, when the commercial side of the tax rolls grows, the residential side should shrink in a tax capped system.
+I believe that in a tax-capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base. 
 
-I pulled the taxes from our [AxisGIS](https://next.axisgis.com/FranklinNH/) geographic information system for the city and combined it with zoning data to get a sense for where our current tax base is coming from. These data are not perfect but I believe they are good enough for a good-faith discussion. 
+I pulled tax records from our [AxisGIS](https://next.axisgis.com/FranklinNH/) geographic information system for the city and combined it with zoning data to get a sense of where our current tax base is coming from. These data are not perfect, but I believe they are good enough for a good-faith discussion. 
 
 ```{r ead in data}
 #| warning: false
@@ -31,7 +32,7 @@ tax_rate<- 17.63/1000
 
 ```
 
-The table below shows where our tax base comes from. I'm assuming all property is taxed the same at the last municipal rate `{r} tax_rate`  or 17.63 per mill and that city property and conservation land is taxed. There are areas that are not zoned in this dataset and some of these properties have been reassessed since I pulled this data. 
+The table below shows where our tax base comes from. I'm assuming all property is taxed equally, at the last municipal rate `{r} tax_rate` , or $17.63 per $1000. I also assume that city property and conservation land is taxed. There are areas that are not zoned in this dataset, and some of these properties have been reassessed since I pulled this data. 
 
 ```{r}
 #| echo: false
@@ -67,11 +68,15 @@ sum_gt<- sum_tab %>% summarize(across(where(is.numeric), sum)) %>%
 sum_gt
 ```
 
-At the highest level, we have close to 3500 properties on the tax rolls, and generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city's operation. The [FY26 budgeted](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/fy2026_council_adopted_budget_1.pdf) revenues adopted by the council is $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, this shows that our dataset is still close enough to draw some conclusions. This difference is a limitation in using publicly available data, not mismanagement by the city. 
+We have close to 3500 properties on the tax rolls, which generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city's operation. 
+
+The [FY26 budgeted revenues](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/fy2026_council_adopted_budget_1.pdf)  adopted by the council are $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, it shows that our dataset is still close enough to draw some conclusions. 
+
+The difference between the budgeted revenues and the estimated tax revenues is a limitation in using publicly available data, not mismanagement by the city. 
 
 
 # Residential Taxes Contribute the Majority of City Taxes
-Splitting this number up by zone shows where the majority of the tax burden lies. 
+Splitting the estimated tax value of Franklin's properties by zone shows where the majority of the tax revenue lies. 
 
 ```{r }
 #| echo: false
@@ -114,11 +119,15 @@ sum_plot
 
 ```
 
-This table shows the majority of the overall tax is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, see that the overall commercial and industrial tax contribution is less than 5%. Note too that the tax value of conservation land throughout the city is more than 10%. This is not an argument to build factories on every square inch of space in the city. It shows that small adjustments on the industrial and commercial side of the ledger can have a meaningful impact to our city. It also underscores the investment that conservation represents.  
+This table shows that the majority of the city's revenue is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community. 
+
+One way to offset the residential tax burden is to grow the commercial tax base. In the chart above, the combined commercial and industrial tax contribution is less than 5%. This is not an argument to build factories on every square inch of space in the city. 
+
+It is also worth noting that the tax value of conservation land throughout the city is more than 10%. This underscores our community's investment in conservation. I believe this is good, it preserves the natural beauty of Franklin for future generations. 
 
 # Industrial/Commercial Properties Pay the Most Tax Per Property
 
-One other way to look at these data is to divide the total tax value in a given zone by the number of properties in that zone yielding the average tax for a given zoned property. This assumes that every property in given zone is equal - it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type. 
+One other way to look at these data is to calculate the average tax per property for each zone category. To calculate this, divide the total tax value in a given zone type by the number of properties in that zone type. This assumes that every property in a given zone type is equal -- it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type. 
 
 ```{r average tax}
 #| echo: false
@@ -134,9 +143,11 @@ sum_tab %>%
 
 ```
 
-This chart shows that industrial and high and low density commercial already contribute more tax on average than an individual residential property. It also shows on average lake protection district (around Webster Lake) properties are taxed a bit higher than other residential properties, but not by much. Finally this chart shows that multi-family housing on average is taxed relatively low. 
+This chart shows that industrial and high- and low-density commercial properties already contribute more tax on average than an individual residential property. It also shows that, on average, properties in the lake protection district (around Webster Lake) are taxed a bit higher than other residential properties, but not by much. Finally, this chart shows that multi-family housing properties are, on average, taxed relatively low. 
 
-As we head into budget season and budget visioning, a robust understanding of the value drivers of the main source of revenue for the city (taxes) is key for council and public decision making. Below is an interactive zoning map. If you'd like to talk about these data, calculations, or conclusions feel free to email at <sjacobson@franklinnh.gov>.
+Putting all of this information together suggests that small increases to the number industrial and commercial properties could have a meaningful impact on city revenues. 
+
+As we head into budget season and budget visioning, a robust understanding of taxes -- the main source of revenue for the city -- is key for council and public decision making. Below is an interactive zoning map. If you'd like to talk about these data, calculations, or conclusions, feel free to email me at <sjacobson@franklinnh.gov>.
 
 # Interactive Zoning Map
 ```{r}

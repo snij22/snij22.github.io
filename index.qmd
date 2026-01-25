@@ -2,16 +2,32 @@
 title: "City Council Digest"
 listing:
  - id: cc
+   type: table
    contents: City Council
    categories: true
-   sort: date desc
+   sort: 
+     - date desc
+     - date-modified desc     
    feed: true
+   fields: [date, date-modified, title, description]
+   field-display-names:
+    date: "Created"
+    date-modified: "Modified"
+    title: "Title"
+    description: "Description"
+   max-items: 4
 
  - id: ff
    contents: Franklin Facts
    categories: true
    sort: date desc
    feed: true
+
+ - id: misc
+   contents: Other Posts
+   categories: true
+   sort: date desc
+   feed: true  
 ---
 
 Below is a list of posts, City council previews, and deep data dives. 
@@ -23,4 +39,8 @@ Below is a list of posts, City council previews, and deep data dives.
 
 # Franklin Facts
 :::{#ff}
+:::
+
+# Other Posts
+:::{#misc}
 :::

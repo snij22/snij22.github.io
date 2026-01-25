@@ -3,6 +3,7 @@ title: "January 20, 2026 - Budget Visioning"
 description: "Budget visioning between City Council, Mayor, and City Manager"
 categories: Workshop
 date: 1/19/2026
+date-modified: 1/19/2026
 ---
 
 # Location: Franklin Public Library
