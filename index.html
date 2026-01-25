@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-date-modified','listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -115,6 +115,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-ff'] = new List('listing-ff', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-misc .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-misc'] = new List('listing-misc', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -323,6 +351,23 @@ window.Quarto = {
 </li>
       </ul>
   </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
+ <span class="menu-text">Other Posts</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/20250125_budget_workshop_reflection .html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2026 Budget Visioning Reflection</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
     </ul>
     </div>
 </nav>
@@ -335,9 +380,10 @@ window.Quarto = {
   <ul>
   <li><a href="#city-council" id="toc-city-council" class="nav-link active" data-scroll-target="#city-council">City Council</a></li>
   <li><a href="#franklin-facts" id="toc-franklin-facts" class="nav-link" data-scroll-target="#franklin-facts">Franklin Facts</a></li>
+  <li><a href="#other-posts" id="toc-other-posts" class="nav-link" data-scroll-target="#other-posts">Other Posts</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(8)</span></div><div class="category" data-category="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n">City Council Meeting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29tbWl0dGVl">Committee <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TGVnaXNsYXRpdmU=">Legislative <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGFya3MlMjAlMjYlMjBSZWM=">Parks &amp; Rec <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saWNl">Police <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya3Nob3A=">Workshop <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Wm9uaW5n">Zoning <span class="quarto-category-count">(1)</span></div></div><div class="quarto-margin-footer"><div class="margin-footer-item">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(9)</span></div><div class="category" data-category="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n">City Council Meeting <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Q29tbWl0dGVl">Committee <span class="quarto-category-count">(4)</span></div><div class="category" data-category="TGVnaXNsYXRpdmU=">Legislative <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UGFya3MlMjAlMjYlMjBSZWM=">Parks &amp; Rec <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UG9saWNl">Police <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVmbGVjdGlvbg==">Reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya3Nob3A=">Workshop <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Wm9uaW5n">Zoning <span class="quarto-category-count">(1)</span></div></div><div class="quarto-margin-footer"><div class="margin-footer-item">
 <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1767876");</style>
     <style type="text/css">
     /* LOADER */
@@ -1244,204 +1290,119 @@ window.Quarto = {
 <p>Below is a list of posts, City council previews, and deep data dives.</p>
 <section id="city-council" class="level1">
 <h1>City Council</h1>
-<div id="listing-cc" class="quarto-listing quarto-listing-container-default">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769217311756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
-<div class="thumbnail"><a href="./City Council/Committees/20250119_police.html" class="no-external">
+<div id="listing-cc" class="quarto-listing quarto-listing-container-table">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-cc-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-cc'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-date-sort" data-direction="asc">
+        Created - Oldest
+      </option>
+      <option value="listing-date-sort" data-direction="desc">
+        Created - Newest
+      </option>
+      <option value="listing-title-sort" data-direction="asc">
+        Title
+      </option>
+    </select>
+  </div>
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<table class="quarto-listing-table table">
+<thead>
+<tr>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Created</a>
+</th>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title" data-anchor-id="city-council">
-<a href="./City Council/Committees/20250119_police.html" class="no-external">Feb 4, 2026 Police</a>
-</h3>
-<div class="listing-categories">
+<th>
+Modified
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
+<th>
+<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
+</th>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UG9saWNl'); return false;">Police</div>
+<th>
+Description
+</th>
 
-</div>
-<div class="delink listing-description"><a href="./City Council/Committees/20250119_police.html" class="no-external">
-<p>First meeting of the Police committee</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Committees/20250119_police.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Q29tbWl0dGVl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769217311756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693">
-<div class="thumbnail"><a href="./City Council/Committees/2026 Committee assignments.html" class="no-external">
+</tr>
+</thead>
+<tbody class="list">
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<tr data-index="0" data-categories="Q29tbWl0dGVlJTJDUGFya3MlMjAlMjYlMjBSZWM=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769385558998" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="1" data-listing-word-count-sort="68" data-listing-title-sort="Jan 28,2026 Parks and Recreation" data-listing-filename-sort="20250119_pr.qmd">
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 25, 2026</span>
+</td>
+<td>
+<a href="./City Council/Committees/20250119_pr.html" class="title listing-title">Jan 28,2026 Parks and Recreation</a>
+</td>
+<td>
+<span class="listing-description">First meeting of the Parks and Recreation committee</span>
+</td>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Committees/2026 Committee assignments.html" class="no-external">2026-2027 Committee Assignments</a>
-</h3>
-<div class="listing-categories">
+</tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
+<tr data-index="1" data-categories="Q29tbWl0dGVlJTJDTGVnaXNsYXRpdmU=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769385558998" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="2" data-listing-word-count-sort="350" data-listing-title-sort="Jan 27, 2026 Legislative" data-listing-filename-sort="20250119_leg.qmd">
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 25, 2026</span>
+</td>
+<td>
+<a href="./City Council/Committees/20250119_leg.html" class="title listing-title">Jan 27, 2026 Legislative</a>
+</td>
+<td>
+<span class="listing-description">First meeting of the legislative committee</span>
+</td>
 
-</div>
-<div class="delink listing-description"><a href="./City Council/Committees/2026 Committee assignments.html" class="no-external">
-<p>Committee assignments for all Councilors</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Committees/2026 Committee assignments.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="Q29tbWl0dGVlJTJDUGFya3MlMjAlMjYlMjBSZWM=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769217311756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="40">
-<div class="thumbnail"><a href="./City Council/Committees/20250119_pr.html" class="no-external">
+</tr>
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+<tr data-index="2" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769385558998" data-listing-date-modified-sort="1768780800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="32" data-listing-title-sort="Feb 4, 2026 Police" data-listing-filename-sort="20250119_police.qmd">
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 19, 2026</span>
+</td>
+<td>
+<a href="./City Council/Committees/20250119_police.html" class="title listing-title">Feb 4, 2026 Police</a>
+</td>
+<td>
+<span class="listing-description">First meeting of the Police committee</span>
+</td>
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Committees/20250119_pr.html" class="no-external">Jan 28,2026 Parks and Recreation</a>
-</h3>
-<div class="listing-categories">
+</tr>
 
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
+<tr data-index="3" data-categories="Q29tbWl0dGVl" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769385558998" data-listing-date-modified-sort="1768780800000" data-listing-reading-time-sort="4" data-listing-word-count-sort="693" data-listing-title-sort="2026-2027 Committee Assignments" data-listing-filename-sort="2026 Committee assignments.qmd">
+<td>
+<span class="listing-date">Jan 19, 2026</span>
+</td>
+<td>
+<span class="listing-date-modified">Jan 19, 2026</span>
+</td>
+<td>
+<a href="./City Council/Committees/2026 Committee assignments.html" class="title listing-title">2026-2027 Committee Assignments</a>
+</td>
+<td>
+<span class="listing-description">Committee assignments for all Councilors</span>
+</td>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UGFya3MlMjAlMjYlMjBSZWM='); return false;">Parks &amp; Rec</div>
+</tr>
 
-</div>
-<div class="delink listing-description"><a href="./City Council/Committees/20250119_pr.html" class="no-external">
-<p>First meeting of the Parks and Recreation committee</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Committees/20250119_pr.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="Q29tbWl0dGVlJTJDTGVnaXNsYXRpdmU=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769217311756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="41">
-<div class="thumbnail"><a href="./City Council/Committees/20250119_leg.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Committees/20250119_leg.html" class="no-external">Jan 27, 2026 Legislative</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q29tbWl0dGVl'); return false;">Committee</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGVnaXNsYXRpdmU='); return false;">Legislative</div>
-
-</div>
-<div class="delink listing-description"><a href="./City Council/Committees/20250119_leg.html" class="no-external">
-<p>First meeting of the legislative committee</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Committees/20250119_leg.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="V29ya3Nob3A=" data-listing-date-sort="1768780800000" data-listing-file-modified-sort="1769217311757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="245">
-<div class="thumbnail"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Workshops/20260120_budget.html" class="no-external">January 20, 2026 - Budget Visioning</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('V29ya3Nob3A='); return false;">Workshop</div>
-
-</div>
-<div class="delink listing-description"><a href="./City Council/Workshops/20260120_budget.html" class="no-external">
-<p>Budget visioning between City Council, Mayor, and City Manager</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Workshops/20260120_budget.html" class="no-external">
-<div class="listing-date">
-Jan 19, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1767484800000" data-listing-file-modified-sort="1769217311757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="955">
-<div class="thumbnail"><a href="./City Council/Meetings/2026 January.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Meetings/2026 January.html" class="no-external">January 5, 2026 City Council</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n'); return false;">City Council Meeting</div>
-
-</div>
-<div class="delink listing-description"><a href="./City Council/Meetings/2026 January.html" class="no-external">
-<p>Preview of topics for 1/5/26 City Council meeting</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Meetings/2026 January.html" class="no-external">
-<div class="listing-date">
-Jan 4, 2026
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1762041600000" data-listing-file-modified-sort="1769217311756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
-<div class="thumbnail"><a href="./City Council/Meetings/2025 November.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./City Council/Meetings/2025 November.html" class="no-external">November 3, 2025 City Council</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n'); return false;">City Council Meeting</div>
-
-</div>
-<div class="delink listing-description"><a href="./City Council/Meetings/2025 November.html" class="no-external">
-<p>Links to agenda and packet for 11/3/25 City Council meeting</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./City Council/Meetings/2025 November.html" class="no-external">
-<div class="listing-date">
-Nov 2, 2025
-</div>
-</a>
-</div>
-</div>
-</div>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1449,7 +1410,7 @@ Nov 2, 2025
 <h1>Franklin Facts</h1>
 <div id="listing-ff" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Wm9uaW5n" data-listing-date-sort="1768348800000" data-listing-file-modified-sort="1769217311757" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1265">
+<div class="quarto-post image-right" data-index="0" data-categories="Wm9uaW5n" data-listing-date-sort="1768348800000" data-listing-file-modified-sort="1769385558999" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1283">
 <div class="thumbnail"><a href="./Franklin Facts/20260114_zone_tax_val.html" class="no-external">
 
 <p class="card-img-top"><img src="Franklin Facts/20260114_zone_tax_val_files/figure-html/plot the zones-1.png"  class="thumbnail-image card-img"/></p>
@@ -1472,6 +1433,41 @@ Nov 2, 2025
 <a href="./Franklin Facts/20260114_zone_tax_val.html" class="no-external">
 <div class="listing-date">
 Jan 14, 2026
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="other-posts" class="level1">
+<h1>Other Posts</h1>
+<div id="listing-misc" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="UmVmbGVjdGlvbg==" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1769385558999" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="659">
+<div class="thumbnail"><a href="./Other Posts/20250125_budget_workshop_reflection .html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title" data-anchor-id="other-posts">
+<a href="./Other Posts/20250125_budget_workshop_reflection .html" class="no-external">2026 Budget Visioning Reflection</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVmbGVjdGlvbg=='); return false;">Reflection</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/20250125_budget_workshop_reflection .html" class="no-external">
+<p>2026 Budget Visioning Reflection</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/20250125_budget_workshop_reflection .html" class="no-external">
+<div class="listing-date">
+Jan 25, 2026
 </div>
 </a>
 </div>
