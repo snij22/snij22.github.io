@@ -9,7 +9,7 @@ execute:
 categories:
   - analysis
 ---
-A state priorty of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
+A stated priorty of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
 
 
 ```{r load libs}
@@ -50,9 +50,9 @@ city_data%>%
       .list = c(
         n = "Number of Properties",
         av_size = "Average Property Size (Acres)", 
-        av_tax_val = "Average Tax Value ($)", 
+        av_tax_val = "Average Value ($)", 
         med_size = "Median size (acres)", 
-        med_tax_val = "Median Tax Value ($)")) %>%
+        med_tax_val = "Median Value ($)")) %>%
         fmt_number(c(av_size, med_size)) %>%
     fmt_currency(c(av_tax_val, med_tax_val)) %>%
      opt_interactive(use_pagination = FALSE)
@@ -68,7 +68,9 @@ tm_shape(city_shp) +
 
 ```
 
-This table shows that the city owns about 149 different parcels throughout the city! That's a lot of parcels. I've included the average and median size and value of the parcels as well. Looking at the map above you can see there is a wide range in what that city owns. Some (like 266 flag hole road) are large and represent 366 acres of land. Others (like some of the properties on East bow Street) are small (0.08) acres.
+This table shows that the city owns about 149 different parcels throughout the city! That's a lot of parcels. I've included the average and median size and value of the parcels as well. Looking at the map above you can see there is a wide range in what that city owns. Some (like 266 flag hole road) are large and represent 366 acres of land. Others (like some of the properties on East bow Street) are small (0.08) acres. 
+
+Note that the value is the **taxable** value, i.e. the value that would be multiplied by the tax rate to when collecting taxes.  
 
 Another way to look at this is to look at the zone that these parcels fall in - if returned to the rolls, how much is conservation, light industrial etc? 
 
@@ -79,18 +81,22 @@ city_data%>% group_by(NAME) %>%
   av_size= mean(ACRES, na.rm= T), 
   av_tax_val = mean(TOTTXVAL, na.rm =T), 
   med_size= median(ACRES, na.rm= T), 
-  med_tax_val = median(TOTTXVAL, na.rm =T)) %>%
+  med_tax_val = median(TOTTXVAL, na.rm =T), 
+  total_tax_val = sum(TOTTXVAL, na.rm = T), 
+  total_acres = sum(ACRES, na.rm = T)) %>%
       gt() |>
     cols_label(
       .list = c(
         n = "Number of Properties",
         NAME = "Zoned Category",
         av_size = "Average Property Size (Acres)", 
-        av_tax_val = "Average Tax Value ($)", 
+        av_tax_val = "Average Value ($)", 
         med_size = "Median size (acres)", 
-        med_tax_val = "Median Tax Value ($)")) %>%
-        fmt_number(c(av_size, med_size)) %>%
-    fmt_currency(c(av_tax_val, med_tax_val)) %>%
+        med_tax_val = "Median Value ($)",
+        total_acres = "Total Acres", 
+        total_tax_val = "Total Value ($)")) %>%
+        fmt_number(c(av_size, med_size, total_acres)) %>%
+    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val)) %>%
      opt_interactive(use_pagination = FALSE)
 
 
@@ -102,4 +108,19 @@ tm_shape(city_shp) +
 
 ```
 
-If you look closely at the above maps, you'll see that this datset includes things like roads and slivers 
+If you look closely at the above maps, you'll see that this dataset includes things like roads and slivers and missing zones. Slivers and roads represent a limitation of this approach of pulling data from AXISGIS. 
+
+These data show the the city has done a pretty good job of getting commercial properties back on the tax rolls. From my perspective, this is critical as the point of an industrial or commercial property is to be used by a private enterprise. 
+
+The city owns more than 100 acres of single family residential land. The median value of these properties is lower than some of the other categories, but in total, it is a large amount of land. This land could be used for developers to build/rebuild homes, or it could be converted into other zone types to allow businesses space to grow. Alternatively it represents a 'land bank' that the city can hold onto and draw down for various activities. 
+
+Changing zoning is not easy, nor is greenfield development a permanent long-term benefit. Areas that are zoned industrial or commercial may have specific utilities that need to be in place before they move in. Industrial properties may emit smog, attract more traffic, or give off light pollution that reduces the quality of life and value of neighboring properties. 
+
+Similarly developing land that has never been touched before represents potential liabilities to the city. new land development means new roads, sewers, gas lines etc to serve the new homes. Even if a developer pays to install these as a cost of development, the long term care and maintenance of these lies with the city. 
+
+
+
+
+
+
+

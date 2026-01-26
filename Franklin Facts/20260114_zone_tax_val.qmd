@@ -28,6 +28,8 @@ zone_sf<- read_sf(here::here(".data/20251116_geo_dat/zone_polys.shp"))
 
 zone_type<- zone_sf %>%st_drop_geometry() %>%select(NAME, LABEL) %>% distinct() %>% mutate(lab2 = str_remove_all(LABEL, "-"))
 
+better_zone_map<- read_sf(here::here(".data/outputs/parcel_nums_with_zone.shp")) 
+
 tax_rate<- 17.63/1000
 
 ```
@@ -157,8 +159,10 @@ zone_sf<- zone_sf %>% group_by(NAME) %>%
     summarize()%>% st_zm()  %>%
     filter(!str_detect(NAME, "Franklin|Downtown"))
 
+#better_zone_map %>% filter(PARCEL_ != "000-000-00") %>%
 tm_shape(zone_sf) + 
-    tm_polygons(group = "Zones",
+    tm_polygons(
+        group = "Zones",
         fill = "NAME",  fill.scale = tm_scale_categorical(values.repeat = F),
     fill.legend = tm_legend("Zone Type",group ="Zone" )) + 
         tm_basemap(leaflet::providers$OpenStreetMap) + 

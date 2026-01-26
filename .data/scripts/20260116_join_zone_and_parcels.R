@@ -50,3 +50,7 @@ tm_shape(joined_data) +
 joined_data %>% select(PARCEL_, NAME, LABEL, TYPE) %>% 
 write_sf( ".data/outputs/parcel_nums_with_zone.shp")
                        
+a<- read_sf(".data/outputs/parcel_nums_with_zone.shp") 
+
+tm_shape(a) + 
+  tm_polygons("NAME", tm_scale_categorical(values.repeat = F))
