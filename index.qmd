@@ -1,5 +1,4 @@
 ---
-title: "City Council Digest"
 listing:
  - id: cc
    type: table
@@ -29,9 +28,6 @@ listing:
    sort: date desc
    feed: true  
 ---
-
-Below is a list of posts, City council previews, and deep data dives. 
-
 
 # City Council
 :::{#cc}
