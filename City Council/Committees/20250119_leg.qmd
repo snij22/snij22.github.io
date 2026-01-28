@@ -3,7 +3,7 @@ title: "Jan 27, 2026 Legislative"
 description: "First meeting of the legislative committee"
 categories: [Committee, Legislative]
 date: 1/19/2026
-date-modified: 1/25/26
+date-modified: 1/25/2026
 author: "S Jacobson"
 ---
 
