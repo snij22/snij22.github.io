@@ -9,7 +9,7 @@ execute:
 categories:
   - analysis
 ---
-A stated priorty of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
+A stated priority of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
 
 
 ```{r load libs}
@@ -35,7 +35,7 @@ city_data<- dat %>% filter(OwnerName == "FRANKLIN, CITY OF" )
 ```
 
 
-Let's look at city property. The city owns a series of parcels around within the municipality. Over time the city acquires property. This land may be conservation land, it may have been taken for tax purposes or it may be used for other city purposes. An important priority stated by our City manager is returning property to the tax rolls. 
+Let's look at city property. The city owns a series of parcels around within the municipality. Over time the city acquires property. Typically teh city aquires property through sale or via non-payment of taxes. While the city owns the land, it is not bringing in new community members, nor adding to the tax base of the city. Some city land is needed for city functions (City Hall, Bessie Rowell Community Center) and represents collective ownership by the public. An important priority stated by our City Manager is returning property to the tax rolls. 
 
 ```{r map it}
 
@@ -70,9 +70,11 @@ tm_shape(city_shp) +
 
 This table shows that the city owns about 149 different parcels throughout the city! That's a lot of parcels. I've included the average and median size and value of the parcels as well. Looking at the map above you can see there is a wide range in what that city owns. Some (like 266 flag hole road) are large and represent 366 acres of land. Others (like some of the properties on East bow Street) are small (0.08) acres. 
 
-Note that the value is the **taxable** value, i.e. the value that would be multiplied by the tax rate to when collecting taxes.  
+Note that the value is the **taxable** value, i.e. the value that would be multiplied by the tax rate to when collecting taxes. If you look closely at the maps, you'll see that this dataset includes things like roads and slivers and missing zones. Slivers and roads represent a limitation of this approach of pulling data from [AXISGIS](https://next.axisgis.com/FranklinNH/). 
 
-Another way to look at this is to look at the zone that these parcels fall in - if returned to the rolls, how much is conservation, light industrial etc? 
+While this suggests that there is opportunity (more than 100 parcels) for getting properties back onto the tax rolls, we need to see where and how these properties are zoned. properties that are conservation land may have restrictions on sale. Other properties may be in use by the city (e.g. Bessie Rowell) and not worth selling. 
+
+THe below table joins the zoning information to these parcels. 
 
 ```{r }
 city_data%>% group_by(NAME) %>% 
@@ -106,21 +108,88 @@ tm_shape(city_shp) +
   tm_basemap(leaflet::providers$OpenStreetMap) + 
   tm_title("Franklin City Property")
 
+
 ```
 
-If you look closely at the above maps, you'll see that this dataset includes things like roads and slivers and missing zones. Slivers and roads represent a limitation of this approach of pulling data from AXISGIS. 
 
-These data show the the city has done a pretty good job of getting commercial properties back on the tax rolls. From my perspective, this is critical as the point of an industrial or commercial property is to be used by a private enterprise. 
+
+These data show the the city has done a pretty good job of getting commercial properties back on the tax rolls. From my perspective, this is critical as the point of an industrial or commercial property is to be used by a private enterprise, especially when the property is already zoned industrial or commercial. The city doesn't gain much from holding onto industrial land.
 
 The city owns more than 100 acres of single family residential land. The median value of these properties is lower than some of the other categories, but in total, it is a large amount of land. This land could be used for developers to build/rebuild homes, or it could be converted into other zone types to allow businesses space to grow. Alternatively it represents a 'land bank' that the city can hold onto and draw down for various activities. 
 
-Changing zoning is not easy, nor is greenfield development a permanent long-term benefit. Areas that are zoned industrial or commercial may have specific utilities that need to be in place before they move in. Industrial properties may emit smog, attract more traffic, or give off light pollution that reduces the quality of life and value of neighboring properties. 
-
-Similarly developing land that has never been touched before represents potential liabilities to the city. new land development means new roads, sewers, gas lines etc to serve the new homes. Even if a developer pays to install these as a cost of development, the long term care and maintenance of these lies with the city. 
+Changing zoning is not easy, nor is greenfield development a permanent long-term benefit. Areas that are zoned industrial or commercial may have specific utilities that need to be in place before they move in. Industrial properties may emit smog, attract more traffic, or give off light pollution that reduces the quality of life and value of neighboring properties. Similarly developing land that has never been touched before represents potential liabilities to the city. New land (greenfield) development means new roads, sewers, gas lines etc. to serve the new homes. Even if a developer pays to install these as a cost of development, the long term care and maintenance of these lies with the city. 
 
 
+Taking out the conservation district and removing properties less than 0.25 acres gives a better sense of what may be returned to the rolls. 
+```{r}
+
+
+returnable<-city_shp %>% filter(ACRES>0.25) %>% filter(NAME != 'Conservation District')
+
+
+city_data%>% 
+  group_by(NAME) %>% 
+  filter(ACRES>0.25) %>% filter(NAME != 'Conservation District') %>%
+  replace_na(list(NAME = "Missing Zone")) %>% 
+  summarize(n = n(),
+  av_size= mean(ACRES, na.rm= T), 
+  av_tax_val = mean(TOTTXVAL, na.rm =T), 
+  med_size= median(ACRES, na.rm= T), 
+  med_tax_val = median(TOTTXVAL, na.rm =T), 
+  total_tax_val = sum(TOTTXVAL, na.rm = T), 
+  total_acres = sum(ACRES, na.rm = T)) %>%
+      gt() |>
+      tab_header("Returnable properties by Zone", 
+      cols_label(
+      .list = c(
+        n = "Number of Properties",
+        NAME = "Zoned Category",
+        av_size = "Average Property Size (Acres)", 
+        av_tax_val = "Average Value ($)", 
+        med_size = "Median size (acres)", 
+        med_tax_val = "Median Value ($)",
+        total_acres = "Total Acres", 
+        total_tax_val = "Total Value ($)")) %>%
+        fmt_number(c(av_size, med_size, total_acres)) %>%
+    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val)) %>%
+    grand_summary_rows(columns = c(n, av_size, av_tax_val, med_size, med_tax_val, total_acres, total_tax_val), 
+    fns = c(sum = "sum"),
+    side = "bottom") %>%  
+    opt_interactive(use_pagination = FALSE)
+
+  city_data%>% 
+  group_by(NAME) %>% 
+  filter(ACRES>0.25) %>% filter(NAME != 'Conservation District') %>%
+  replace_na(list(NAME = "Missing Zone")) %>% 
+  summarize(n = n(),
+  av_size= mean(ACRES, na.rm= T), 
+  av_tax_val = mean(TOTTXVAL, na.rm =T), 
+  med_size= median(ACRES, na.rm= T), 
+  med_tax_val = median(TOTTXVAL, na.rm =T), 
+  total_tax_val = sum(TOTTXVAL, na.rm = T), 
+  total_acres = sum(ACRES, na.rm = T)) %>%
+    summarize(across(c(n, starts_with("tot")), .fns = sum)) %>%
+      gt() |>
+      tab_header("Total Returnable properties", 
+      subtitle  = "City owned propoerties that are not conservation and greater than one quarter acre") |>
+      cols_label(
+      .list = c(
+        n = "Number of Properties",
+        total_acres = "Total Acres", 
+        total_tax_val = "Total Value ($)")) %>%
+        fmt_number(c(total_acres)) %>%
+    fmt_currency(c( total_tax_val)) %>%  
+    opt_interactive(use_pagination = FALSE)
 
 
 
+##filter out the schools and MCP grant
+tm_shape(returnable) + 
+  tm_polygons("NAME",  fill.scale = tm_scale_categorical(values.repeat = F)) +  
+  tm_basemap(leaflet::providers$OpenStreetMap) + 
+  tm_title("Franklin City Property")
 
 
+```
+
+asda
