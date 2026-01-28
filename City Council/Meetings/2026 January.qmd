@@ -4,6 +4,7 @@ description: "Preview of topics for 1/5/26 City Council meeting"
 categories: City Council Meeting
 date: 1/4/26
 date-modified: 1/4/2026
+author: "S Jacobson"
 ---
 
 

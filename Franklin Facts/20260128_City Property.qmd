@@ -1,13 +1,13 @@
 ---
-title: "How Much Property does the city own?"
-description: "Using the axis GIS to figure out where and how much property the city owns"
-author: "S Jacobson "
-date: "2025-12-27"
+title: "How Much Property Does the City Own?"
+description: "How much property does the city own, where is it, and how valuable is it? "
+author: "S Jacobson"
+date: "2026-01-28"
+date-modified: "2026-01-28"
 execute:
   echo: false
   warning: false
-categories:
-  - analysis
+categories: [Zoning, Property tax]
 ---
 A stated priority of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
 
@@ -35,7 +35,7 @@ city_data<- dat %>% filter(OwnerName == "FRANKLIN, CITY OF" )
 ```
 
 
-Let's look at city property. The city owns a series of parcels around within the municipality. Over time the city acquires property. Typically teh city aquires property through sale or via non-payment of taxes. While the city owns the land, it is not bringing in new community members, nor adding to the tax base of the city. Some city land is needed for city functions (City Hall, Bessie Rowell Community Center) and represents collective ownership by the public. An important priority stated by our City Manager is returning property to the tax rolls. 
+The city owns a series of parcels around within the municipality. Over time the city acquires property. Typically the city acquires property through sale or via non-payment of taxes. While the city owns the land, it is not bringing in new community members, nor adding to the tax base of the city. Some city land is needed for city functions (City Hall), some city land is used for amenities for residents ( Odell Park, Bessie Rowell Community Center). All represent collective ownership by the public. An important priority stated by our City Manager is returning property to the tax rolls. 
 
 ```{r map it}
 
@@ -46,20 +46,21 @@ city_data%>%
   med_size= median(ACRES, na.rm= T), 
   med_tax_val = median(TOTTXVAL, na.rm =T)) %>%
       gt() |>
+      tab_header("City-Owned properties") |>
     cols_label(
       .list = c(
         n = "Number of Properties",
         av_size = "Average Property Size (Acres)", 
-        av_tax_val = "Average Value ($)", 
+        av_tax_val = "Average Value \n ($)", 
         med_size = "Median size (acres)", 
         med_tax_val = "Median Value ($)")) %>%
         fmt_number(c(av_size, med_size)) %>%
-    fmt_currency(c(av_tax_val, med_tax_val)) %>%
+    fmt_currency(c(av_tax_val, med_tax_val), use_subunits = F) %>%
      opt_interactive(use_pagination = FALSE)
 
 ##looks like this includes roads###
 city_shp<- city_data %>%
-  left_join(parcel_polys) %>% st_as_sf()
+  left_join(parcel_polys) %>% st_as_sf() %>% select(PropertyAddress, PARCEL_, NAME, ACRES, MODEL)
 
 tm_shape(city_shp) + 
   tm_polygons() + 
@@ -72,9 +73,9 @@ This table shows that the city owns about 149 different parcels throughout the c
 
 Note that the value is the **taxable** value, i.e. the value that would be multiplied by the tax rate to when collecting taxes. If you look closely at the maps, you'll see that this dataset includes things like roads and slivers and missing zones. Slivers and roads represent a limitation of this approach of pulling data from [AXISGIS](https://next.axisgis.com/FranklinNH/). 
 
-While this suggests that there is opportunity (more than 100 parcels) for getting properties back onto the tax rolls, we need to see where and how these properties are zoned. properties that are conservation land may have restrictions on sale. Other properties may be in use by the city (e.g. Bessie Rowell) and not worth selling. 
+While this suggests that there is opportunity (more than 100 parcels) for getting properties back onto the tax rolls, we need to see where and how these properties are zoned. Some properties like conservation land may have restrictions on sale. Other properties may be in use by the city (e.g. Bessie Rowell) and not worth selling. 
 
-THe below table joins the zoning information to these parcels. 
+The below table joins the zoning information to these parcels. 
 
 ```{r }
 city_data%>% group_by(NAME) %>% 
@@ -87,7 +88,8 @@ city_data%>% group_by(NAME) %>%
   total_tax_val = sum(TOTTXVAL, na.rm = T), 
   total_acres = sum(ACRES, na.rm = T)) %>%
       gt() |>
-    cols_label(
+      tab_header("City-Owned properties by Zone") %>%
+      cols_label(
       .list = c(
         n = "Number of Properties",
         NAME = "Zoned Category",
@@ -98,8 +100,10 @@ city_data%>% group_by(NAME) %>%
         total_acres = "Total Acres", 
         total_tax_val = "Total Value ($)")) %>%
         fmt_number(c(av_size, med_size, total_acres)) %>%
-    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val)) %>%
-     opt_interactive(use_pagination = FALSE)
+    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val), use_subunits = F) %>%
+     opt_interactive(use_pagination = FALSE)%>%
+    cols_width(everything()~px(110))
+
 
 
 
@@ -120,16 +124,45 @@ The city owns more than 100 acres of single family residential land. The median 
 Changing zoning is not easy, nor is greenfield development a permanent long-term benefit. Areas that are zoned industrial or commercial may have specific utilities that need to be in place before they move in. Industrial properties may emit smog, attract more traffic, or give off light pollution that reduces the quality of life and value of neighboring properties. Similarly developing land that has never been touched before represents potential liabilities to the city. New land (greenfield) development means new roads, sewers, gas lines etc. to serve the new homes. Even if a developer pays to install these as a cost of development, the long term care and maintenance of these lies with the city. 
 
 
-Taking out the conservation district and removing properties less than 0.25 acres gives a better sense of what may be returned to the rolls. 
+Taking out the conservation district, parks, schools, and removing properties less than 0.25 acres (a coarse filter for the slivers) gives a better sense of what may be returned to the rolls. 
 ```{r}
 
+manual_remove<- tribble(~Name, ~Parcel_number,
+  "Forest Hills Park", "118-132-00",
+"Stone Park", "118-083-00",
+"Mill City Park", "117-345-00", #encumbered by land and water con fund
+"Mill City Park", "134-237-00", #encumbered by land and water con fund
+"Mill City Park", "134-238-00", #encumbered by land and water con fund
+"Mill City Park", "134-239-00", #encumbered by land and water con fund
+"Mill City Park", "135-401-00", #north of MCP to cross mill
+"Railroad", "135-140-00",
+"Railroad", "135-146-00",
+"Railroad", "135-139-00",
+"Railroad", "134-412-00",
+"Railroad","117-347-00",
+"Winni River Trail", "135-402-00",
+"Trestle view", "117-162-00",
+"Marceau Park", "117-152-00",
+"Griffin forest", "074-043-00",
+"Griffin Beach", "074-041-00",
+"Griffin Beach", "074-042-00",
+"Daniel Park", "116-403-00") 
 
-returnable<-city_shp %>% filter(ACRES>0.25) %>% filter(NAME != 'Conservation District')
+returnable<-city_shp %>% 
+  filter(ACRES>0.25) %>% 
+  filter(NAME != 'Conservation District') %>%
+  replace_na(list(MODEL = "Missing Model")) %>% 
+  filter(MODEL != "SCHOOL") %>%
+  filter(!PARCEL_ %in% manual_remove$Parcel_number )
 
 
 city_data%>% 
   group_by(NAME) %>% 
-  filter(ACRES>0.25) %>% filter(NAME != 'Conservation District') %>%
+  filter(ACRES>0.25) %>% 
+  filter(NAME != 'Conservation District') %>% 
+  replace_na(list(MODEL = "Missing Model")) %>% 
+  filter(MODEL != "SCHOOL") %>%
+  filter(!PARCEL_ %in% manual_remove$Parcel_number ) %>%
   replace_na(list(NAME = "Missing Zone")) %>% 
   summarize(n = n(),
   av_size= mean(ACRES, na.rm= T), 
@@ -139,7 +172,8 @@ city_data%>%
   total_tax_val = sum(TOTTXVAL, na.rm = T), 
   total_acres = sum(ACRES, na.rm = T)) %>%
       gt() |>
-      tab_header("Returnable properties by Zone", 
+      tab_header("Returnable properties by Zone",
+    subtitle  = "City owned properties that are not conservation, schools, parks, and are greater than one quarter acre")|>
       cols_label(
       .list = c(
         n = "Number of Properties",
@@ -151,15 +185,17 @@ city_data%>%
         total_acres = "Total Acres", 
         total_tax_val = "Total Value ($)")) %>%
         fmt_number(c(av_size, med_size, total_acres)) %>%
-    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val)) %>%
-    grand_summary_rows(columns = c(n, av_size, av_tax_val, med_size, med_tax_val, total_acres, total_tax_val), 
-    fns = c(sum = "sum"),
-    side = "bottom") %>%  
-    opt_interactive(use_pagination = FALSE)
+    fmt_currency(c(av_tax_val, med_tax_val, total_tax_val), use_subunits = F) %>%
+     opt_interactive(use_pagination = FALSE)%>%
+    cols_width(everything()~px(110))
 
   city_data%>% 
   group_by(NAME) %>% 
-  filter(ACRES>0.25) %>% filter(NAME != 'Conservation District') %>%
+  filter(ACRES>0.25) %>% 
+  filter(NAME != 'Conservation District') %>% 
+  replace_na(list(MODEL = "Missing Model")) %>% 
+  filter(MODEL != "SCHOOL") %>%
+  filter(!PARCEL_ %in% manual_remove$Parcel_number ) %>% 
   replace_na(list(NAME = "Missing Zone")) %>% 
   summarize(n = n(),
   av_size= mean(ACRES, na.rm= T), 
@@ -171,19 +207,18 @@ city_data%>%
     summarize(across(c(n, starts_with("tot")), .fns = sum)) %>%
       gt() |>
       tab_header("Total Returnable properties", 
-      subtitle  = "City owned propoerties that are not conservation and greater than one quarter acre") |>
+      subtitle  = "City owned properties that are not conservation, schools, parks, and are greater than one quarter acre") |>
       cols_label(
       .list = c(
         n = "Number of Properties",
         total_acres = "Total Acres", 
         total_tax_val = "Total Value ($)")) %>%
         fmt_number(c(total_acres)) %>%
-    fmt_currency(c( total_tax_val)) %>%  
-    opt_interactive(use_pagination = FALSE)
+    fmt_currency(c( total_tax_val), use_subunits = F) %>%  
+    opt_interactive(use_pagination = FALSE) 
 
 
 
-##filter out the schools and MCP grant
 tm_shape(returnable) + 
   tm_polygons("NAME",  fill.scale = tm_scale_categorical(values.repeat = F)) +  
   tm_basemap(leaflet::providers$OpenStreetMap) + 
@@ -192,4 +227,7 @@ tm_shape(returnable) +
 
 ```
 
-asda
+This is still an overcount as some municipal buildings are likely included, however it shows that there are up to 40 properties left to return to the rolls. 
+
+Returning these properties to the tax rolls represents a one time infusion of cash (the sale) and ongoing tax revenue from the new owner. This analysis suggests there is $11.6 illion of value in 'returnable' property. Using last year's tax rate ($17.63), there is $891,000 of tax revenue in these parcels, or 4% of the 2026 budget. This is significant, but will not solve Franklin's funding issues.  
+

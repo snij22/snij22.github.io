@@ -4,6 +4,7 @@ description: "First meeting of the Police committee"
 categories: [Committee, Police]
 date: 1/19/2026
 date-modified: 1/19/2026
+author: "S Jacobson"
 ---
 
 # Location: Franklin Public Library

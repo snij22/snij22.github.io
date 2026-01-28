@@ -4,6 +4,7 @@ description: "First meeting of the Parks and Recreation committee"
 categories: [Committee, Parks & Rec]
 date: 1/19/2026
 date-modified: 1/25/2026
+author: "S Jacobson"
 ---
 
 # Location: Bessie Rowell Community Center

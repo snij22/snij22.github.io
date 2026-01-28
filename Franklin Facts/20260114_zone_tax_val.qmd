@@ -5,7 +5,7 @@ categories: Zoning
 format: html
 date: 1/14/26
 date-modified: 1/25/2026
-
+author: "S Jacobson"
 ---
 
 # Zoning and the connection to the tax base

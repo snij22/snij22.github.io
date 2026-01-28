@@ -4,6 +4,7 @@ description: "2026 Budget Visioning Reflection"
 categories: Reflection
 date: 1/25/2026
 date-modified: 1/25/2026
+author: "S Jacobson"
 ---
 
 On January 20, in the Franklin Public Library, the new City Council met for its first workshop -- visioning the city budget for the upcoming year. This meeting was meant to provide direction and guidance for the City Manager to use when pulling together the budget for next year. It's worth noting that we are extremely early in the budget process.  
