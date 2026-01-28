@@ -3,7 +3,7 @@ title: "Tax Base by Zone"
 description: Looking at all the property in the city, how much tax base is in each zoned category.
 categories: Zoning
 format: html
-date: 1/14/26
+date: 1/14/2026
 date-modified: 1/25/2026
 author: "S Jacobson"
 ---

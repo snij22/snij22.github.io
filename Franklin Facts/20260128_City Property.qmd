@@ -2,8 +2,9 @@
 title: "How Much Property Does the City Own?"
 description: "How much property does the city own, where is it, and how valuable is it? "
 author: "S Jacobson"
-date: "2026-01-28"
-date-modified: "2026-01-28"
+format: html
+date: 1/28/2026
+date-modified: 1/28/2026
 execute:
   echo: false
   warning: false
