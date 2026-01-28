@@ -1,47 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.franklinfacts.org/About.html</loc>
-    <lastmod>2026-01-28T12:24:10.495Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.franklinfacts.org/index.html</loc>
-    <lastmod>2026-01-28T12:24:10.584Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.franklinfacts.org/City Council/Workshops/20260120_budget.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
+    <loc>https://www.franklinfacts.org/City Council/Committees/20250119_leg.html</loc>
+    <lastmod>2026-01-28T15:23:40.552Z</lastmod>
   </url>
   <url>
     <loc>https://www.franklinfacts.org/City Council/Committees/20250119_pr.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
+    <lastmod>2026-01-28T15:23:40.549Z</lastmod>
   </url>
   <url>
-    <loc>https://www.franklinfacts.org/City Council/Committees/20250119_police.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
+    <loc>https://www.franklinfacts.org/City Council/Workshops/20260120_budget.html</loc>
+    <lastmod>2026-01-28T15:23:40.547Z</lastmod>
   </url>
   <url>
     <loc>https://www.franklinfacts.org/City Council/Meetings/2026 January.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.franklinfacts.org/City Council/Meetings/2025 November.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.franklinfacts.org/City Council/Committees/2026 Committee assignments.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
-  </url>
-  <url>
-    <loc>https://www.franklinfacts.org/City Council/Committees/20250119_leg.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
+    <lastmod>2026-01-28T15:23:40.549Z</lastmod>
   </url>
   <url>
     <loc>https://www.franklinfacts.org/Franklin Facts/20260114_zone_tax_val.html</loc>
-    <lastmod>2026-01-28T12:24:10.498Z</lastmod>
+    <lastmod>2026-01-28T15:23:40.547Z</lastmod>
   </url>
   <url>
     <loc>https://www.franklinfacts.org/Other Posts/20250125_budget_workshop_reflection.html</loc>
-    <lastmod>2026-01-28T12:24:10.499Z</lastmod>
+    <lastmod>2026-01-28T15:23:40.544Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/About.html</loc>
+    <lastmod>2026-01-23T22:36:00.965Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/index.html</loc>
+    <lastmod>2026-01-28T11:10:31.587Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/Franklin Facts/20260128_City Property.html</loc>
+    <lastmod>2026-01-28T15:29:20.207Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/City Council/Meetings/2025 November.html</loc>
+    <lastmod>2026-01-28T15:23:40.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/City Council/Committees/2026 Committee assignments.html</loc>
+    <lastmod>2026-01-28T15:23:40.552Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www.franklinfacts.org/City Council/Committees/20250119_police.html</loc>
+    <lastmod>2026-01-28T15:23:40.550Z</lastmod>
   </url>
 </urlset>
