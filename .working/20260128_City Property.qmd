@@ -190,7 +190,7 @@ city_data%>%
      opt_interactive(use_pagination = FALSE)%>%
     cols_width(everything()~px(110))
 
-  city_data%>% 
+city_data%>% 
   group_by(NAME) %>% 
   filter(ACRES>0.25) %>% 
   filter(NAME != 'Conservation District') %>% 
