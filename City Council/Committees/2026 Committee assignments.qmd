@@ -2,7 +2,6 @@
 title: "2026-2027 Committee Assignments"
 description: "Committee assignments for all Councilors"
 categories: Committee
-author: "S Jacobson"
 date: 1/19/2026
 date-modified: 1/19/2026
 ---

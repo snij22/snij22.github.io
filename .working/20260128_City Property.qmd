@@ -1,7 +1,6 @@
 ---
 title: "How Much Property Does the City Own?"
 description: "How much property does the city own, where is it, and how valuable is it? "
-author: "S Jacobson"
 format: html
 date: 1/28/2026
 date-modified: 1/28/2026
