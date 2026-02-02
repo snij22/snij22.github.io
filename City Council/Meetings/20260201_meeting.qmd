@@ -1,0 +1,126 @@
+---
+title: "February 2, 2026 City Council"
+description: "Preview of topics for 2/2/2026 City Council meeting"
+categories: City Council Meeting
+date: 2/1/2026
+date-modified: 2/1/2026
+---
+
+# Location: Franklin Elks
+
+# Time: 6:00 PM
+
+[Agenda](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/02_feb_2026_city_council_meeting_agenda_2.pdf)
+
+[Packet](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/02-02-2029_council_packet_-_full.pdf)
+
+------------------------------------------------------------------------
+This is a standard city council meeting, starting with public hearings, public comment, and then moving onto council business. 
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further. 
+
+
+
+## Agenda Items
+
+## 1. Approval of Minutes 
+-   Summary:
+    -   Minutes from both the old and new business portions of the January 2026 meeting.
+
+### How Sam Sees It: 
+- A couple of minor grammatical/attribution errors to address. 
+
+## 2. Ambulance Fee Pricing
+-   Summary:
+    -   Changes to state law stop balance billing, starting a cost study statewide.
+    -   City Manager and Fire Chief began negotiating to allow 325% Medicare rate. If the city does not continue these negotiations, we are locked into Medicare rate. 
+    -   Now can bill up to 325% of Medicare rate, but cannot balance bill.
+    -   Council will vote on final contracts with insurance providers.
+    - Proposed rates would increase. For example, basic life support would  increase from $603 to $1,567. 
+    - Transport statistics (2025):
+        - 67% of transports were from Medicare
+        - 15% were from Medicaid
+        - 9% were from commercial (i.e. private insurance)
+        - 7% were self-pay
+        - 2% were other
+
+### How Sam Sees It:
+- Continuing these negotiations allows us to collect more money from private insurance while negotiations are ongoing.
+- The Council can and should offer a self-pay discount. This should reduce the impact of these rate changes on people who cannot pay. 
+- I suggest amending this motion to add a 60% discount for self-pay patients to keep them at current rates (25% above Medicare).
+- Ambulance transports should not be a revenue driver for this city. Raising rates on uninsured patients shifts the burden of funding the city onto those that cannot afford it.
+
+## 3. Changes to Accessory Dwelling Unit (ADU) Zoning Procedure
+-   Summary: 
+    - State-level changes mean ADUs are easier to zone and build. 
+    - Anywhere that is zoned single family can construct an ADU. 
+    - Franklin can still put restrictions on the number of ADUs, other zoning categories (e.g. multi family), owner occupancy, aesthetics, and set backs, among other criteria. 
+    - ADU minimum is 750 square feet; maximum is 950 square feet.
+    - Only 1 ADU allowed per parcel.
+
+### How Sam Sees It:
+- Changing the ADU zoning procedure as proposed has the potential to increase housing supply, reduce costs for renters, and bring new residents to the city. 
+- ADUs are a potential additional income stream if/when constructed and if rented. 
+
+## 4. Policy on Council Appointments  
+-   Summary: 
+    - A proposal has been made for the Council to set policy for committee appointments as: 
+        1. Minimum 30-day public notice
+        2. Notice added to next agenda meeting that there will be an appointment.
+        3. Councilors nominate. 
+        4. Close nominations.
+        5. Debate nominations.
+        6. Election by paper ballot.  
+    - A proposal has been made for the Council to set policy for appointment of a vacant Council seat as: 
+        1. Minimum 30-day public notice
+        2. Notice added to next agenda meeting that there will be an appointment.
+        3. Councilors nominate. 
+        4. Debate nominations.
+        5. Public hearing within 10 days.
+        6. Election by paper ballot by the council at the public hearing. 
+
+### How Sam Sees It:
+- I think we need a policy for appointments.
+- 30-day vacancy notice feels long for appointments.
+- I think paper ballots are excessive for committee appointments.
+- I like the policy as proposed for the City Council vacancy appointments. 
+
+
+## 5. Odell Park River Access
+- Summary:
+    - Steven Mandella (Ward One) wants to work to build river access at Odell Park.
+    - He is seeking Council feedback and permission for a feasibility study of river access.
+    - River access will likely be paired with something called 603 Tubing.
+
+### How Sam Sees It:
+- Fantastic idea
+
+## 6. Increasing Police Detail Rates
+- Summary:
+    - Set a hearing to increase police detail rates.
+    - Old rate: $95.00/hour; new rate: $110.50/hour.
+    - Brings rates in line with other police details (e.g. Belknap county sheriff, Concord, Hill, Merrimack County).
+
+### How Sam Sees It:
+- We should charge similar rates to other departments.
+- I'm slightly concerned that this will make it harder for organizations to provide police coverage when needed.
+
+### Questions:
+- How many hours are Franklin Police Department (FPD) put onto outside detail? 
+- How much do we budget for this detail work? 
+- Who are the major consumers of FPD details? 
+- How often does the department do rate studies? 
+
+
+## Late Item 1: Creation of New City Positions
+- Summary:
+    - The City Manager wants to create two on-call positions to facilitate RSA-91A (right-to-know) requests.
+    - The City Manager reports that he's inundated with requests that hamper his ability to do his job. 
+    - Some requests require thousands of pages of backup. 
+    - There is room in the budget for this by moving money around.
+
+### How Sam Sees It:
+- I'm not inclined to approve this. The City Manager has open positions that have not yet been filled in last year's budget (e.g. Human Resources).
+- The time needed to service these requests should be logged, and if possible, some amount of the cost of it should be recouped from the requester. 
+- The City Manager's proposed solution does not help encourage people to request specific information via 91A.
+- There is not a position description provided with this request. 
