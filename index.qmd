@@ -5,7 +5,6 @@ listing:
    contents: City Council
    categories: true
    sort: 
-     - date desc
      - date-modified desc     
    feed: true
    fields: [date, date-modified, title, description]
