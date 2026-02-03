@@ -3,7 +3,7 @@ title: "Feb 4, 2026 Police"
 description: "First meeting of the Police committee"
 categories: [Committee, Police]
 date: 1/19/2026
-date-modified: 1/19/2026
+date-modified: 2/03/2026
 ---
 
 # Location: Franklin Public Library
@@ -12,8 +12,13 @@ date-modified: 1/19/2026
 
 # Time: 6:00 PM
 
-# Rough Agenda
-We are still finalizing the agenda at this time. Below is what I think we'll talk about: 
+# Agenda
+Below is what we intend to discuss. Prior to the meeting, the committee will tour the police station.  
 
 1. Chair Appointment
 2. Set meeting schedule
+3. Other Business
+    - Detail rate
+    - Staffing
+    - Pay
+    - Upcoming union contract negotiations 
