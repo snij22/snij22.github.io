@@ -6,7 +6,7 @@ library(rvest)
 library(sf)
 
 #pull all parcel polygons that I have
-parcel_polys_fp<- here::here("data/20251116_geo_dat/parcel_polys.shp")
+parcel_polys_fp<- here::here(".data/20251116_geo_dat/parcel_polys.shp")
 parcel_nums<- st_read(dsn = parcel_polys_fp ) %>% st_drop_geometry() %>% 
   select(PARCEL_) %>%
   filter(PARCEL_ != "000-000-00")
@@ -46,7 +46,7 @@ parcel_nums<- parcel_nums %>%
 lot_num = str_split(PARCEL_, "-", simplify = T)[,2],
 sub_num = str_split(PARCEL_, "-", simplify = T)[,3],)
 
-existing<-  data.table::fread(here::here("data/assess_ts_1.csv")) %>%
+existing<-  read_csv(here::here(".data/assess_ts_1.csv")) %>%
   select("Map-Lot-Sub") %>% unique() %>% filter( `Map-Lot-Sub` != "") %>%
   mutate(map_num = str_split_i( `Map-Lot-Sub`, "-", 1) %>% str_sub(., -3),
           lot_num = str_split_i( `Map-Lot-Sub`, "-", 2) %>% str_sub(., -3),
@@ -138,6 +138,7 @@ data.table::fwrite(combined, here::here("data/assess_ts_2.csv"))
 
 #if you forget to kill
 #system("taskkill /im java.exe /f", intern=FALSE, ignore.stdout=FALSE)
+#linux killall -9 java
 remDr$close()
 rD$server$stop()
   

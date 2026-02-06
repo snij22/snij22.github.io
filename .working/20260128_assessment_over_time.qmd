@@ -1,6 +1,5 @@
 ---
-title: "Tax assessmnet over time"
-format: html
+title: "Tax assessment over time"
 description: How as the Assessed value of the lake changed over time.
 categories: [Zoning, taxes]
 format: html
@@ -12,7 +11,9 @@ execute:
 ---
 
 
-Previous posts have looked at the range of zoning in the city of Franklin and how much property the city owns. This post will look at some of these properties over time to understand changing assessments and the tax cap. The data for this post come from the nh tax associate, the online portal used to pay taxes. I gathered this data in late 2025, so it may have changed since then, but I believe it is complete enough for this analysis. This post will not name individual property owners, instead it will examine, in aggregate, the changes in assessment. 
+Previous posts have looked at the range of zoning in the city of Franklin and how much property the city owns. This post will look at some of these properties over time to understand changing assessments and the tax cap. The data for this post come from  [NH tax kiosk](https://nhtaxkiosk.com/?KIOSKID=FRANKLIN), the online portal used to pay taxes. I gathered this data in late 2025, so it may have changed since then, but I believe it is complete enough for this analysis. This post will not name individual property owners, instead it will examine, in aggregate, the changes in assessment. 
+
+Below is a map that I a going to be using to look at downtown vs. lake. I've used two zoning overlays to filter the relevant parcels, Lake protection district, and Downtown revitalization overlay district. 
 
 ```{r read in data}
 
@@ -29,43 +30,75 @@ a<- zone_sf %>% st_zm() %>% st_transform(st_crs(better_zone_map)) %>%
     group_by(NAME) %>% 
     filter(LABEL == "DROD"| LABEL =="LP")
 
-lakes_and_hist<- st_intersection(better_zone_map, a) %>% filter(PARCEL_ != "000-000-00") %>% filter(PARCEL_ != "000-WATER-00") %>%
+lakes_and_hist<- st_intersection(better_zone_map, a) %>%
+     filter(!PARCEL_ %in% c(
+        "000-WATER-00", "000-000-00", 
+        "117-405-00", #Odell 
+        "117-346-00", "117-321-00", "117-347-00", "117-320-00" #Downtown sliver 
+        )) %>%    
     mutate(lead_3 = str_sub(PARCEL_, start = 1, end =3)) %>%
     mutate(group = if_else(lead_3<100, "Lake", "Downtown"))%>%
     group_by(PARCEL_) %>%
     slice(1)
-
-lakes_and_hist %>% qtm()
 
 ts_raw<- read_csv(here::here(".data/assess_ts_comb.csv"))
 
 ts_dat<- ts_raw %>%
     select(PARCEL_, `Bill Amount`, `Due Date`) %>%
     janitor::clean_names()%>%
-    mutate(due_date= mdy(due_date))
+    mutate(due_date= mdy(due_date)) %>%
+    filter(due_date >= "2012-01-01")
+
+lakes_and_hist %>%
+    tm_shape() +
+    tm_polygons(fill = "group")
+
+```
+
+
+
+
+
+
+```{r combine data}
 
 comb<- lakes_and_hist%>%
     st_drop_geometry() %>%
     select(PARCEL_, NAME, LABEL, group)%>% distinct() %>% 
     left_join(ts_dat, join_by(PARCEL_==parcel)) 
+
 annual<-comb %>%
     mutate(year= year(due_date)) %>%
+    drop_na(year) %>% #removes 3 properties. one with taxes at some point in the last 2 years (075-048-01)
     group_by(group, PARCEL_, year) %>%
-    summarize(annual_tax= sum(bill_amount)) 
+    summarize(annual_tax= sum(bill_amount)) %>% 
+    filter(!(PARCEL_ == "075-036-00" & annual_tax>20000)) #remove one obscenely high water bill (75k) from that parcel
 
 annual %>% ggplot(aes(y =annual_tax, x = year, group= PARCEL_)) + 
     geom_line(alpha=.3) + 
     facet_grid(rows=vars(group))    
 
-annual %>%
+summ_by_group<- annual %>%
     group_by(group, year) %>%
     summarize(mean_tax = mean(annual_tax, na.rm=T), 
-    tot_tax= sum(annual_tax, na.rm=T))%>%
-        ggplot(aes(x=year, y = mean_tax, color= group)) +
+    tot_tax= sum(annual_tax, na.rm=T))
+    
+    summ_by_group %>% 
+    ggplot(aes(x=year, y = mean_tax, color= group)) +
         geom_line() 
 
+annual %>%
+    left_join(summ_by_group) %>%
+    mutate(variance= annual_tax - mean_tax) %>%
 
-
+    ggplot(aes(y =variance, x = year, group= PARCEL_)) + 
+    geom_line(alpha=.3) + 
+    scale_y_continuous(labels= scales::label_currency()) + 
+    facet_grid(rows=vars(group))+
+    theme_bw() +
+    labs(x = "Year",y = "Annual Variance in tax ($)", 
+    title= "Few downtown properties pay more in taxes relative to the Lake")    
+plotly::ggplotly()
 annual %>%
     group_by(group, year) %>%
     summarize(mean_tax = mean(annual_tax, na.rm=T), 
@@ -79,7 +112,7 @@ annual %>%
             theme_bw()
 
 
-annual %>%
+annual %>% 
     group_by(group, year) %>%
     summarize(mean_tax = mean(annual_tax, na.rm=T), 
     tot_tax= sum(annual_tax, na.rm=T))%>% 
@@ -91,6 +124,9 @@ annual %>%
         x = NULL, 
         y = NULL) + 
             theme_bw()
+
+
+
 
 
 
