@@ -1,0 +1,101 @@
+---
+title: "Feb 26, 2026 Legislative"
+description: "Legislative committee meeting covering event permits, short term rentals, and other items"
+categories: [Committee, Legislative]
+date: 2/15/2026
+date-modified: 2/15/2026
+---
+
+# Location: Franklin Public Library
+
+# Date: February 26, 2026
+
+# Time: 6:00 PM
+
+# Rough Agenda
+We are still working to finalize the agenda. Below is what I'd like to discuss: 
+
+
+1. Approve minutes from 1/27 meeting 
+2. Event permit reform 
+3. Short term rentals (STR)
+4. Charter changes
+5. Economic development committee
+6. Winter parking 
+7. Other Business
+
+
+## Agenda Breakdown
+
+### 1. Minute approval
+- Councilor Warner drafted minutes from the Jan 27, 2026 meeting, which I expect to be approved with minimal changes. 
+
+### 2. Event permit reform
+- In the [old business of the January 2026 City Council meeting](/City%20Council/files/202601_event_permit_car.pdf), changes to the event permitting process were sent to the legislative committee for review. There are a series of changes to be considered: 
+    1. Defining a special event permit in the code. This is the crux of the City Manager's referral. The alcohol use section of the city code does not specify where a permit should be picked up, which might be confusing. The after-hours use of beaches/parks permits are handled through the police department now. 
+    2. The proposed alcohol permit appeal mechanism is not clear; sometimes appeals go to the broader council, and sometimes they are not defined.  
+    3. The lawyer recommends the use of "alcohol" vs. "intoxicating liquor" for more clarity in the code.   
+
+#### How Sam Sees It: 
+- I think this section of the city code mistakes the functions of the City Council and the committee composed of the experts (City Manager, Fire Chief, Police Chief, Parks and Rec Head) in the city. Sections C and D insert the City Council as both the approver and appellate body - which doesn't make sense to me. As proposed, one could imagine a situation where a group applies for a permit, that permit is denied by the City Council for a non-technical reason, then the group appeals that decision back to...the City Council, where they get denied again. I think it makes more sense to keep the City Council as the group that is appealed to after the committee of experts weighs in. That way it is a fair opportunity to appeal. 
+
+- Similarly, I don't believe the Mayor should be a part of the committee of experts. The point of this committee is to evaluate the safety, preparation, and planning of the organization's use of alcohol. The Mayor does not have any technical training to evaluate such plans.  The Mayor would have time to weigh in on the process during an appeal process - assuming the City Council stays as the appellate body. As proposed, the Mayor gets two chances to influence this decision. 
+
+### 3. Short Term Rentals (STR)
+Currently, the city does not have a Short Term Rentals (STR) ordinance. Short term rentals are things like AirBnB's or Vacation Rentals By Owner (VRBO). A single family home is used for a portion of time in a way that was not really contemplated or zoned. 
+
+#### How Sam Sees It: 
+STRs are a way for some homeowners to make more money from their property; however, their use can stress city infrastructure, change the character of neighborhoods, and warp property assessments. 
+
+The city of Franklin needs some kind of regulation of STRs for clarity, in ways that will not expose the city to litigation. The director of planning and zoning is drafting an STR policy for review, as well as compiling comparative studies of other communities like Meredith. A quick Google search shows that communities regulate STRs differently:
+
+- Meredith
+    - Provides definitions as less than 30 days of occupancy for a rental
+    - Separates owner-in-residence vs. not
+    - Puts limits on number of people per bedroom (2)
+    - Adds septic, fire, and parking checks
+    - Owner contact info provided
+
+- Wolfboro
+    - Limits guests per bedroom (2) + 2 additional guests
+    - Provides for fire, septic and parking checks
+    - Requires NH Meals and rooms tax ID
+    - Owner contact info provided
+
+- Berlin
+    - Not addressed (as far as I can tell)
+
+Recent changes to the Accessory Dwelling Unit (ADU) definitions in the city code make them easier to construct, which has the potential to make STRs more prolific in the community. I see STRs as something that needs to be regulated by the city. 
+
+### 4. Charter changes
+Councilor Warner sent a series of potential charter changes to bring to the broader Council from the [August 2024 Legislative meeting](/City%20Council/files/081924_legislative_committee_minutes_-_approved.pdf). These charter changes will have to be added to the ballot to be adopted and are summarized as follows: 
+
+- C-2, Moving Wards into ordinance
+- C-3, Changing councilmen to councilors
+- C-7, Change election day to align with state/national elections
+- C-13, Change Board of Education to School Board
+- C-16, Tie votes/disputed elections
+- C-17, Revise duties of Supervisor of the Checklist
+- C-32, Reset or adjust the tax cap
+- C-53, Conflict of interest
+
+
+#### How Sam Sees It: 
+Eight changes to the charter (though some are more straightforward than others) are likely too much for a single year. I'd like to work as a legislative committee to bring three recommendations for ballot additions to the broader council in time for elections this year. I think this should be two "find-and-replace" changes (e.g. Board of Education to School Board) and one substantive change (e.g. Reset or adjust the tax cap). Note that the specific wording of any ballot change would likely have to come through legislative. 
+
+
+### 5. Economic development committee
+During the [July 16, 2025 legislative committee meeting](/City%20Council/files/071625_legislative_committee_minutes_-_approved.pdf), there was a discussion about creating an economic development committee. A proposal was forwarded to the city's lawyer and no response (to my knowledge) has been received. 
+
+I see no need to move on this until we receive a report back from legal. 
+
+### 6. Tax cap referral
+During the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the [charter](https://ecode360.com/10175836?highlight=tax&highlight=taxes&searchId=9744524952871378#10175836) defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council's actions might encumber the following council and requested referral to the city's lawyer. 
+
+I see no need to move on this until we receive a report back from legal.
+
+### 7. Winter parking 
+Planning and Zoning director Chunn agreed to present a parking study he had conducted to support winter parking ordinance changes. Since we are almost through winter (and any action form legislative is unlikely to take effect until after winter parking has been resolved), I think we should pick this up at the May 21 meeting.
+
+### 8. Other business
+No other business anticipated at this time. 
