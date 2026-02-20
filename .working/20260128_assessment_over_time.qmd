@@ -13,7 +13,7 @@ execute:
 
 Previous posts have looked at the range of zoning in the city of Franklin and how much property the city owns. This post will look at some of these properties over time to understand changing assessments and the tax cap. The data for this post come from  [NH tax kiosk](https://nhtaxkiosk.com/?KIOSKID=FRANKLIN), the online portal used to pay taxes. I gathered this data in late 2025, so it may have changed since then, but I believe it is complete enough for this analysis. This post will not name individual property owners, instead it will examine, in aggregate, the changes in assessment. 
 
-Below is a map that I a going to be using to look at downtown vs. lake. I've used two zoning overlays to filter the relevant parcels, Lake protection district, and Downtown revitalization overlay district. 
+Below is a map that I a going to be using to look at downtown vs. lake. I've used two zoning overlays to filter the relevant parcels, Lake protection district, and Downtown revitalization overlay district. This post seeks to answer the question: are both of these sections of the city contributing equally to the tax base? 
 
 ```{r read in data}
 
@@ -24,22 +24,30 @@ library(tmap)
 tmap_mode("view")
 better_zone_map<- read_sf(here::here(".data/outputs/parcel_nums_with_zone.shp")) 
 
+prop_data<- read_csv(here::here(".data/20251116_geo_dat/prop_card_data_combined.csv")) %>%
+    select(PARCEL_, LANDUSE) %>%
+    distinct() 
+
+
 zone_sf<- read_sf(here::here(".data/20251116_geo_dat/zone_polys.shp")) 
 
 a<- zone_sf %>% st_zm() %>% st_transform(st_crs(better_zone_map)) %>% 
     group_by(NAME) %>% 
     filter(LABEL == "DROD"| LABEL =="LP")
-
+peabody<- better_zone_map %>% filter(PARCEL_ == "117-138-00")
 lakes_and_hist<- st_intersection(better_zone_map, a) %>%
+    bind_rows(peabody) %>% 
      filter(!PARCEL_ %in% c(
         "000-WATER-00", "000-000-00", 
         "117-405-00", #Odell 
-        "117-346-00", "117-321-00", "117-347-00", "117-320-00" #Downtown sliver 
+        "117-346-00", "117-321-00", "117-347-00", "117-320-00" #Downtown slivers 
         )) %>%    
     mutate(lead_3 = str_sub(PARCEL_, start = 1, end =3)) %>%
     mutate(group = if_else(lead_3<100, "Lake", "Downtown"))%>%
     group_by(PARCEL_) %>%
-    slice(1)
+    slice(1) %>%
+    left_join(prop_data) %>% 
+    replace_na(list(LANDUSE = "Missing")) # two missing porperties of interest. One over the old pentstock downtown and one right of way off webster av
 
 ts_raw<- read_csv(here::here(".data/assess_ts_comb.csv"))
 
@@ -47,24 +55,81 @@ ts_dat<- ts_raw %>%
     select(PARCEL_, `Bill Amount`, `Due Date`) %>%
     janitor::clean_names()%>%
     mutate(due_date= mdy(due_date)) %>%
-    filter(due_date >= "2012-01-01")
+    filter(due_date >= "2012-01-01") 
 
 lakes_and_hist %>%
     tm_shape() +
     tm_polygons(fill = "group")
 
+``` 
+
+
+First, let's look at the number of properties in each, and their type. The below map looks at the land use parameter on the tax card - this identifies each parcel in categories like 1 family residential (1F residential), 2 family residential (2F residential), commercial/industrial (COM/IND). Note that this is not zoning, this is the use of the property. It's also not perfect, some parcels are missing classifications, and others may be misclassified.
+
+Going into this, my intuition is that the lake will be dominated by single family residential, while the downtown will be multifamily and commercial.
+
+
+```{r map the land use}
+
+
+lakes_and_hist %>%
+    tm_shape() +
+    tm_polygons(fill = "LANDUSE", fill.scale = tm_scale_categorical(values.repeat = F))
+
+parc_count<- lakes_and_hist %>%st_drop_geometry() %>% 
+    mutate(landuse2 = case_when(str_detect(LANDUSE, "RES") ~ "Residential",
+    str_detect(LANDUSE, "COM") ~ "Commercial/Industrial",
+    .default = "Other"
+    )) %>% 
+            group_by(group, landuse2,LANDUSE) %>% count(name = "Number of Parcels") %>% ungroup()
+
+
+parc_count %>% group_by(group, landuse2) %>% summarise(`Number of Parcels` = sum(`Number of Parcels`)) %>%
+    ggplot(aes(x = landuse2, y = `Number of Parcels`, fill = group))  + 
+    geom_col(position = position_dodge2()) + theme_bw()
+
+
+
+tab1<- parc_count %>% gt(rowname_col = "LANDUSE", 
+            groupname_col = "landuse2") %>%
+            summary_rows(
+                group = list("group","landuse2"), 
+            columns = "Number of 
+            Parcels", 
+            fns = list( label = "Total", fn = "sum"), side = "top", )
+
+tab2<- parc_count %>% gt(rowname_col = "group", 
+            groupname_col = "landuse2") %>%
+            summary_rows(
+                group = list("group","landuse2"), 
+            columns = "Number of 
+            Parcels", 
+            fns = list( label = "Total", fn = "sum"), side = "top", )  %>% 
+                tab_header(title = "Breakdown of parcels by group and landuse type")
+
+tab2
+
+
+
+
 ```
 
+Sure enough, this is what we see. The chart above shows the grouped data (grouping all residential land use types together) and it matches the intuition: 
+
+1. The Lake has more parcels (472) than Downtown (51). We should keep this in mind when summarizing the data.
+2. Most of the lake parcels are residential while the downtown is mostly commercial.
+
+The able above shows the breakdown of the grouped data revealing that most of the "Other" downtown is exempt municipal/state while around the lake it is farm or timber. 
+
+The next question is too look at the relative tax contributions of each area seeking to answer the following question: which area provides more tax to the city of Franklin? 
 
 
+```{r 2025 tax data}
 
-
-test change
-```{r combine data}
 
 comb<- lakes_and_hist%>%
     st_drop_geometry() %>%
-    select(PARCEL_, NAME, LABEL, group)%>% distinct() %>% 
+    select(PARCEL_, NAME, LABEL, group, LANDUSE)%>% distinct() %>% 
     left_join(ts_dat, join_by(PARCEL_==parcel)) 
 
 annual<-comb %>%
@@ -72,25 +137,50 @@ annual<-comb %>%
     drop_na(year) %>% #removes 3 properties. one with taxes at some point in the last 2 years (075-048-01)
     group_by(group, PARCEL_, year) %>%
     summarize(annual_tax= sum(bill_amount)) %>% 
-    filter(!(PARCEL_ == "075-036-00" & annual_tax>20000)) #remove one obscenely high water bill (75k) from that parcel
+    filter(!(PARCEL_ == "075-036-00" & annual_tax>50000)) #remove one obscenely high water bill (75k) from that parcel
 
-annual %>% ggplot(aes(y =annual_tax, x = year, group= PARCEL_)) + 
-    geom_line(alpha=.3) + 
-    facet_grid(rows=vars(group))    
 
+annual %>% filter(year == "2025") %>% group_by(group) %>% summarise( total_tax = sum(annual_tax, na.rm = T)) %>%
+    ggplot(aes(x = group, y = total_tax)) + 
+    geom_col() + 
+    scale_y_continuous(labels = scales::label_currency()) + 
+    theme_bw() + 
+    labs(x = NULL, y = "Total 2025 Tax Contribution", 
+    title = "2025 Tax Contribution by group")
+
+annual %>% filter(year == "2025") %>% 
+    ggplot(aes(x =annual_tax, group= PARCEL_)) + 
+    geom_histogram(binwidth = 2000) + 
+    facet_grid(rows=vars(group))  + 
+    theme_bw() + 
+    labs(title = "Histogram of Annual Taxes in 2025", 
+    x = "Annual Tax ($)", 
+    y = "Number of parcels")   
+
+
+```
+
+The lakes protection district provided about 5 times more money to the city in 2025 than the downtown (~$3M in tax in 2025 while the Downtown provided ~$600,000); it has the benefit of 9 times the number of parcels. Viewed this way, in 2025, the Lake provided more tax to the City, however it was not as efficient as the Downtown. 
+
+
+```{r ts taxes} 
 summ_by_group<- annual %>%
     group_by(group, year) %>%
     summarize(mean_tax = mean(annual_tax, na.rm=T), 
-    tot_tax= sum(annual_tax, na.rm=T))
+    tot_tax= sum(annual_tax, na.rm=T), 
+    med_tax= median(annual_tax, na.rm=T))
     
     summ_by_group %>% 
     ggplot(aes(x=year, y = mean_tax, color= group)) +
         geom_line() 
 
+summ_by_group %>% 
+    ggplot(aes(x=year, y = med_tax, color= group)) +
+        geom_line() 
+
 annual %>%
     left_join(summ_by_group) %>%
     mutate(variance= annual_tax - mean_tax) %>%
-
     ggplot(aes(y =variance, x = year, group= PARCEL_)) + 
     geom_line(alpha=.3) + 
     scale_y_continuous(labels= scales::label_currency()) + 
@@ -98,7 +188,8 @@ annual %>%
     theme_bw() +
     labs(x = "Year",y = "Annual Variance in tax ($)", 
     title= "Few downtown properties pay more in taxes relative to the Lake")    
-plotly::ggplotly()
+
+
 annual %>%
     group_by(group, year) %>%
     summarize(mean_tax = mean(annual_tax, na.rm=T), 
@@ -133,3 +224,24 @@ annual %>%
 ```
 
 fgvhbjknlm
+
+
+
+```{r assessed value}
+
+tax_rate_table<- tribble(~year,	~tax_rate,
+2014,	24.95,
+2015,	25.03,
+2016,	25.23,
+2017,	25.56,
+2018,	21.96,
+2019,	22.47,
+2020,	22.84,
+2021,	23.21,
+2022,	24.39,
+2023,	16.26,
+2024,	17.15,
+2025,	17.63)
+
+
+```

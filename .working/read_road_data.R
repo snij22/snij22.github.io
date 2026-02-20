@@ -4,51 +4,121 @@ library(sf)
 library(tigris)
 library(tmap)
 tmap_mode("view")
-
-
+options(tigris_use_cache = TRUE)
 # set different Overpass server
 set_overpass_url("https://overpass.private.coffee/api/interpreter")
-madison_city_limits <- places(state = "WI") |> filter(NAME == "Madison") |> st_transform(crs = "EPSG:4326")
 
-franklin_city_limits <- places(state = "NH") |> filter(NAME == "Franklin") |> st_transform(crs = "EPSG:4326")
+franklin_city_limits <- places(state = "NH") |>
+  filter(NAME == "Franklin") |>
+  st_transform(crs = "EPSG:4326")
 
-st_bbox(madison_city_limits)
-st_bbox(franklin_city_limits)
+frank_bb <- st_bbox(franklin_city_limits)
 
-bb <- c(-71.73366, 43.37770, -71.61998, 43.51793)
-x <- opq (bbox = bb) |>
-    add_osm_feature (key = "highway", value = c("primary", "secondary","tertiary", "motorway", "trunk", "unclassified", "residential")) |>
-    osmdata_sf () 
+
+x <- opq(bbox = frank_bb) |>
+  add_osm_feature(
+    key = "highway",
+    value = c(
+      "primary",
+      "secondary",
+      "tertiary",
+      "motorway",
+      "trunk",
+      "unclassified",
+      "residential"
+    )
+  ) |>
+  osmdata_sf()
 
 tertiaries <- x$osm_lines
 
 
 msn_tertiary <- tertiaries[franklin_city_limits, op = st_intersects]
 
-msn_tertiary |> 
-  mutate(maxspeed_numeric = as.numeric(str_remove(maxspeed, " mph")),
-         maxspeed_factor = as_factor(maxspeed)) |> 
-  st_drop_geometry() |> 
-  count(maxspeed_numeric) |> 
-  gt::gt()
 
-
-
-msn_tertiary |> 
-  mutate(maxspeed_numeric = as.numeric(str_remove(maxspeed, " mph")),
-         thirty_mph = case_when(maxspeed_numeric < 30 ~ "below 30 mph",
-                                maxspeed_numeric == 30 ~ "30 mph",
-                                maxspeed_numeric > 30 ~ "over 30 mph"
-                                 )) |> 
+msn_tertiary |>
   tm_shape() +
-  tm_lines(col = "highway",  lwd = 10)
+  tm_lines(col = "highway", lwd = 10)
 
-msn_tertiary |> 
-  mutate(maxspeed_numeric = as.numeric(str_remove(maxspeed, " mph")),
-         thirty_mph = case_when(maxspeed_numeric < 30 ~ "below 30 mph",
-                                maxspeed_numeric == 30 ~ "30 mph",
-                                maxspeed_numeric > 30 ~ "over 30 mph"
-                                 )) |> 
+msn_tertiary |>
   tm_shape() +
-  tm_lines(col = "surface",  lwd = 10)
+  tm_lines(col = "surface", lwd = 10)
 ### context https://rpubs.com/vgXhc/tertiary
+
+road_type_code <- tribble(
+  ~RTTYP , ~label             ,
+  "C"    , "County"           ,
+  "I"    , "Interstate"       ,
+  "M"    , "Common Name"      ,
+  "O"    , "Other"            ,
+  "S"    , "State Recognized" ,
+  "U"    , "U.S."
+)
+
+mer_roads <- roads("New Hampshire", "Merrimack")
+frank_nad <- franklin_city_limits %>% st_transform(st_crs(mer_roads))
+
+frank_roads <- st_crop(mer_roads, frank_nad) %>%
+  left_join(road_type_code) %>%
+  replace_na(list(label = "Other"))
+
+
+tm_shape(frank_roads) +
+  tm_lines(col = "label")
+
+
+frank_roads %>%
+  mutate(road_length = st_length(., )) %>%
+  group_by(label) %>%
+  summarise(
+    total_road_length = sum(road_length),
+    total_road_length = units::set_units(total_road_length, mi),
+  )
+
+
+frank_split <- frank_roads %>%
+  split(.$label)
+
+
+#this gets a bit more to responsibility: note that common name and other covers everything.
+tm_shape(frank_roads) +
+  tm_lines(
+    col = "label",
+    group = "All Roads",
+    lwd = 4,
+    group.control = "radio"
+  ) +
+  tm_shape(frank_split[['Common Name']]) +
+  tm_lines(
+    col = "label",
+    group = "Common Name",
+    col.legend = tm_legend(show = F),
+    lwd = 4,
+    group.control = "radio"
+  ) +
+  tm_shape(frank_split[['Other']]) +
+  tm_lines(
+    col = "label",
+    group = "Other",
+    col.legend = tm_legend(show = F),
+    lwd = 4,
+    group.control = "radio"
+  ) +
+  tm_shape(frank_split[['State Recognized']]) +
+  tm_lines(
+    col = "label",
+    group = "State Recognized",
+    col.legend = tm_legend(show = F),
+    lwd = 4,
+    group.control = "radio"
+  ) +
+  tm_shape(frank_split[['U.S.']]) +
+  tm_lines(
+    col = "label",
+    group = "U.S.",
+    col.legend = tm_legend(show = F),
+    lwd = 4,
+    group.control = "radio"
+  ) +
+  tm_basemap(leaflet::providers$OpenStreetMap, group.control = "check") +
+  tm_title("Franklin Roads")
