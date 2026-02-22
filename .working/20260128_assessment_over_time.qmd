@@ -10,8 +10,12 @@ execute:
   warning: false
 ---
 
+## Introduction
 
-Previous posts have looked at the range of zoning in the city of Franklin and how much property the city owns. This post will look at some of these properties over time to understand changing assessments and the tax cap. The data for this post come from  [NH tax kiosk](https://nhtaxkiosk.com/?KIOSKID=FRANKLIN), the online portal used to pay taxes. I gathered this data in late 2025, so it may have changed since then, but I believe it is complete enough for this analysis. This post will not name individual property owners, instead it will examine, in aggregate, the changes in assessment. 
+Previous posts have looked at the range of zoning in the city of Franklin and how much property the city owns. This post will look at two key areas of the city, the Lake and Downtown, and outline tax contribution, growth and changes in assessments over time. The data for this post come from  [NH tax kiosk](https://nhtaxkiosk.com/?KIOSKID=FRANKLIN), the online portal used to pay taxes. I gathered this data in late 2025, so it may have changed since then, but I believe it is complete enough for this analysis. This post will not name individual property owners, instead it will examine, in aggregate, the changes in assessment. 
+
+
+# Lakes and Cities
 
 Below is a map that I a going to be using to look at downtown vs. lake. I've used two zoning overlays to filter the relevant parcels, Lake protection district, and Downtown revitalization overlay district. This post seeks to answer the question: are both of these sections of the city contributing equally to the tax base? 
 
@@ -36,7 +40,7 @@ a<- zone_sf %>% st_zm() %>% st_transform(st_crs(better_zone_map)) %>%
     filter(LABEL == "DROD"| LABEL =="LP")
 peabody<- better_zone_map %>% filter(PARCEL_ == "117-138-00")
 lakes_and_hist<- st_intersection(better_zone_map, a) %>%
-    bind_rows(peabody) %>% 
+    #bind_rows(peabody) %>% 
      filter(!PARCEL_ %in% c(
         "000-WATER-00", "000-000-00", 
         "117-405-00", #Odell 
@@ -47,15 +51,17 @@ lakes_and_hist<- st_intersection(better_zone_map, a) %>%
     group_by(PARCEL_) %>%
     slice(1) %>%
     left_join(prop_data) %>% 
-    replace_na(list(LANDUSE = "Missing")) # two missing porperties of interest. One over the old pentstock downtown and one right of way off webster av
+    replace_na(list(LANDUSE = "Missing")) # two missing properties of interest. One over the old penstock downtown and one right of way off webster av
 
 ts_raw<- read_csv(here::here(".data/assess_ts_comb.csv"))
 
-ts_dat<- ts_raw %>%
+ts_dat<- ts_raw %>% filter(Type == "Property Tax" ) %>% 
     select(PARCEL_, `Bill Amount`, `Due Date`) %>%
     janitor::clean_names()%>%
     mutate(due_date= mdy(due_date)) %>%
-    filter(due_date >= "2012-01-01") 
+    filter(due_date >= "2015-01-01") 
+
+#median annual tax is 5033
 
 lakes_and_hist %>%
     tm_shape() +
@@ -116,10 +122,12 @@ tab2
 
 Sure enough, this is what we see. The chart above shows the grouped data (grouping all residential land use types together) and it matches the intuition: 
 
-1. The Lake has more parcels (472) than Downtown (51). We should keep this in mind when summarizing the data.
+1. The Lake has more parcels (472) and greater area (26,841 acres) than Downtown (51 parcels, 2,679 acres). We should keep this in mind when summarizing the data.
 2. Most of the lake parcels are residential while the downtown is mostly commercial.
 
-The able above shows the breakdown of the grouped data revealing that most of the "Other" downtown is exempt municipal/state while around the lake it is farm or timber. 
+The table above shows the breakdown of the grouped data revealing that most of the "Other" downtown is exempt municipal/state while around the lake it is farm or timber. 
+
+## Tax Contribution by Area
 
 The next question is too look at the relative tax contributions of each area seeking to answer the following question: which area provides more tax to the city of Franklin? 
 
@@ -128,9 +136,13 @@ The next question is too look at the relative tax contributions of each area see
 
 
 comb<- lakes_and_hist%>%
+    mutate(area = st_area(geometry)) %>% 
     st_drop_geometry() %>%
-    select(PARCEL_, NAME, LABEL, group, LANDUSE)%>% distinct() %>% 
+    select(PARCEL_, NAME, LABEL, area, group, LANDUSE)%>% distinct() %>% 
     left_join(ts_dat, join_by(PARCEL_==parcel)) 
+
+tot_areas<- comb %>% group_by(group) %>% summarise(tot_area = sum(area), 
+                                                    tot_area = units::set_units(tot_area, acre))
 
 annual<-comb %>%
     mutate(year= year(due_date)) %>%
@@ -160,7 +172,11 @@ annual %>% filter(year == "2025") %>%
 
 ```
 
-The lakes protection district provided about 5 times more money to the city in 2025 than the downtown (~$3M in tax in 2025 while the Downtown provided ~$600,000); it has the benefit of 9 times the number of parcels. Viewed this way, in 2025, the Lake provided more tax to the City, however it was not as efficient as the Downtown. 
+The lakes protection district provided about 5 times more money to the city in 2025 than the downtown (~$3M in tax in 2025 while the Downtown provided ~$600,000); it has the benefit of 9 times the number of parcels. Viewed this way, in 2025, the Lake provided more tax to the City, however it was not as efficient as the Downtown (note this holds true if using acreage instead of parcels). 
+
+This is one factor that should be weighed as part of the parking discussion; land in the downtown is valuable and making taxable parcels into parking lots has a cost. On the other hand, businesses without parking will not thrive. 
+
+One final consideration on this point is that Franklin's downtown is more efficient than the lake, in spite of the numerous empty storefronts. Filling storefronts raises the value of the land, raising the tax that can be gathered from the downtown area. 
 
 
 ```{r ts taxes} 
@@ -170,25 +186,6 @@ summ_by_group<- annual %>%
     tot_tax= sum(annual_tax, na.rm=T), 
     med_tax= median(annual_tax, na.rm=T))
     
-    summ_by_group %>% 
-    ggplot(aes(x=year, y = mean_tax, color= group)) +
-        geom_line() 
-
-summ_by_group %>% 
-    ggplot(aes(x=year, y = med_tax, color= group)) +
-        geom_line() 
-
-annual %>%
-    left_join(summ_by_group) %>%
-    mutate(variance= annual_tax - mean_tax) %>%
-    ggplot(aes(y =variance, x = year, group= PARCEL_)) + 
-    geom_line(alpha=.3) + 
-    scale_y_continuous(labels= scales::label_currency()) + 
-    facet_grid(rows=vars(group))+
-    theme_bw() +
-    labs(x = "Year",y = "Annual Variance in tax ($)", 
-    title= "Few downtown properties pay more in taxes relative to the Lake")    
-
 
 annual %>%
     group_by(group, year) %>%
@@ -197,34 +194,88 @@ annual %>%
         ggplot(aes(x=year, y = tot_tax, color= group)) +
         geom_line() + 
         scale_y_continuous(labels = scales::label_currency())  +
+        scale_x_continuous(n.breaks = 10) + 
                 labs(title = "Total Tax", 
         x = NULL, 
         y = NULL) + 
             theme_bw()
+```
+
+The above plot show that the lake has always contributed more tax than downtown, however the downtown is growing faster since about 2022. I'd like to know which group the downtown or the lake has had more growth. To do this I'm going to look at the tax variance - for each parcel I take the average downtown tax value minus the value from that parcel in that year. This should show how evenly distributed the growth in each area is. 
+
+## Tax Variance 
+
+Below is a chart showing the tax variance since 2015. A couple of observations: 
+
+- Downtown is more extreme than the Lake. A handful of parcels are contributing the tax for the entire group especially in 2025. 
+- Lake properties appear more stable than downtown. The tax bills of lake properties didn't change much between 2017 and 2022. 
+- Downtown properties are more highly variable. This is as expected given the renovations to various buildings over the last 10 years. 
 
 
-annual %>% 
-    group_by(group, year) %>%
-    summarize(mean_tax = mean(annual_tax, na.rm=T), 
-    tot_tax= sum(annual_tax, na.rm=T))%>% 
-        #write_csv(here::here(".data/outputs/annual_group_tax.csv"))
-        ggplot(aes(x=year, y = mean_tax, color= group)) +
-        geom_line() + 
-        scale_y_continuous(labels = scales::label_currency())  + 
-        labs(title = "Average Annual Tax", 
-        x = NULL, 
-        y = NULL) + 
-            theme_bw()
+```{r tax variance}
+# summ_by_group %>% 
+#     ggplot(aes(x=year, y = mean_tax, color= group)) +
+#         geom_line() 
+
+# summ_by_group %>% 
+#     ggplot(aes(x=year, y = med_tax, color= group)) +
+#         geom_line() 
+
+annual %>%
+    left_join(summ_by_group) %>%
+    mutate(variance= annual_tax - mean_tax) %>%  filter(annual_tax >0)  %>% 
+    ggplot(aes(y =variance, x = year, group= PARCEL_)) + 
+    geom_line(alpha=.3) + 
+    scale_y_continuous(labels= scales::label_currency()) + 
+    facet_grid(rows=vars(group)) +
+    theme_bw() +
+    labs(x = "Year",y = "Annual Variance in tax ($)", 
+    title= "Few downtown properties pay more in taxes relative to the Lake")    
+
+# annual %>%
+#     left_join(summ_by_group) %>% filter(annual_tax >0) %>% #filter(PARCEL_ == "117-158-00")
+#     transmute( 
+#         variance= annual_tax - mean_tax, 
+#     year = year) %>% 
+#     left_join(lakes_and_hist)  %>% st_as_sf() %>% 
+#     filter(year == 2025) %>%
+#     select(variance) %>% 
+#     tm_shape() + 
+#     tm_polygons(fill = "variance", 
+#     fill.scale = tm_scale_continuous(ticks = seq(-20e3,20e3, 10e3 ),limits = c(-20e3, 20e3), outliers.trunc = c(T, T)), popup.format = tm_label_format(prefix = "$")
+#      ) +  
+#     tm_title("2025 Tax Variance - Exempt parcels removed") + 
+#     tm_basemap(leaflet::providers$OpenStreetMap)  
 
 
 
 
+# annual %>% 
+#     group_by(group, year) %>%
+#     summarize(mean_tax = mean(annual_tax, na.rm=T), 
+#     tot_tax= sum(annual_tax, na.rm=T))%>% 
+#         #write_csv(here::here(".data/outputs/annual_group_tax.csv"))
+#         ggplot(aes(x=year, y = mean_tax, color= group)) +
+#         geom_line() + 
+#         scale_y_continuous(labels = scales::label_currency())  + 
+#         labs(title = "Average Annual Tax", 
+#         x = NULL, 
+#         y = NULL) + 
+#             theme_bw()
 
 
 ```
 
-fgvhbjknlm
 
+## Assessments
+
+Taxes are generally calculated by taking the assessed value of a property times, divide it by 1,000 and multiply it by the tax rate. The tax rate changes each year and is a combination of municipal, county and state taxes. [Franklin publishes](https://www.franklinnh.gov/assessing-department/pages/tax-rate-ratio) a nice breakdown on the city website. 
+
+Franklin is a tax capped city, so it's tax rate is balanced by the municipal budget. The budget has a spending limitation built in, that it can only grow by a set amount (typically ~2-3%) each year. The spending limitation can be exceeded for capital improvement spending. This results in a see-saw; if assessed values go up, tax rates go down. If assessed values go down, tax rates go up. This means property taxes in the city are relatively stable. 
+
+Periodically properties throughout the city get reassessed. These can be triggered from changes to the property (like getting a permit for a renovation) or by time passing. Reassessments rebalance the tax distribution across the entire city. 
+
+Below is a table of tax rates going back to 2015. 
 
 
 ```{r assessed value}
@@ -241,7 +292,82 @@ tax_rate_table<- tribble(~year,	~tax_rate,
 2022,	24.39,
 2023,	16.26,
 2024,	17.15,
-2025,	17.63)
+2025,	17.63) 
 
+
+tax_rate_table %>%
+    ggplot(aes(x = year, y = tax_rate, label = tax_rate)) + 
+    geom_point() + 
+    geom_line() + 
+    scale_x_continuous(n.breaks = 10) + 
+    geom_text(nudge_y = .5,nudge_x = .2) + 
+    theme_bw() + 
+    labs(title = "Franklin Tax Rate", 
+    x = NULL, 
+    y = "Tax Rate ($)")
 
 ```
+
+
+This chart shows two things: 
+
+1. Overall the tax rate has been falling. This is good as it means the city is growing, generating higher assessed values. 
+2. It shows the impact of reassessments. The large drops in 2018 and 2023 indicate reassessments were conducted around that time. Residents may remember them as big changes to their tax bill. 
+
+Reassessments in a tax capped city like Franklin shift where the tax burden lies. For example, let's pretend there are 3 properties that make the city budget of $30,000:
+ - Property A: $10,000 
+ - Property B: $10,000
+ - Property C: $10,000
+
+If property owner A improves their property by building an addition. Five years pass and the city budget has increased 15% to $34,500 and the properties are reassessed, with the improvement being less than the change in budget.
+
+ - Property A: $13,500 
+ - Property B: $10,700
+ - Property C: $10,300
+
+Everyone's taxes went up, but property A's went up the most because they improved it. 5 more years pass and property owner B improves their house a lot. The city budget increases another 15% to $39,675. This time the budget growth is smaller than the improvmement. The properties are reassesed: 
+
+ - Property A: $13,500 
+ - Property B: $20,000
+ - Property C: $6,175
+
+Property C's taxes went down, while A stayed the same. Because the budget cannot be exceeded, the value of each property is not captured by the city. Indeed, the value of property C is going down, because property B is improving. 
+
+This is a simple example, but in aggregate this system works to disincentivize growing. If you improve your property, you are reassessed and have to shoulder more of the tax burden. Over time, Property C is becoming less valuable due to the changes outside of it's control. Individually this means Property C has more money in their pocket, but the city loses tax base it helped grow.  
+
+We can see the impact of reassessments in the above data by backing out the assessed value from the tax ((tax*1000)/ tax rate).
+```{r assessments}
+annual_assessed<- annual %>%
+    left_join(tax_rate_table) %>%
+    mutate(assessed_value = (annual_tax *1000)/tax_rate) 
+    
+# annual_assessed %>% 
+#     ggplot(aes(y =assessed_value, x = year, group= PARCEL_)) + 
+#     geom_line(alpha=.3) + 
+#     scale_y_continuous(labels= scales::label_currency()) + 
+#     scale_x_continuous(n.breaks = 10) + 
+#     facet_grid(rows=vars(group)) +
+#     theme_bw() +
+#     labs(x = "Year",y = "Assessed Value ($)", 
+#     title= "Lake properties rise and fall together, Downtown is variable")    
+
+annual_assessed %>% 
+    group_by(group, year) %>% filter(assessed_value >0) %>% 
+    summarize(med_ass = median(assessed_value, na.rm = T), 
+    mean_ass = mean(assessed_value, na.rm = T)) %>%
+        ggplot(aes(x = year, y = med_ass, color = group)) + 
+        geom_line() + 
+        scale_x_continuous(n.breaks = 10)  +
+        theme_bw() + 
+        scale_y_continuous(labels = scales::label_currency()) + 
+        labs(x = NULL, 
+        y = "Median Assessed Value ($)", 
+        title = "Assessments bounce between Downtown and Lake")
+
+```
+
+This plot shows the assessment example in action. around 2018, there was a reassessment that lowered the Lake's median value below downtown. Then in 2023 the assessment swapped the two and the lake was assessed higher than downtown. This doesn't make sense as the majority of the development that occurred during that time was downtown, yet it is assessed lower. Recall that lower assessed values mean lower tax contribution. Shifting assessments like this leaves value on the table that the city cannot collect because of the tax cap.  
+
+
+
+
