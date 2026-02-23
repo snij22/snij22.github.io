@@ -1,0 +1,156 @@
+---
+title: "The Long And Winding Road"
+description: How much road footage does Franklin have.
+categories: [Roads, Capital Improvements]
+format: html
+date: 2/22/2026
+date-modified: 2/22/26
+execute:
+  echo: false
+  warning: false
+---
+# Introduction
+Talk to any person in town and they will tell you that the roads need to be repaired. The state of Franklin's roads represent years of underinvestment, but how big is the problem we are talking about? The best place to look for the answer to this question is Franklin's [Capital Improvement Plan (CIP)](https://www.franklinnh.gov/capital-improvement-plan-cip-committee/pages/capital-improvements-plan-cip-documents). The most recent plan (drafted in 2024) identifies 21 roads that are in need of repair. This includes places like Davis street, Prospect street and Cheney Hill. Note that the CIP identifies other capital needs as well; for example  fire trucks and building repairs. 
+
+
+# The Capital Improvements Plan (CIP)
+
+This draft CIP calls for 4.6 million dollars of CIP funding in 2025, 5.9 million dollars in 2026, 5.9 million dollars in 2027 and increases from there. The city did not fund the CIP-identified projects fully in 2025, and likely will not be able to in 2026. The need for these repairs has not gone away, rather they are pushed back and compound. The committee of 9 who writes the CIP is mandated to meet at least once a year by the charter of the city. Back in 2024 members of the CIP committee drove each of the roads in the plan to score help prioritize them. Kudos to them for seeing the problems firsthand.  
+
+
+```{r read in data}
+library(tidyverse)
+library(osmdata)
+library(sf)
+library(tigris)
+library(tmap)
+library(gt)
+tmap_mode("view")
+options(tigris_use_cache = TRUE)
+# set different Overpass server
+#set_overpass_url("https://overpass.private.coffee/api/interpreter")
+
+franklin_city_limits <- places(state = "NH") |>
+  filter(NAME == "Franklin") |>
+  st_transform(crs = "EPSG:4326")
+
+#st_area(franklin_city_limits) %>% units::set_units(mi^2)
+
+frank_bb <- st_bbox(franklin_city_limits)
+
+
+x <- opq(bbox = frank_bb) |>
+  add_osm_feature(
+    key = "highway",
+    value = c(
+      "primary",
+      "secondary",
+      "tertiary",
+      "motorway",
+      "trunk",
+      "unclassified",
+      "residential"
+    )
+  ) |>
+  osmdata_sf()
+
+roads <- x$osm_lines
+
+
+
+``` 
+
+
+
+## All Roads Lead to ...Franklin
+The city of Franklin is fairly small, only 29.1 square miles. and yet it has hundreds of roads. [Open Street Map](https://www.openstreetmap.org/#map=8/43.461/-71.691) (OSM) is an open-source, community-editable map. It's kind of like wikipedia for place information and is used by both private and public entities as a source of geographical information.
+
+Pulling data from OSM we can get a sense for how many roads are in the city and what kinds of roads they are (paved, dirt etc). I'm focusing on surface type for this blog as it is speaks more to the maintenance need. Future posts may look at speed limits for traffic safety, walking paths through the city for non-car based travel or other interesting transit questions. 
+
+
+
+```{r number and type}
+
+
+frank_roads <- roads[franklin_city_limits, op = st_intersects] %>% select(highway, surface) %>%
+    mutate(surface = if_else(surface %in% c("dirt", "fine_gravel", "gravel", "unpaved"), "unpaved", surface))
+
+
+frank_roads |>
+  tm_shape() +
+  tm_lines(col = "highway", lwd = 10) + tm_basemap(leaflet::providers$OpenStreetMap)  
+
+
+
+frank_roads %>%
+    mutate(length = st_length(geometry)%>% units::set_units(mi) %>% as.numeric() %>% round(2)) %>% st_drop_geometry() %>% 
+    group_by(highway) %>%
+    summarise(n = n(), 
+    tot_length = sum(length)) %>%
+        arrange(desc(tot_length)) %>% 
+        gt() %>%
+        cols_label(
+      .list = c(
+        n = "Number of Roads",
+        tot_length = "Total Road Length (miles)")) %>% 
+        gt::grand_summary_rows(fns = list(label = "Total", fn = "sum"), 
+            columns = where(is.numeric))
+
+
+```
+
+The map and table above show the distribution of roads by type: 
+
+- Primary Roads - Highways. Example: Route 3 coming into town. 
+- Secondary Roads - Lesser traveled highways. Example: State Route 127.
+- Tertiary Roads - Main roads that connect portions of the City. Example: Prospect Street. 
+- Trunk Roads - Main travel roads through the city. Example: Central Street. 
+- Residential Roads - Neighborhood streets. Example. Beech Street. 
+- Unclassified- Not currently classified in OSM. 
+
+Most of the roads in Franklin are residential however the primary and trunk roads are probably most heavily traveled. 
+
+## The Scale of Franklin's Roads
+
+Franklin has more than 350 roads, totaling more than 100 miles of roadway. This demonstrates the scale of the maintenance burden in the city. Some maintenance of the higher level roads (e.g. Primary) may fall to the state. I don't have a true cost of road repair by this classification system, but 100 miles of anything is going ot be expensive. Another thing to keep in mind is that these expenses are recurring - roads are "consumed" by the traffic on them. The city needs to be budgeting for routine upkeep across the entire network. 
+
+OSM also provides the surface type of the road. The material a road is made from impacts how much it can be used, who can use it, it's lifespan, and how much it takes to repair or replace it. These data are even less well documented than the road type, but it helps outline the scale of the Franklin's roads. 
+
+
+```{r }
+
+
+
+frank_roads |>
+  tm_shape() +
+  tm_lines(col = "surface", lwd = 10) + 
+  tm_basemap(leaflet::providers$OpenStreetMap)  
+
+
+
+
+frank_roads %>%
+    mutate(length = st_length(geometry)%>% units::set_units(mi) %>% as.numeric() %>% round(2)) %>% st_drop_geometry() %>% 
+    group_by(surface) %>%
+    summarise(n = n(), 
+    tot_length = sum(length)) %>%
+        replace_na(list(surface = "Missing Description")) %>% 
+        gt() %>%
+        cols_label(
+      .list = c(
+        n = "Number of Roads",
+        tot_length = "Total Road Length (miles)")) %>% 
+            grand_summary_rows(fns = list(label = "Total", fn = "sum"), 
+            columns = where(is.numeric))
+
+
+asphalt_miles<- frank_roads %>%
+    mutate(length = st_length(geometry)%>% units::set_units(mi) %>% as.numeric() %>% round(2)) %>% st_drop_geometry() %>% 
+    group_by(surface) %>%
+    summarise(n = n(), 
+    tot_length = sum(length)) %>% filter(surface== "asphalt") %>%pull(tot_length)
+
+```
+
+
+This suggests that the city has at least `{r} asphalt_miles` miles of road to repave. This will take time, money and concerted effort. The time to start is now!
