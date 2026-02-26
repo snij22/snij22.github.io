@@ -15,36 +15,6 @@ franklin_city_limits <- places(state = "NH") |>
 frank_bb <- st_bbox(franklin_city_limits)
 
 
-x <- opq(bbox = frank_bb) |>
-  add_osm_feature(
-    key = "highway",
-    value = c(
-      "primary",
-      "secondary",
-      "tertiary",
-      "motorway",
-      "trunk",
-      "unclassified",
-      "residential"
-    )
-  ) |>
-  osmdata_sf()
-
-tertiaries <- x$osm_lines
-
-
-msn_tertiary <- tertiaries[franklin_city_limits, op = st_intersects]
-
-
-msn_tertiary |>
-  tm_shape() +
-  tm_lines(col = "highway", lwd = 10)
-
-msn_tertiary |>
-  tm_shape() +
-  tm_lines(col = "surface", lwd = 10)
-### context https://rpubs.com/vgXhc/tertiary
-
 road_type_code <- tribble(
   ~RTTYP , ~label             ,
   "C"    , "County"           ,

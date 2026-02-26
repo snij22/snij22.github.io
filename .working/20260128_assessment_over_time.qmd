@@ -325,7 +325,7 @@ If property owner A improves their property by building an addition. Five years 
  - Property B: $10,700
  - Property C: $10,300
 
-Everyone's taxes went up, but property A's went up the most because they improved it. 5 more years pass and property owner B improves their house a lot. The city budget increases another 15% to $39,675. This time the budget growth is smaller than the improvmement. The properties are reassesed: 
+Everyone's taxes went up, but property A's went up the most because they improved it. 5 more years pass and property owner B improves their house a lot. The city budget increases another 15% to $39,675. This time the budget growth is smaller than the improvement. The properties are reassessed: 
 
  - Property A: $13,500 
  - Property B: $20,000
