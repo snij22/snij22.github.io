@@ -4,6 +4,7 @@ description: "Committee assignments for all Councilors"
 categories: Committee
 date: 1/19/2026
 date-modified: 1/19/2026
+author: Sam Jacobson
 ---
 With each election, the committee assignments of councilors can change. Many (though not all) committees that are appointed by the Mayor have their root in the city charter. Most line up with a professional department head (e.g. Fire committee works closely with the fire chief). Committee meetings are the best way for public to engage/observe the discussion of department specific issues. Each committee makes regular reports to the broader council on their business and recommends department specific actions. Below is a list of the committees, description and current members. If you have questions about something that comes before that committee, contact those councilors!
 

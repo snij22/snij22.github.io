@@ -4,6 +4,7 @@ description: "Legislative committee meeting covering event permits, short term r
 categories: [Committee, Legislative]
 date: 2/15/2026
 date-modified: 2/15/2026
+author: Sam Jacobson
 ---
 
 # Location: Franklin Public Library

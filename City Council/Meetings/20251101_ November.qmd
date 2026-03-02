@@ -4,6 +4,7 @@ description: "Links to agenda and packet for 11/3/25 City Council meeting"
 categories: City Council Meeting
 date: 11/2/2025
 date-modified: 11/2/2025
+author: Sam Jacobson
 ---
 
 <h1>Location: Franklin Elks</h1>

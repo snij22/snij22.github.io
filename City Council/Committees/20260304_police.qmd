@@ -4,6 +4,7 @@ description: "Second meeting of the Police committee"
 categories: [Committee, Police]
 date: 2/28/2026
 date-modified: 2/28/2026
+author: Sam Jacobson
 ---
 
 # Location: Franklin Public Library

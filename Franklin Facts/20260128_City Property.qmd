@@ -8,6 +8,7 @@ execute:
   echo: false
   warning: false
 categories: [Zoning, Property tax]
+author: Sam Jacobson
 ---
 A stated priority of the city manager is to return city property to the tax rolls. Most recently this has come before the council working with the snowmobile club. Because the city does not pay taxes on land that owns, City-owned land represents lost revenue. This blog post will look at the location and tax value of city owned land. 
 

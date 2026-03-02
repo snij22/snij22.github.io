@@ -8,6 +8,7 @@ date-modified: 2/22/26
 execute:
   echo: false
   warning: false
+author: Sam Jacobson
 ---
 # Introduction
 Talk to any person in town and they will tell you that the roads need to be repaired. The state of Franklin's roads represent years of underinvestment, but how big is the problem we are talking about? The best place to look for the answer to this question is Franklin's [Capital Improvement Plan (CIP)](https://www.franklinnh.gov/capital-improvement-plan-cip-committee/pages/capital-improvements-plan-cip-documents). The most recent plan (drafted in 2024) identifies 21 roads that are in need of repair. This includes places like Davis street, Prospect street and Cheney Hill. Note that the CIP identifies other capital needs as well; for example  fire trucks and building repairs. 

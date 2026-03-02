@@ -4,6 +4,7 @@ description: "Preview of topics for 2/2/2026 City Council meeting"
 categories: City Council Meeting
 date: 2/1/2026
 date-modified: 2/1/2026
+author: Sam Jacobson
 ---
 
 # Location: Franklin Elks

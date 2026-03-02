@@ -4,6 +4,7 @@ description: "First meeting of the legislative committee"
 categories: [Committee, Legislative]
 date: 1/19/2026
 date-modified: 1/25/2026
+author: Sam Jacobson
 ---
 
 # Location: Franklin Public Library
