@@ -21,41 +21,21 @@ This draft CIP calls for 4.6 million dollars of CIP funding in 2025, 5.9 million
 
 ```{r read in data}
 library(tidyverse)
-library(osmdata)
 library(sf)
-library(tigris)
 library(tmap)
 library(gt)
 tmap_mode("view")
-options(tigris_use_cache = TRUE)
 # set different Overpass server
-#set_overpass_url("https://overpass.private.coffee/api/interpreter")
 
-franklin_city_limits <- places(state = "NH") |>
-  filter(NAME == "Franklin") |>
+franklin_city_limits <-here::here(".data/outputs/20260221_frank_limits/20260221_frank_city_limits.shp")|>
+  read_sf()|>
   st_transform(crs = "EPSG:4326")
 
-#st_area(franklin_city_limits) %>% units::set_units(mi^2)
-
-frank_bb <- st_bbox(franklin_city_limits)
 
 
-x <- opq(bbox = frank_bb) |>
-  add_osm_feature(
-    key = "highway",
-    value = c(
-      "primary",
-      "secondary",
-      "tertiary",
-      "motorway",
-      "trunk",
-      "unclassified",
-      "residential"
-    )
-  ) |>
-  osmdata_sf()
 
-roads <- x$osm_lines
+
+roads <- here::here(".data/outputs/20260221_osm_roads/20260221_frank_roads.shp") %>% read_sf()
 
 
 
