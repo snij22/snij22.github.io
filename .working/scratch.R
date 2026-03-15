@@ -227,3 +227,27 @@ ts_dat %>%
   group_by(year) %>%
   summarize(med = median(annual_tax), quart = quantile(annual_tax)) %>%
   view()
+
+#########################
+
+library(tidyverse)
+library(tidycensus)
+library(tmap)
+library(sf)
+frank <- st_read(
+  ".data/outputs/20260221_frank_limits/20260221_frank_city_limits.shp"
+) %>%
+  st_transform(st_crs(dat))
+
+dat <- get_acs(
+  geography = "block group",
+  state = "NH",
+  variables = "B01003_001",
+  year = 2017,
+  geometry = T
+)
+
+dat %>% st_unio(frank, ) %>% tm_shape() + tm_polygons("estimate")
+
+
+load_variables(2017, "acs5", cache = TRUE)
