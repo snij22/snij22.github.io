@@ -3,7 +3,7 @@ title: "March 19, 2026 Legislative"
 description: "Legislative Committee meeting covering short term rentals"
 categories: [Committee, Legislative]
 date: 3/15/2026
-date-modified: 3/15/2026
+date-modified: 3/16/2026
 author: Sam Jacobson
 ---
 
@@ -28,7 +28,10 @@ Below is what we plan to discuss:
 Brenda Demers drafted minutes from the February 26, 2026 meeting, which I expect to be approved with minimal changes. 
 
 ### 2. Short Term Rentals (STRs)
-Director Chunn will present an updated STR ordinance draft for review at the March 19 meeting, which I will post when I have it electronically. 
+Director Chunn will present an updated STR ordinance draft for review at the March 19 meeting. These are posted below. 
+
+- [Draft STR Ordinance](/City%20Council/files/20260316_draft_STR_ordinance.pdf)
+-[Draft STR Regulation](/City%20Council/files/20260316_draft_STR_regulation.pdf)
 
 Currently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO). 
 
