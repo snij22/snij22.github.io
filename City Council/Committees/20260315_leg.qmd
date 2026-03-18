@@ -3,18 +3,20 @@ title: "March 19, 2026 Legislative"
 description: "Legislative Committee meeting covering short term rentals"
 categories: [Committee, Legislative]
 date: 3/15/2026
-date-modified: 3/16/2026
+date-modified: 3/18/2026
 author: Sam Jacobson
 ---
 
-# Location: Franklin Public Library
+# **NOTE LOCATION CHANGE**
+
+# Location: Bessie Rowell Community Center
 
 # Date: March 19, 2026
 
 # Time: 6:00 PM
 
 # Rough Agenda
-Below is what we plan to discuss: 
+Note location change due to fire alarm issue in Library. Below is what we plan to discuss: 
 
 1. Approve minutes from Feb 26 meeting
     - [Minutes](https://www.franklinnh.gov/legislative-committee) are located at the bottom right of the linked page. 
