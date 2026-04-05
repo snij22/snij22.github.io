@@ -1,0 +1,178 @@
+---
+title: "April 6, 2026 City Council"
+description: "Preview of topics for 4/6/2026 City Council meeting"
+categories: City Council Meeting
+date: 4/5/2026
+date-modified: 4/5/2026
+author: Sam Jacobson
+---
+
+# Location: Franklin Elks
+
+# Time: 6:00 PM
+
+[Agenda](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-04-06_city_council_meeting_agenda_0.pdf)
+
+[Packet](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-04-06_combined_packet_0.pdf)
+
+------------------------------------------------------------------------
+This is a standard City Council meeting, starting with public hearings, public comment, and then moving onto council business.
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further. 
+
+## Agenda Items
+
+## 1. Approval of minutes 
+-   Summary:
+    -   Minutes from the March 2026 City Council meeting and March 23 City Council workshop (how to read the Municipal budget). 
+
+### How Sam Sees It: 
+- No significant changes recommended
+
+## 2. Approve the teachers' contract
+- Summary:
+    - This contract has been under negotiation with with members of the School Board for months. It covers 1 year of time (2026-2027).
+- Teacher Evaluations
+    - Complaints about teachers to the administration that result in an investigation; the administration has to notify teachers of investigation findings.
+- Employment
+    - Hourly rate raised from $39 to $45 for prep periods/lunch coverage.
+    - Teachers get contractual protection for prep periods (varies by school).
+    - Pro-rate time at step for coverage of additional classes. Split appropriately if sharing kids from a class.
+    - 30-day notice if administration is removing an extra class load from a teacher.
+    - Remove $2,000 retention pay.
+    - General pay increase for teachers at each step/level.
+    - 3.5% pay increase for teachers at the top step.
+- Sick Time 
+    - Increase incentives(+$200) for teachers to not use personal/sick leave and over-banked sick time.
+- Health Insurance
+    - 100% of single family coverage, 95% of 2 person coverage, 91% of family coverage.
+    - $5,000 if a teacher declines health insurance.
+    
+### How Sam Sees It:
+- This is a 1 year contract with reasonable terms. I'm eager to hear why it is only a 1 year contract. 
+- The changes made (e.g. 3.5% increase for teachers at the top step) seem reasonable for cost-of-living-adjustments. 
+- Prorating coverage time makes sense and should be compensated. 
+- I am happy to see the School Board finding savings where reasonable (e.g. flat payment if health insurance declined, incentivize a sick bank). 
+- This reflects honest bargaining from both sides and should be accepted by the City Council. 
+
+## 3. Set hearing to approve ventilator purchase using grant funds
+-   Summary: 
+    - Set a hearing to purchase ventilators using money from a grant fund. 
+
+### How Sam Sees It:
+- We should set this hearing. 
+- The use of trust funds for this purpose falls within its scope and there is enough money for it.
+- This has been reviewed and approved by the fire committee. 
+
+### Questions: 
+- Is ongoing warranty or maintenance considered in the requested funds for this purpose?
+
+## 4. Offer discount to self pay ambulance patients
+-   Summary: 
+    - Earlier this year, the City Council increased ambulance-bundle fees 350% in response to new negotiations with private insurance triggered by changes in state law.  
+    - Fire committee and Chief Foss recommend up to 25% credit for self pay of ambulance services.
+
+### How Sam Sees It:
+- I think we should offer a self pay discount.
+- I think the self pay discount should be up to 60% to maintain the self pay price for transported patients. 
+    - A 25% discount will result in final cost ~$1,500. Before the change it was ~$700. 
+
+## 5. Set hearing for accepting grant funds for fire hosing 
+- Summary:
+   - The state provides annual funding for firefighting and protective equipment for wild land fires. 
+   - Franklin Fire Department (FFD) hosing is out of service.
+   - FFD needs shirts and helmets for forest firefighting.
+   - Up to $2,000 may be reimbursed by the state.
+   - Total cost of equipment is ~$7,000. If the grant is accepted, cost to the city would be ~$5,000. 
+
+
+### How Sam Sees It:
+- We should set this public hearing.
+- We should purchase this hosing and PPE.
+
+## 6. Eversource litigation funding
+- Summary:
+   - The city lost an assessing case against Eversource and has to pay  ~$350,000.
+        - Multiple other municipalities got caught in this case and have to pay similar property tax abatements.
+    - The city manager recommends covering this unexpected cost with money from the industrial park TIF and 2026 budget.
+        - TIF closed in December 2025.
+        - Outstanding money in the TIF (~$320,000) was moved to the Capital Improvements Plan (CIP) for road repair.
+        - ~$31,000 was budgeted for abatements in 2026. This would be combined with the TIF money to satisfy the judgement. 
+    - During the City Council workshop meeting, Councilor Johnston suggested using fund balance in pace of TIF/CIP money. He did not provide a plan for replacing fund balance money.
+    - This bill accrues daily interest (~$30/day) each day it is unpaid. 
+
+### How Sam Sees It:
+- We should pay this using funds recovered from closing the Industrial Park TIF.
+    - These funds have not been budgeted for; therefore, their move will not impact active projects.
+    - The TIF money (~$320,000) is not enough money to meaningfully impact Franklin's road network. The CIP calls for more than $2 million annually to fund a repair/replace schedule.
+    - If the Council took this money from the fund balance, it would need to be replaced within 5 years. This means starting each year a ~$70,000 deficit, from a budget perspective. While $70,000 is not a large amount of money in context of a $20 million municipal budget (0.35%), last year's City Council removed all economic development budget to find a similar dollar amount to support the fire department. This required multiple meetings and motions and was not easy. The city does not have tens of thousands of dollars ready to be reallocated given current levels of service. 
+    - Borrowing (even zero interest loans) to pay for unexpected expenses is not fiscally prudent.
+
+## 7. Set public hearing for alcohol event permitting
+- Summary
+    - Set public hearing to change ordinance on alcohol and event permitting.
+    - This came through legislative and legal.
+    - Significant changes are: 
+        - Add mayor to permit review committee
+        - Expand definition of alcohol
+        - Establish appeal process for denied permits
+        - Enhance compliance with state law
+        - Remove need for permit for consumption, require only for serving
+
+### How Sam Sees It:
+- I worked on drafting this, so I think we should adopt it.
+- I think we should hold the public hearing. 
+
+## 8. Fireman's Muster
+- Summary
+    - Make an admissions-based fundraising event to support the fire department.
+    - Event will cost $2,000 for league entrance; it is anticipated to raise more.
+    - Form an ad-hoc committee to develop and execute the event.
+
+### How Sam Sees It: 
+- I think we should fund our capital needs with taxes or other consistent revenue streams. 
+- Fundraisers are too inconsistent to reliably budget for.  
+- I don't think it's appropriate for the city to be putting on a fundraiser for itself.
+- I support in kind support the city could offer, e.g. event permitting support, but another group should put on the Muster. 
+
+## 9. Set date for school funding explainer
+- Summary
+    - Set a workshop for late April to talk about state and local education funding.
+
+### How Sam Sees It: 
+- More information is better. I think this is a good idea. 
+
+
+## 10. Odell cottage maintenance
+- Summary
+    - The non-profit "Franklin Parks and Rec Volunteers" want city approval for planned changes to Odell Park cottage.
+    - These include:
+        - Sealing the ADA ramp
+        - Repairing the chimney
+        - Repairing/replacing gutters
+        - Lattice repair
+        - Sand/seal cottage floors
+        - Tree removal
+
+### How Sam Sees It: 
+- I think this proposal makes sense.
+- Want to make sure the fire department, Heritage, and Conservation Commissions are appropriately consulted. 
+
+
+## Other Business:
+
+### Downtown TIF Board appointment
+- Summary
+    - Four seats are open on the TIF Board. There are nine total seats on the TIF Board. 
+    - There are a variety of requirements for eligibility to sit on this board, mostly that you live or work in the TIF district. 
+    - The following people have submitted their names for consideration:
+        - Jason Grevior
+        - Damon Lewis
+        - Christy Mank
+        - Jeff May
+        - Desiree Mclaughlin
+        - Leo Paquin
+
+### How Sam Sees It: 
+- I don't have strong feelings on these applicants. I have seen all of them act in public and believe most would serve well on this board. 
+- I have a slight preference against Desiree as she lost the recent election and is generally divisive. 
