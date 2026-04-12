@@ -1,7 +1,7 @@
 ---
 title: "The Value of the Industrial Park TIF "
-description: How much money has the Industrial park Tax Increment Finance district generated over the last 6 years
-categories: [Roads, Capital Improvements]
+description: How much money has the industrial park tax increment finance (TIF) district generated over the last 13 years?
+categories: [TIF, Tax Cap]
 format: html
 date: 4/8/2026
 date-modified: 4/8/2026
@@ -11,18 +11,18 @@ execute:
 author: Sam Jacobson
 ---
 
-## What is a TIF?
- A TIF is a tool in the city's toolbox for reserving taxes from certain areas for use in those areas. A portion of the tax raised from properties in a TIF stay in the TIF instead of going into the general fund of the City. 
+## What is tax increment financing (TIF)?
+ A TIF district is a tool in the city's toolbox for reserving taxes from certain areas for use in those areas. A portion of the tax raised from properties in a TIF stay in the district boundaries instead of going into the general fund of the city. 
  
- The City establishes a baseline value of the properties in the TIF, increases in value above the baseline get separated out for use in the TIF. For example, the baseline value of a TIF might be assessed at $500,000. A developer makes some improvements (like repairing a dilapidated building), triggering a reassessment, and the next year the value is $600,000. Some or all of the difference in baseline is set aside for use in the TIF. In this example, 40% of the tax improvement in a TIF might stay in the TIF while 60% might go into the general fund. This allows targeted development and tries to compound improvements in a particular area of the city. 
+ The city establishes a baseline value of the properties in the TIF, increases in value above the baseline get separated out for use in the TIF. For example, the baseline value of a TIF might be assessed at $500,000. A developer makes some improvements (like repairing a dilapidated building), triggering a reassessment, and the next year the value is $600,000. Some or all of the difference in baseline is set aside for use in the TIF. In this example, 40% of the tax improvement in a TIF might stay in the TIF while 60% might go into the general fund. This allows targeted development and tries to compound improvements in a particular area of the city. 
  
  TIF's provide certainty to developers, companies, and individual investors that they will be able to capture some of the growth they generate. The cost of a TIF is a loss of general fund revenue (i.e. higher burden on non-TIF members to provide taxes to the city).  
 
  TIF's have different structures, but have common pieces including an administrator or board that administers the money in the TIF, a plan or reason for the TIF's creation, and a termination process. 
 
- ## Franklin TIFs 
+## Franklin's TIF districts 
 
- In Franklin, we had two TIFs active as of **November 2025**. The first is the Franklin Falls Mixed use TIF district, also known as the Downtown TIF. The second is the Industrial park TIF, which was closed on December 1, 2025. The [page 38 of the meeting packet ](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/01_december_city_council_packet_0.pdf) contains information about the Industrial TIF. Below is a map showing the location of the two TIF districts. Note that in the language of zoning, an overlay is an area that groups properties and what I call the Downtown TIF is the Downtown Revitalization Overlay District and what I call the Industrial Park TIF is the Franklin Business Park TIF,
+ In Franklin, we had two TIFs active as of **November 2025**. The first is the Franklin Falls Mixed use TIF district, also known as the Downtown TIF. The second is the Industrial park TIF, which was closed on December 1, 2025. The [page 38 of the meeting packet of the December 2025 CIty council meeting ](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/01_december_city_council_packet_0.pdf) contains information about the Industrial TIF. Below is a map showing the location of the two TIF districts. Note that in the language of zoning, an overlay is an area that groups properties and what I call the Downtown TIF is the Downtown Revitalization Overlay District and what I call the Industrial Park TIF is the Franklin Business Park TIF,
 
 ```{r Load data map tif}
 
@@ -55,10 +55,11 @@ tif_dat<- here::here(".data/20260408_industrial_tif/industrial_tif_value_capture
 
 The two TIF's have different goals. The Industrial park TIF is intended to set money aside for costs related to the operation of the industrial park, notably road repair. Because the industrial park roads see heavy truck and machinery traffic their roads are likely to be in worse shape than residential streets. Likewise, the value and continued operation of the industrial park is tied to their connection to the road network - if a business cant receive deliveries, then it cannot operate. Because the city of Franklin has historically underfunded it's road repair, the TIF allows tenant companies to direct some of their tax money towards the roads that run through the Industrial park and that they need to survive and grow. The city sees the benefit of increased property tax revenue as well.  
 
+The downtown TIF is intended to grow downtown business and storefronts.
+
 ## Industrial TIF Financials
 
 We can see how much money the industrial TIF generated for its tenants by looking at the packet mentioned above. 
-
 
 ```{r tif financials}
 tif_dat<- here::here(".data/20260408_industrial_tif/industrial_tif_value_capture.csv") %>% read_csv() %>% janitor::clean_names()
@@ -92,7 +93,7 @@ The tradeoff here is that the roads in the industrial park are treated just like
 
 ## A note on Assessed Value
 
-Part of the way the city changes the distribution of tax around the city is through reassessments. As mentioned above, reassessment can be triggered by changes to a property (i.e. building something new) or over time. Periodically the city is reassessed as a whole to account for properties that have not been improved and to change which properties are taxed more based on market value and other factors. Assessment as a whole is beyond the scope of this post, however it is interesting to look at the assessed value of industrial TIF properties and how it works with the tax cap.  
+Part of the way the city changes the distribution of tax around the city is through reassessments. As mentioned above, a reassessment can be triggered by changes to a property (i.e. building something new) or thought the passage of time. Periodically, the city is reassessed as a whole to account for properties that have not been improved and to change which properties are taxed more based on market value and other factors. Assessment as a whole is beyond the scope of this post, however it is interesting to look at the assessed value of industrial TIF properties and how the value of the properties in the TIF work with the tax cap.  
 ```{r assessed value}
 
 reassessment_years<- c(2018.5, 2022.5)
@@ -107,7 +108,7 @@ tif_dat %>%
     scale_y_continuous(labels = scales::label_currency())   + 
     labs(x = "Year", 
     y = "Assessed Value ($)", 
-    caption = "Grey Bars represent reassessments") + 
+    caption = "Grey bars represent reassessments") + 
         theme_bw()
   
 
@@ -120,10 +121,10 @@ tif_dat %>%
     scale_y_continuous(labels = scales::label_currency())   + 
     labs(x = "Year", 
     y = "Tax Rate (per $1000)", 
-    caption = "Grey Bars represent reassessments") + 
+    caption = "Grey bars represent reassessments") + 
         theme_bw()
   
 
 ```
 
-As the chart above show, the TIF assessed value of the properties in the Industrial TIF have grown $12,568,651, almost doubling since 2013. The tax revenue put into the TIF (half of the total tax value) from these properties has increase from ~$5,000 to ~$50,000. This indicates real growth. It also shows the impact of the tax cap - as revenues go up (growth in the industrial park) the tax rate goes down. This limits the ability of the city to capture that growth and return even more value to the taxpayer.  
+As the charts above show, the TIF assessed value of the properties in the Industrial TIF have grown $12,568,651, almost doubling since 2013. The tax revenue put into the TIF (half of the total tax value) from these properties has increase from ~$5,000 to ~$50,000. This indicates real growth. It also shows the impact of the tax cap - as revenues go up (growth in the industrial park) the tax rate goes down. This limits the ability of the city to capture that growth and return even more value to the taxpayer.  
