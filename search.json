@@ -12,111 +12,82 @@
     ]
   },
   {
-    "objectID": "Franklin Facts/20260221_road_network_length.html",
-    "href": "Franklin Facts/20260221_road_network_length.html",
-    "title": "The Long And Winding Road",
+    "objectID": "Franklin Facts/20260114_zone_tax_val.html",
+    "href": "Franklin Facts/20260114_zone_tax_val.html",
+    "title": "Tax Base by Zone",
     "section": "",
-    "text": "Talk to any person in town and they will tell you that the roads need to be repaired. The state of Franklin’s roads represent years of underinvestment, but how big is the problem we are talking about? The best place to look for the answer to this question is Franklin’s Capital Improvement Plan (CIP). The most recent plan (drafted in 2024) identifies 21 roads that are in need of repair. This includes places like Davis street, Prospect street and Cheney Hill. Note that the CIP identifies other capital needs as well; for example fire trucks and building repairs.",
+    "text": "Zoning and the connection to the tax base\nDuring the election campaign, most people I talked to were concerned with their taxes. Residents want to know how much money is being raised, where it is being spent, and why taxes never seem to go down.\nI believe that in a tax-capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base.\nI pulled tax records from our AxisGIS geographic information system for the city and combined it with zoning data to get a sense of where our current tax base is coming from. These data are not perfect, but I believe they are good enough for a good-faith discussion.\nThe table below shows where our tax base comes from. I’m assuming all property is taxed equally, at the last municipal rate 0.01763 , or $17.63 per $1000. I also assume that city property and conservation land is taxed. There are areas that are not zoned in this dataset, and some of these properties have been reassessed since I pulled this data.\n\n\n\n\n\n\n\n\n\nWe have close to 3500 properties on the tax rolls, which generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city’s operation.\nThe FY26 budgeted revenues adopted by the council are $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, it shows that our dataset is still close enough to draw some conclusions.\nThe difference between the budgeted revenues and the estimated tax revenues is a limitation in using publicly available data, not mismanagement by the city.\n\n\nResidential Taxes Contribute the Majority of City Taxes\nSplitting the estimated tax value of Franklin’s properties by zone shows where the majority of the tax revenue lies.\n\n\n\n\n\n\n\n\n\nWe can show these data graphically as well.\n\n\n\n\n\n\n\n\n\nThis table shows that the majority of the city’s revenue is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community.\nOne way to offset the residential tax burden is to grow the commercial tax base. In the chart above, the combined commercial and industrial tax contribution is less than 5%. This is not an argument to build factories on every square inch of space in the city.\nIt is also worth noting that the tax value of conservation land throughout the city is more than 10%. This underscores our community’s investment in conservation. I believe this is good, it preserves the natural beauty of Franklin for future generations.\n\n\nIndustrial/Commercial Properties Pay the Most Tax Per Property\nOne other way to look at these data is to calculate the average tax per property for each zone category. To calculate this, divide the total tax value in a given zone type by the number of properties in that zone type. This assumes that every property in a given zone type is equal – it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type.\n\n\n\n\n\n\n\n\n\nThis chart shows that industrial and high- and low-density commercial properties already contribute more tax on average than an individual residential property. It also shows that, on average, properties in the lake protection district (around Webster Lake) are taxed a bit higher than other residential properties, but not by much. Finally, this chart shows that multi-family housing properties are, on average, taxed relatively low.\nPutting all of this information together suggests that small increases to the number industrial and commercial properties could have a meaningful impact on city revenues.\nAs we head into budget season and budget visioning, a robust understanding of taxes – the main source of revenue for the city – is key for council and public decision making. Below is an interactive zoning map. If you’d like to talk about these data, calculations, or conclusions, feel free to email me at sjacobson@franklinnh.gov.\n\n\nInteractive Zoning Map",
     "crumbs": [
       "City Council",
       "Franklin Facts",
-      "The Long And Winding Road"
+      "Tax Base by Zone"
     ]
   },
   {
-    "objectID": "Franklin Facts/20260221_road_network_length.html#all-roads-lead-to-franklin",
-    "href": "Franklin Facts/20260221_road_network_length.html#all-roads-lead-to-franklin",
-    "title": "The Long And Winding Road",
-    "section": "All Roads Lead to …Franklin",
-    "text": "All Roads Lead to …Franklin\nThe city of Franklin is fairly small, only 29.1 square miles. and yet it has hundreds of roads. Open Street Map (OSM) is an open-source, community-editable map. It’s kind of like wikipedia for place information and is used by both private and public entities as a source of geographical information.\nPulling data from OSM we can get a sense for how many roads are in the city and what kinds of roads they are (paved, dirt etc). I’m focusing on surface type for this blog as it is speaks more to the maintenance need. Future posts may look at speed limits for traffic safety, walking paths through the city for non-car based travel or other interesting transit questions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhighway\nNumber of Roads\nTotal Road Length (miles)\n\n\n\n\n\nresidential\n230\n43.60\n\n\n\nunclassified\n49\n20.92\n\n\n\ntertiary\n16\n15.01\n\n\n\nsecondary\n12\n14.30\n\n\n\ntrunk\n50\n6.29\n\n\n\nprimary\n16\n4.34\n\n\nTotal\n—\n373\n104.46\n\n\n\n\n\n\n\nThe map and table above show the distribution of roads by type:\n\nPrimary Roads - Highways. Example: Route 3 coming into town.\nSecondary Roads - Lesser traveled highways. Example: State Route 127.\nTertiary Roads - Main roads that connect portions of the City. Example: Prospect Street.\nTrunk Roads - Main travel roads through the city. Example: Central Street.\nResidential Roads - Neighborhood streets. Example. Beech Street.\nUnclassified- Not currently classified in OSM.\n\nMost of the roads in Franklin are residential however the primary and trunk roads are probably most heavily traveled.",
-    "crumbs": [
-      "City Council",
-      "Franklin Facts",
-      "The Long And Winding Road"
-    ]
-  },
-  {
-    "objectID": "Franklin Facts/20260221_road_network_length.html#the-scale-of-franklins-roads",
-    "href": "Franklin Facts/20260221_road_network_length.html#the-scale-of-franklins-roads",
-    "title": "The Long And Winding Road",
-    "section": "The Scale of Franklin’s Roads",
-    "text": "The Scale of Franklin’s Roads\nFranklin has more than 350 roads, totaling more than 100 miles of roadway. This demonstrates the scale of the maintenance burden in the city. Some maintenance of the higher level roads (e.g. Primary) may fall to the state. I don’t have a true cost of road repair by this classification system, but 100 miles of anything is going ot be expensive. Another thing to keep in mind is that these expenses are recurring - roads are “consumed” by the traffic on them. The city needs to be budgeting for routine upkeep across the entire network.\nOSM also provides the surface type of the road. The material a road is made from impacts how much it can be used, who can use it, it’s lifespan, and how much it takes to repair or replace it. These data are even less well documented than the road type, but it helps outline the scale of the Franklin’s roads.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsurface\nNumber of Roads\nTotal Road Length (miles)\n\n\n\n\n\nasphalt\n257\n80.77\n\n\n\nunpaved\n24\n8.47\n\n\n\nMissing Description\n92\n15.22\n\n\nTotal\n—\n373\n104.46\n\n\n\n\n\n\n\nThis suggests that the city has at least 80.77 miles of road to repave. This will take time, money and concerted effort. The time to start is now!",
-    "crumbs": [
-      "City Council",
-      "Franklin Facts",
-      "The Long And Winding Road"
-    ]
-  },
-  {
-    "objectID": "City Council/Committees/20260119_police.html",
-    "href": "City Council/Committees/20260119_police.html",
-    "title": "Feb 4, 2026 Police",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "City Council",
     "section": "",
-    "text": "Location: Franklin Public Library\n\n\nDate: February 4, 2026\n\n\nTime: 6:00 PM\n\n\nAgenda\nBelow is what we intend to discuss. Prior to the meeting, the committee will tour the police station.\n\nChair Appointment\nSet meeting schedule\nOther Business\n\nDetail rate\nStaffing\nPay\nUpcoming union contract negotiations",
-    "crumbs": [
-      "City Council",
-      "Committees",
-      "Feb 4, 2026 Police"
-    ]
+    "text": "City Council\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Created - Oldest\n      \n      \n        Created - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCreated\n\n\n\nModified\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nApr 11, 2026\n\n\nApr 11, 2026\n\n\nApril 13, 2026 - School Budget Explainer\n\n\nHow to read and interpret the school budget\n\n\n\n\n\n\nApr 5, 2026\n\n\nApr 5, 2026\n\n\nApril 6, 2026 City Council\n\n\nPreview of topics for 4/6/2026 City Council meeting\n\n\n\n\n\n\nApr 5, 2026\n\n\nApr 5, 2026\n\n\nApril 9, 2026 Legislative\n\n\nLegislative Committee meeting covering short term rental regulation\n\n\n\n\n\n\nMar 22, 2026\n\n\nMar 22, 2026\n\n\nMarch 23, 2026 - Municipal Budget Explainer\n\n\nHow to read and interpret the City Budget\n\n\n\n\n\n\nNo matching items\n\n\n\nFranklin Facts\n\n\n\n\n\n\n\n\n\n\nThe Value of the Industrial Park TIF\n\n\n\nTIF\n\nTax Cap\n\n\n\nHow much money has the industrial park tax increment finance (TIF) district generated over the last 13 years?\n\n\n\n\n\nApr 8, 2026\n\n\nSam Jacobson\n\n\n\n\n\n\n\n\n\n\n\n\nThe Long And Winding Road\n\n\n\nRoads\n\nCapital Improvements\n\n\n\nHow much road footage does Franklin have.\n\n\n\n\n\nFeb 22, 2026\n\n\nSam Jacobson\n\n\n\n\n\n\n\n\n\n\n\n\nHow Much Property Does the City Own?\n\n\n\nZoning\n\nProperty tax\n\n\n\nHow much property does the city own, where is it, and how valuable is it?\n\n\n\n\n\nJan 28, 2026\n\n\nSam Jacobson\n\n\n\n\n\n\n\n\n\n\n\n\nTax Base by Zone\n\n\n\nZoning\n\n\n\nLooking at all the property in the city, how much tax base is in each zoned category.\n\n\n\n\n\nJan 14, 2026\n\n\nSam Jacobson\n\n\n\n\n\nNo matching items\n\n\n\nOther Posts\n\n\n\n\n\n\n\n\n\n\n2026 Budget Visioning Reflection\n\n\n\nReflection\n\n\n\n2026 Budget Visioning Reflection\n\n\n\n\n\nJan 25, 2026\n\n\nSam Jacobson\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "City Council/Committees/20260304_police.html",
-    "href": "City Council/Committees/20260304_police.html",
-    "title": "Mar 4, 2026 Police",
-    "section": "",
-    "text": "Location: Franklin Public Library\n\n\nDate: March 4, 2026\n\n\nTime: 5:30 PM\n\n\nAgenda\nBelow is what we intend to discuss.\n\nReview minutes from the February 4 meeting.\nFollow up discussion on pay scales\nOther business\n\n\nHow Sam Sees It:\nI expect the big point of discussion this meeting will be pay scales. At the last meeting, the Chief presented a plan to change the pay scales of the entire department in an effort to retain officers. Members of the Committee and City Manager wanted to see additional backup that the department could afford to change pay scales mid year while staying within budget. To make this change, the Chief of Police wanted to close open positions, an approach that may work in the short term but can lead to burnout via under-staffing. As shown in the fire department, under-staffing can lead to excessive overtime, which may cost more than hiring additional officers. Additionally, solely changing pay scales in the police department may trigger resentment between other departments.\nI’m hopeful we’ll have some additional budget backup provided to discuss, so that the Police committee can make a strong recommendation to the broader council. Right now, I understand the need to raise pay to retain officers, but am not convinced we can afford to.",
-    "crumbs": [
-      "City Council",
-      "Committees",
-      "Mar 4, 2026 Police"
-    ]
-  },
-  {
-    "objectID": "City Council/Committees/20260405_leg.html#agenda-breakdown",
-    "href": "City Council/Committees/20260405_leg.html#agenda-breakdown",
-    "title": "April 9, 2026 Legislative",
+    "objectID": "City Council/Committees/20260214_leg.html#agenda-breakdown",
+    "href": "City Council/Committees/20260214_leg.html#agenda-breakdown",
+    "title": "Feb 26, 2026 Legislative",
     "section": "Agenda Breakdown",
-    "text": "Agenda Breakdown\n\n1. Minute Approval\nBrenda Demers drafted minutes from the March 19, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n2. Short Term Rentals (STRs)\nDirector Chunn will present an updated STR ordinance draft based on the discussion at the March 19 meeting. These will be posted as soon as possible.\nDrafts presented at the March 19 Meeting (note these have not been updated)\n\nDraft STR Ordinance\nDraft STR Regulation\n\nCurrently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO).\nAt the March 19 meeting, the committee continued discussing a permit process for STRs. Key changes from the last meeting include:\n\nSeptic inspections may be completed by a certified inspector in addition to NH department of environmental services (NHDES).\nShould there be an insurance requirement as part of the certificate?\nFine collection (leins)?\nExpand certificates to include condos\nAllow property managers to qualify as owner-in-residence (OIR)\nIncrease the number fo days for OIR\nStiffen penalties for unaddressed violations\nChanging parking to require at least one parking spot\n\n\nHow Sam Sees It:\nDuring the March 19 meeting, Director Chunn presented a strong first draft. We discussed a series of changes, and I expect to have a draft complete ready to bring to the entire council in May.\n\n\n\n3. Other Business\nAs part of February 26 Legislative meeting, Councilor Warner requested to share his opinion and research on the tax cap portion of the charter at this meeting. We will not be discussing it in depth.",
+    "text": "Agenda Breakdown\n\n1. Minute approval\n\nCouncilor Warner drafted minutes from the Jan 27, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n\n2. Event permit reform\n\nIn the old business of the January 2026 City Council meeting, changes to the event permitting process were sent to the legislative committee for review. There are a series of changes to be considered:\n\nDefining a special event permit in the code. This is the crux of the City Manager’s referral. The alcohol use section of the city code does not specify where a permit should be picked up, which might be confusing. The after-hours use of beaches/parks permits are handled through the police department now.\nThe proposed alcohol permit appeal mechanism is not clear; sometimes appeals go to the broader council, and sometimes they are not defined.\n\nThe lawyer recommends the use of “alcohol” vs. “intoxicating liquor” for more clarity in the code.\n\n\n\nHow Sam Sees It:\n\nI think this section of the city code mistakes the functions of the City Council and the committee composed of the experts (City Manager, Fire Chief, Police Chief, Parks and Rec Head) in the city. Sections C and D insert the City Council as both the approver and appellate body - which doesn’t make sense to me. As proposed, one could imagine a situation where a group applies for a permit, that permit is denied by the City Council for a non-technical reason, then the group appeals that decision back to…the City Council, where they get denied again. I think it makes more sense to keep the City Council as the group that is appealed to after the committee of experts weighs in. That way it is a fair opportunity to appeal.\nSimilarly, I don’t believe the Mayor should be a part of the committee of experts. The point of this committee is to evaluate the safety, preparation, and planning of the organization’s use of alcohol. The Mayor does not have any technical training to evaluate such plans. The Mayor would have time to weigh in on the process during an appeal process - assuming the City Council stays as the appellate body. As proposed, the Mayor gets two chances to influence this decision.\n\n\n\n\n3. Short Term Rentals (STR)\nCurrently, the city does not have a Short Term Rentals (STR) ordinance. Short term rentals are things like AirBnB’s or Vacation Rentals By Owner (VRBO). A single family home is used for a portion of time in a way that was not really contemplated or zoned.\n\nHow Sam Sees It:\nSTRs are a way for some homeowners to make more money from their property; however, their use can stress city infrastructure, change the character of neighborhoods, and warp property assessments.\nThe city of Franklin needs some kind of regulation of STRs for clarity, in ways that will not expose the city to litigation. The director of planning and zoning is drafting an STR policy for review, as well as compiling comparative studies of other communities like Meredith. A quick Google search shows that communities regulate STRs differently:\n\nMeredith\n\nProvides definitions as less than 30 days of occupancy for a rental\nSeparates owner-in-residence vs. not\nPuts limits on number of people per bedroom (2)\nAdds septic, fire, and parking checks\nOwner contact info provided\n\nWolfboro\n\nLimits guests per bedroom (2) + 2 additional guests\nProvides for fire, septic and parking checks\nRequires NH Meals and rooms tax ID\nOwner contact info provided\n\nBerlin\n\nNot addressed (as far as I can tell)\n\n\nRecent changes to the Accessory Dwelling Unit (ADU) definitions in the city code make them easier to construct, which has the potential to make STRs more prolific in the community. I see STRs as something that needs to be regulated by the city.\n\n\n\n4. Charter changes\nCouncilor Warner sent a series of potential charter changes to bring to the broader Council from the August 2024 Legislative meeting. These charter changes will have to be added to the ballot to be adopted and are summarized as follows:\n\nC-2, Moving Wards into ordinance\nC-3, Changing councilmen to councilors\nC-7, Change election day to align with state/national elections\nC-13, Change Board of Education to School Board\nC-16, Tie votes/disputed elections\nC-17, Revise duties of Supervisor of the Checklist\nC-32, Reset or adjust the tax cap\nC-53, Conflict of interest\n\n\nHow Sam Sees It:\nEight changes to the charter (though some are more straightforward than others) are likely too much for a single year. I’d like to work as a legislative committee to bring three recommendations for ballot additions to the broader council in time for elections this year. I think this should be two “find-and-replace” changes (e.g. Board of Education to School Board) and one substantive change (e.g. Reset or adjust the tax cap). Note that the specific wording of any ballot change would likely have to come through legislative.\n\n\n\n5. Economic development committee\nDuring the July 16, 2025 legislative committee meeting, there was a discussion about creating an economic development committee. A proposal was forwarded to the city’s lawyer and no response (to my knowledge) has been received.\nI see no need to move on this until we receive a report back from legal.\n\n\n6. Tax cap referral\nDuring the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the charter defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council’s actions might encumber the following council and requested referral to the city’s lawyer.\nI see no need to move on this until we receive a report back from legal.\n\n\n7. Winter parking\nPlanning and Zoning director Chunn agreed to present a parking study he had conducted to support winter parking ordinance changes. Since we are almost through winter (and any action form legislative is unlikely to take effect until after winter parking has been resolved), I think we should pick this up at the May 21 meeting.\n\n\n8. Other business\nNo other business anticipated at this time.",
     "crumbs": [
       "City Council",
       "Committees",
-      "April 9, 2026 Legislative"
+      "Feb 26, 2026 Legislative"
     ]
   },
   {
-    "objectID": "City Council/Committees/20260119_leg.html#old-business",
-    "href": "City Council/Committees/20260119_leg.html#old-business",
-    "title": "Jan 27, 2026 Legislative",
-    "section": "Old Business",
-    "text": "Old Business\n\nPermit process review\n\nThis item deals with the permit process issues identified in January. Currently, permits to use city land/facilties go through a review by various department heads and the City Manager. In January, the Mayor was added to this group of people. Also in January, the City Manager recommended this come back to legislative as the permit process did not have a place in the charter.\n\n\n\nWinter parking ordinance\n\nIn November of last year, there was a winter parking forum with various proposed changes kicked to legislative. My memory is that these were still outstanding.\n\n\n\nEconomic development committee\n\nCouncilor Johnston recalled a discussion to establish an economic development city committee. This discussion was before the legislative committee approximately 1 year ago, when Councilor Johnston was working with Councilor Zinke. This agenda item seeks to figure out where that left off.\n\n\n\nHuman Resources (HR) position description\n\nIn the 2026 budget, the City Council included money for a part time HR position, as there currently is not an HR person in the city. This position has not been posted because the City Council kicked a position description for the HR position to the legislative committee. This agenda item will confirm the status of the position description.",
+    "objectID": "City Council/Committees/2026 Committee assignments.html",
+    "href": "City Council/Committees/2026 Committee assignments.html",
+    "title": "2026-2027 Committee Assignments",
+    "section": "",
+    "text": "With each election, the committee assignments of councilors can change. Many (though not all) committees that are appointed by the Mayor have their root in the city charter. Most line up with a professional department head (e.g. Fire committee works closely with the fire chief). Committee meetings are the best way for public to engage/observe the discussion of department specific issues. Each committee makes regular reports to the broader council on their business and recommends department specific actions. Below is a list of the committees, description and current members. If you have questions about something that comes before that committee, contact those councilors!\nThese committees are where there is often frank, focused discussion on issues facing a given department. Many have not met in more than 6 months, a practice I hope changes under Mayor Morrill.\n\nFinance\nThe Finance Committee deals with the finances of the city. Think is the city on budget for the year, any foreseeable budget/financial related issues that should be reviewed before being brought to the broader council. THe last meeting occurred in January 2026 (with the new members)!\n\nDelaney Carrier\nAl Warner\nBen Forge\n\n\n\nCity School Liaison\nThe City School Liaison Committee is joint between the city and school board and is meant to enhance communication between both bodies. It has not met in years. The last meeting I can find information from is November 2021.\n\nSusan Hallett-Cook\nEd Prive\nTom Boyce\n\n\n\nPolice\nThe Police Committee works with the chief of police to review department budget and policies. Think things like canine units and body camera usage. The last meeting I can find information from is May 2025.\n\nBen Forge\nEd Prive\nSam Jacobson\n\n\n\nJoint Finance\nThe Joint Finance Committee is made up of 3 City and 3 School Board members. It is intended to enhance communication between the school board and city regarding school finances. The last meeting I can find information from is October 2025.\n\nAl Warner\nDelaney Carrier\nJustine Hoppe\n\n\n\nLegislative\nThe Legislative Committee deals with city ordinances and policies. Think things like the winter parking ban, event permitting etc. The last meeting I can find information from is September 2025.\n\nSam Jacobson\nTim Johnston\nAl Warner\n\n\n\nMunicipal Services\nThe Municipal Services Committee works with the director of municipal services to review department budgets and policy. THink things like road paving schedule, painting needs and capital needs for the department. The last meeting I can find information from is September 2025.\n\nTim Johnston\nDelaney Carrier\nTom Boyce\n\n\n\nFire\nThe Fire Committee works with the fire Chief to review department budgets and policy. Think things like ambulance rates, inspection protocols, and capital needs. The last meeting I can find information from is May 2025.\n\nTom Boyce\nAl Warner\nJustine Hoppe\n\n\n\nParks and Recreation\nThe Parks and Recreation Committee works with the director of parks and recreation to review department budgets and policies. think things like events on city property and Bessie Rowell usage. The last meeting I can find information from is August 2024.\n\nJustine Hoppe\nSam Jacobson\nSusan Hallett-Cook\n\n\n\nCapital Improvements Plan\nThe Capital Improvements Plan (CIP) Committee reviews and recommends changes to the city-wide capital improvements plan. The CIP is a list of all of the repair projects in the city.The last meeting I can find information from is December 2024.\n\nEd Prive\nBen Forge\nSusan Hallett-Cook\n\n\n\nPlanning\nThe mayor appoints one member of the planning board. This councilor joins teh other members of the community that are on the planning board to review applications before the planning board. The Planning board deals with subdivisions and site plans, land use regulations, and creating master plans for the city. The last meeting I can find information from is December 2025.\n\nDelaney Carrier\nTim Johnston (Alternate). Tim may step in when Delaney cannot attend a meeting.\n\n\n\nFranklin Business & Industrial Development Corporation\nThe Franklin Business & Industrial Development Corporation (FBIDC)promotes the expansion of the economic base of the Greater Franklin area through targeted strategies to make the community an increasingly attractive location to conduct business, work and live. The mayor makes one appointment to this organization. FBIDC is similar to a Chamber of Commerce. The last meeting was in January 2026.\n\nSam Jacobson",
     "crumbs": [
       "City Council",
       "Committees",
-      "Jan 27, 2026 Legislative"
+      "2026-2027 Committee Assignments"
     ]
   },
   {
-    "objectID": "City Council/Committees/20260119_leg.html#new-business",
-    "href": "City Council/Committees/20260119_leg.html#new-business",
-    "title": "Jan 27, 2026 Legislative",
-    "section": "New Business",
-    "text": "New Business\n\nTax cap referral\n\nDuring the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the charter defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council’s actions might encumber the following council and requested referral to the legislative committee.\n\n\n\nEnumerating changes to charter and code\n\nCouncilor Warner raised this agenda item via email. I am unsure to what he is referring.\n\n\n\nChanges to ordinance approval process\n\nDuring the January 20, 2026 City Council workshop, the City Manager asked that the process for ordinance changes be reviewed.",
+    "objectID": "City Council/Committees/20260119_pr.html",
+    "href": "City Council/Committees/20260119_pr.html",
+    "title": "Jan 28,2026 Parks and Recreation",
+    "section": "",
+    "text": "Location: Bessie Rowell Community Center\n\n\nDate: January 28, 2026\n\n\nTime: 5:30 PM\n\n\nRough Agenda\nAs of Tuesday Jan 20, Councilor Hoppe finalized the legislative committee meeting agenda. Below is what we plan to discuss:\n\nChair Appointment\nSet 2026 meeting schedule\nParks and rec director replacement\n\n\nDirector Alpers is leaving for another opportunity in mid February. The council will need to work with the City Manager to find a replacement.\n\n\nFY2027 Budget Update",
     "crumbs": [
       "City Council",
       "Committees",
-      "Jan 27, 2026 Legislative"
+      "Jan 28,2026 Parks and Recreation"
     ]
   },
   {
-    "objectID": "City Council/Committees/20260315_leg.html#agenda-breakdown",
-    "href": "City Council/Committees/20260315_leg.html#agenda-breakdown",
-    "title": "March 19, 2026 Legislative",
-    "section": "Agenda Breakdown",
-    "text": "Agenda Breakdown\n\n1. Minute Approval\nBrenda Demers drafted minutes from the February 26, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n2. Short Term Rentals (STRs)\nDirector Chunn will present an updated STR ordinance draft for review at the March 19 meeting. These are posted below.\n\nDraft STR Ordinance\nDraft STR Regulation\n\nCurrently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO).\nAt the last meeting, the committee discussed creating a permit process for STRs. Key questions from the last meeting included:\n\nWhat should the fee for STR permits be, and how long should they last?\nShould STR permits come through the Zoning Board of Adjustment?\nIn which zones/portions of the city should STRs be allowed?\n\n\nHow Sam Sees It:\nAt the last meeting, Director Chunn presented a couple of good examples of STR regulation from Meredith and Laconia. Right now, I think we need some kind of licensing mechanism, and Meredith’s approach seems to make sense. Key points of this are:\n\nAnnual permitting with a fee attached. This fee offsets the inspection and response work conducted by the city for STRs.\nSTR permit applications go through the Zoning Board, which means abutters are notified, and fire, safety, and septic inspections are executed as part of the application process. Going through the Zoning Board also means the group of people reviewing permit applications have resident representation and experience reviewing permits.\nSTRs allowed throughout the city (as they currently are). I don’t think it’s fair to require some sections of the city to get permits while others do not.\n\nI still believe STRs are a way for some homeowners to make more money from their property; however, their use can stress city infrastructure, change the character of neighborhoods, and warp property assessments.\nFundamentally, the use of STRs changes the value of a property; it is no longer just a home, it now generates rental income. Our assessor does not seem to account for that in their home assessments, so I think the city should capture a portion of that additional income.\nCreating a permit for STRs allows the city of Franklin to understand the scope of STR use. Visibility to city enables an informed discussion on whether the city should promote or demote their usage. The city of Franklin needs some kind of regulation of STRs for clarity, in ways that will not expose the city to litigation.\n\n\n\n3. Other Business\nAs part of the last meeting, Councilor Warner requested to share his opinion and research on the tax cap portion of the charter at this meeting. We will not be discussing it in depth.",
+    "objectID": "City Council/Committees/20260315_pr.html",
+    "href": "City Council/Committees/20260315_pr.html",
+    "title": "March 17, 2026 Parks and Recreation",
+    "section": "",
+    "text": "Location: Bessie Rowell Community Center\n\n\nDate: March 17, 2026\n\n\nTime: 5:00 PM\n\n\nAgenda\nBelow is what we plan to discuss:\n\nApprove minutes from 1/28/26 Meeting\n\n\nWe did not have a quorum at the initial meeting of the Parks and Recreation Committee. An additional meeting was held on February 2, prior to the February City Council meeting where motions were made. I expect to review and approve these minutes as well.\n\n\nIntroduction of the new Parks and Recreation Director\nRec Desk software overview\n\n\nI am not sure what this agenda item covers at this time.\n\n\nProcedure and policy (parks) overview\n\n\nI am not sure what this agenda item covers at this time.\n\n\nUpcoming park based events\nLate items",
     "crumbs": [
       "City Council",
       "Committees",
-      "March 19, 2026 Legislative"
+      "March 17, 2026 Parks and Recreation"
+    ]
+  },
+  {
+    "objectID": "City Council/Workshops/20260322_muni_budget.html",
+    "href": "City Council/Workshops/20260322_muni_budget.html",
+    "title": "March 23, 2026 - Municipal Budget Explainer",
+    "section": "",
+    "text": "Location: Franklin Public Library\n\n\nDate: March 23, 2026\n\n\nTime: 6:00 PM\nLink to agenda and packet\nThis workshop is a presentation from the city finance director how to read the municipal budget. As we get into budget season, this will get the councilors onto the same page and hopefully reduce confusion.\nIf you’ve ever looked at the city budget and tried to figure out the structure, this could be the workshop for you!\nThere is an additional item on the agenda to set a public hearing about the Eversource legal settlement. The City lost a judgment related to over-assessed property owned by a public utility (Eversource), and has to abate the taxes collected. This was not included in the 2026 budget and therefore the council has to figure out another source of money to pay.",
+    "crumbs": [
+      "City Council",
+      "Workshops",
+      "March 23, 2026 - Municipal Budget Explainer"
     ]
   },
   {
@@ -682,82 +653,207 @@
     ]
   },
   {
-    "objectID": "City Council/Workshops/20260322_muni_budget.html",
-    "href": "City Council/Workshops/20260322_muni_budget.html",
-    "title": "March 23, 2026 - Municipal Budget Explainer",
-    "section": "",
-    "text": "Location: Franklin Public Library\n\n\nDate: March 23, 2026\n\n\nTime: 6:00 PM\nLink to agenda and packet\nThis workshop is a presentation from the city finance director how to read the municipal budget . As we get into budget season, this will get the councilors onto the same page and hopefully reduce confusion.\nIf you’ve ever looked at the city budget and tried to figure out the structure, this could be the workshop for you!\nThere is an additional item on the agenda to set a public hearing about the Eversource legal settlement. The City lost a judgment related to over-assessed property owned by a public utility (Eversource), and has to abate the taxes collected. This was not included in the 2026 budget and therefore the council has to figure out another source of money to pay.",
+    "objectID": "City Council/Workshops/20260413_school_budget.html#other-agenda-items",
+    "href": "City Council/Workshops/20260413_school_budget.html#other-agenda-items",
+    "title": "April 13, 2026 - School Budget Explainer",
+    "section": "Other Agenda Items",
+    "text": "Other Agenda Items",
     "crumbs": [
       "City Council",
       "Workshops",
-      "March 23, 2026 - Municipal Budget Explainer"
+      "April 13, 2026 - School Budget Explainer"
     ]
   },
   {
-    "objectID": "City Council/Committees/20260315_pr.html",
-    "href": "City Council/Committees/20260315_pr.html",
-    "title": "March 17, 2026 Parks and Recreation",
-    "section": "",
-    "text": "Location: Bessie Rowell Community Center\n\n\nDate: March 17, 2026\n\n\nTime: 5:00 PM\n\n\nAgenda\nBelow is what we plan to discuss:\n\nApprove minutes from 1/28/26 Meeting\n\n\nWe did not have a quorum at the initial meeting of the Parks and Recreation Committee. An additional meeting was held on February 2, prior to the February City Council meeting where motions were made. I expect to review and approve these minutes as well.\n\n\nIntroduction of the new Parks and Recreation Director\nRec Desk software overview\n\n\nI am not sure what this agenda item covers at this time.\n\n\nProcedure and policy (parks) overview\n\n\nI am not sure what this agenda item covers at this time.\n\n\nUpcoming park based events\nLate items",
+    "objectID": "City Council/Workshops/20260413_school_budget.html#setting-a-hearing-for-the-payment-of-eversource-litigation",
+    "href": "City Council/Workshops/20260413_school_budget.html#setting-a-hearing-for-the-payment-of-eversource-litigation",
+    "title": "April 13, 2026 - School Budget Explainer",
+    "section": "1. Setting a hearing for the payment of eversource litigation",
+    "text": "1. Setting a hearing for the payment of eversource litigation\n\nAt the city council meeting on April 6, 2026, the council rejected the City manager’s proposal to use money recovered from the industrial park TIF (moved to the capital improvements plan [CIP] - roads budget). This agenda item sets a public hearing for the new plan - using restricted fund balance to fund the litigation payment.\nUse of restricted fund balance in this way requires starting each year in a ~70,000 deficit.\n\n\nHow Sam See’s it\n\nI think we should set this public hearing.\nStarting each year in a deficit is poor financial planning. I have yet to hear how we might pay for this recurring expense.\nThe council has had months to come up with alternate ways to pay this expense, unsuccessfully.",
     "crumbs": [
       "City Council",
-      "Committees",
-      "March 17, 2026 Parks and Recreation"
+      "Workshops",
+      "April 13, 2026 - School Budget Explainer"
     ]
   },
   {
-    "objectID": "City Council/Committees/20260119_pr.html",
-    "href": "City Council/Committees/20260119_pr.html",
-    "title": "Jan 28,2026 Parks and Recreation",
-    "section": "",
-    "text": "Location: Bessie Rowell Community Center\n\n\nDate: January 28, 2026\n\n\nTime: 5:30 PM\n\n\nRough Agenda\nAs of Tuesday Jan 20, Councilor Hoppe finalized the legislative committee meeting agenda. Below is what we plan to discuss:\n\nChair Appointment\nSet 2026 meeting schedule\nParks and rec director replacement\n\n\nDirector Alpers is leaving for another opportunity in mid February. The council will need to work with the City Manager to find a replacement.\n\n\nFY2027 Budget Update",
+    "objectID": "City Council/Workshops/20260413_school_budget.html#leasing-river-road-acreage-to-brent-fife-to-farm",
+    "href": "City Council/Workshops/20260413_school_budget.html#leasing-river-road-acreage-to-brent-fife-to-farm",
+    "title": "April 13, 2026 - School Budget Explainer",
+    "section": "2. Leasing River Road Acreage to Brent Fife to Farm",
+    "text": "2. Leasing River Road Acreage to Brent Fife to Farm\n\nHistorically this approximately 34 acres of city-owned land has been leased to Brent Fife to farm.\nLease term highlights:\n\none year term of lease\n$25/acre (~$850 total)\nonly agricultural use\n60-day cancellation provision\ncrop harvest protections included in lease\nhazmat (pesticide) outside of label use not allowed\ncity indemnified for injury and/or death\n\nSame lease as in 2025\n\n\nHow Sam See’s it\n\n25$/acre feels low to me. I think we should engage the assessor to see if this is an appropriate rate.\nI understand there may be current use guidance for $25/acre price (RSA 79-A) but I understand that this may be outdated.\nThough this is a small amount of money, every dollar counts for this city.\nThe last lease was signed in May 2025, and so I don’t think there is time pressure to sign this one at this workshop meeting.",
     "crumbs": [
       "City Council",
-      "Committees",
-      "Jan 28,2026 Parks and Recreation"
+      "Workshops",
+      "April 13, 2026 - School Budget Explainer"
     ]
   },
   {
-    "objectID": "City Council/Committees/2026 Committee assignments.html",
-    "href": "City Council/Committees/2026 Committee assignments.html",
-    "title": "2026-2027 Committee Assignments",
-    "section": "",
-    "text": "With each election, the committee assignments of councilors can change. Many (though not all) committees that are appointed by the Mayor have their root in the city charter. Most line up with a professional department head (e.g. Fire committee works closely with the fire chief). Committee meetings are the best way for public to engage/observe the discussion of department specific issues. Each committee makes regular reports to the broader council on their business and recommends department specific actions. Below is a list of the committees, description and current members. If you have questions about something that comes before that committee, contact those councilors!\nThese committees are where there is often frank, focused discussion on issues facing a given department. Many have not met in more than 6 months, a practice I hope changes under Mayor Morrill.\n\nFinance\nThe Finance Committee deals with the finances of the city. Think is the city on budget for the year, any foreseeable budget/financial related issues that should be reviewed before being brought to the broader council. THe last meeting occurred in January 2026 (with the new members)!\n\nDelaney Carrier\nAl Warner\nBen Forge\n\n\n\nCity School Liaison\nThe City School Liaison Committee is joint between the city and school board and is meant to enhance communication between both bodies. It has not met in years. The last meeting I can find information from is November 2021.\n\nSusan Hallett-Cook\nEd Prive\nTom Boyce\n\n\n\nPolice\nThe Police Committee works with the chief of police to review department budget and policies. Think things like canine units and body camera usage. The last meeting I can find information from is May 2025.\n\nBen Forge\nEd Prive\nSam Jacobson\n\n\n\nJoint Finance\nThe Joint Finance Committee is made up of 3 City and 3 School Board members. It is intended to enhance communication between the school board and city regarding school finances. The last meeting I can find information from is October 2025.\n\nAl Warner\nDelaney Carrier\nJustine Hoppe\n\n\n\nLegislative\nThe Legislative Committee deals with city ordinances and policies. Think things like the winter parking ban, event permitting etc. The last meeting I can find information from is September 2025.\n\nSam Jacobson\nTim Johnston\nAl Warner\n\n\n\nMunicipal Services\nThe Municipal Services Committee works with the director of municipal services to review department budgets and policy. THink things like road paving schedule, painting needs and capital needs for the department. The last meeting I can find information from is September 2025.\n\nTim Johnston\nDelaney Carrier\nTom Boyce\n\n\n\nFire\nThe Fire Committee works with the fire Chief to review department budgets and policy. Think things like ambulance rates, inspection protocols, and capital needs. The last meeting I can find information from is May 2025.\n\nTom Boyce\nAl Warner\nJustine Hoppe\n\n\n\nParks and Recreation\nThe Parks and Recreation Committee works with the director of parks and recreation to review department budgets and policies. think things like events on city property and Bessie Rowell usage. The last meeting I can find information from is August 2024.\n\nJustine Hoppe\nSam Jacobson\nSusan Hallett-Cook\n\n\n\nCapital Improvements Plan\nThe Capital Improvements Plan (CIP) Committee reviews and recommends changes to the city-wide capital improvements plan. The CIP is a list of all of the repair projects in the city.The last meeting I can find information from is December 2024.\n\nEd Prive\nBen Forge\nSusan Hallett-Cook\n\n\n\nPlanning\nThe mayor appoints one member of the planning board. This councilor joins teh other members of the community that are on the planning board to review applications before the planning board. The Planning board deals with subdivisions and site plans, land use regulations, and creating master plans for the city. The last meeting I can find information from is December 2025.\n\nDelaney Carrier\nTim Johnston (Alternate). Tim may step in when Delaney cannot attend a meeting.\n\n\n\nFranklin Business & Industrial Development Corporation\nThe Franklin Business & Industrial Development Corporation (FBIDC)promotes the expansion of the economic base of the Greater Franklin area through targeted strategies to make the community an increasingly attractive location to conduct business, work and live. The mayor makes one appointment to this organization. FBIDC is similar to a Chamber of Commerce. The last meeting was in January 2026.\n\nSam Jacobson",
-    "crumbs": [
-      "City Council",
-      "Committees",
-      "2026-2027 Committee Assignments"
-    ]
-  },
-  {
-    "objectID": "City Council/Committees/20260214_leg.html#agenda-breakdown",
-    "href": "City Council/Committees/20260214_leg.html#agenda-breakdown",
-    "title": "Feb 26, 2026 Legislative",
+    "objectID": "City Council/Committees/20260315_leg.html#agenda-breakdown",
+    "href": "City Council/Committees/20260315_leg.html#agenda-breakdown",
+    "title": "March 19, 2026 Legislative",
     "section": "Agenda Breakdown",
-    "text": "Agenda Breakdown\n\n1. Minute approval\n\nCouncilor Warner drafted minutes from the Jan 27, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n\n2. Event permit reform\n\nIn the old business of the January 2026 City Council meeting, changes to the event permitting process were sent to the legislative committee for review. There are a series of changes to be considered:\n\nDefining a special event permit in the code. This is the crux of the City Manager’s referral. The alcohol use section of the city code does not specify where a permit should be picked up, which might be confusing. The after-hours use of beaches/parks permits are handled through the police department now.\nThe proposed alcohol permit appeal mechanism is not clear; sometimes appeals go to the broader council, and sometimes they are not defined.\n\nThe lawyer recommends the use of “alcohol” vs. “intoxicating liquor” for more clarity in the code.\n\n\n\nHow Sam Sees It:\n\nI think this section of the city code mistakes the functions of the City Council and the committee composed of the experts (City Manager, Fire Chief, Police Chief, Parks and Rec Head) in the city. Sections C and D insert the City Council as both the approver and appellate body - which doesn’t make sense to me. As proposed, one could imagine a situation where a group applies for a permit, that permit is denied by the City Council for a non-technical reason, then the group appeals that decision back to…the City Council, where they get denied again. I think it makes more sense to keep the City Council as the group that is appealed to after the committee of experts weighs in. That way it is a fair opportunity to appeal.\nSimilarly, I don’t believe the Mayor should be a part of the committee of experts. The point of this committee is to evaluate the safety, preparation, and planning of the organization’s use of alcohol. The Mayor does not have any technical training to evaluate such plans. The Mayor would have time to weigh in on the process during an appeal process - assuming the City Council stays as the appellate body. As proposed, the Mayor gets two chances to influence this decision.\n\n\n\n\n3. Short Term Rentals (STR)\nCurrently, the city does not have a Short Term Rentals (STR) ordinance. Short term rentals are things like AirBnB’s or Vacation Rentals By Owner (VRBO). A single family home is used for a portion of time in a way that was not really contemplated or zoned.\n\nHow Sam Sees It:\nSTRs are a way for some homeowners to make more money from their property; however, their use can stress city infrastructure, change the character of neighborhoods, and warp property assessments.\nThe city of Franklin needs some kind of regulation of STRs for clarity, in ways that will not expose the city to litigation. The director of planning and zoning is drafting an STR policy for review, as well as compiling comparative studies of other communities like Meredith. A quick Google search shows that communities regulate STRs differently:\n\nMeredith\n\nProvides definitions as less than 30 days of occupancy for a rental\nSeparates owner-in-residence vs. not\nPuts limits on number of people per bedroom (2)\nAdds septic, fire, and parking checks\nOwner contact info provided\n\nWolfboro\n\nLimits guests per bedroom (2) + 2 additional guests\nProvides for fire, septic and parking checks\nRequires NH Meals and rooms tax ID\nOwner contact info provided\n\nBerlin\n\nNot addressed (as far as I can tell)\n\n\nRecent changes to the Accessory Dwelling Unit (ADU) definitions in the city code make them easier to construct, which has the potential to make STRs more prolific in the community. I see STRs as something that needs to be regulated by the city.\n\n\n\n4. Charter changes\nCouncilor Warner sent a series of potential charter changes to bring to the broader Council from the August 2024 Legislative meeting. These charter changes will have to be added to the ballot to be adopted and are summarized as follows:\n\nC-2, Moving Wards into ordinance\nC-3, Changing councilmen to councilors\nC-7, Change election day to align with state/national elections\nC-13, Change Board of Education to School Board\nC-16, Tie votes/disputed elections\nC-17, Revise duties of Supervisor of the Checklist\nC-32, Reset or adjust the tax cap\nC-53, Conflict of interest\n\n\nHow Sam Sees It:\nEight changes to the charter (though some are more straightforward than others) are likely too much for a single year. I’d like to work as a legislative committee to bring three recommendations for ballot additions to the broader council in time for elections this year. I think this should be two “find-and-replace” changes (e.g. Board of Education to School Board) and one substantive change (e.g. Reset or adjust the tax cap). Note that the specific wording of any ballot change would likely have to come through legislative.\n\n\n\n5. Economic development committee\nDuring the July 16, 2025 legislative committee meeting, there was a discussion about creating an economic development committee. A proposal was forwarded to the city’s lawyer and no response (to my knowledge) has been received.\nI see no need to move on this until we receive a report back from legal.\n\n\n6. Tax cap referral\nDuring the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the charter defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council’s actions might encumber the following council and requested referral to the city’s lawyer.\nI see no need to move on this until we receive a report back from legal.\n\n\n7. Winter parking\nPlanning and Zoning director Chunn agreed to present a parking study he had conducted to support winter parking ordinance changes. Since we are almost through winter (and any action form legislative is unlikely to take effect until after winter parking has been resolved), I think we should pick this up at the May 21 meeting.\n\n\n8. Other business\nNo other business anticipated at this time.",
+    "text": "Agenda Breakdown\n\n1. Minute Approval\nBrenda Demers drafted minutes from the February 26, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n2. Short Term Rentals (STRs)\nDirector Chunn will present an updated STR ordinance draft for review at the March 19 meeting. These are posted below.\n\nDraft STR Ordinance\nDraft STR Regulation\n\nCurrently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO).\nAt the last meeting, the committee discussed creating a permit process for STRs. Key questions from the last meeting included:\n\nWhat should the fee for STR permits be, and how long should they last?\nShould STR permits come through the Zoning Board of Adjustment?\nIn which zones/portions of the city should STRs be allowed?\n\n\nHow Sam Sees It:\nAt the last meeting, Director Chunn presented a couple of good examples of STR regulation from Meredith and Laconia. Right now, I think we need some kind of licensing mechanism, and Meredith’s approach seems to make sense. Key points of this are:\n\nAnnual permitting with a fee attached. This fee offsets the inspection and response work conducted by the city for STRs.\nSTR permit applications go through the Zoning Board, which means abutters are notified, and fire, safety, and septic inspections are executed as part of the application process. Going through the Zoning Board also means the group of people reviewing permit applications have resident representation and experience reviewing permits.\nSTRs allowed throughout the city (as they currently are). I don’t think it’s fair to require some sections of the city to get permits while others do not.\n\nI still believe STRs are a way for some homeowners to make more money from their property; however, their use can stress city infrastructure, change the character of neighborhoods, and warp property assessments.\nFundamentally, the use of STRs changes the value of a property; it is no longer just a home, it now generates rental income. Our assessor does not seem to account for that in their home assessments, so I think the city should capture a portion of that additional income.\nCreating a permit for STRs allows the city of Franklin to understand the scope of STR use. Visibility to city enables an informed discussion on whether the city should promote or demote their usage. The city of Franklin needs some kind of regulation of STRs for clarity, in ways that will not expose the city to litigation.\n\n\n\n3. Other Business\nAs part of the last meeting, Councilor Warner requested to share his opinion and research on the tax cap portion of the charter at this meeting. We will not be discussing it in depth.",
     "crumbs": [
       "City Council",
       "Committees",
-      "Feb 26, 2026 Legislative"
+      "March 19, 2026 Legislative"
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "City Council",
-    "section": "",
-    "text": "City Council\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Created - Oldest\n      \n      \n        Created - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nCreated\n\n\n\nModified\n\n\n\nTitle\n\n\n\nDescription\n\n\n\n\n\n\n\n\nApr 5, 2026\n\n\nApr 5, 2026\n\n\nApril 6, 2026 City Council\n\n\nPreview of topics for 4/6/2026 City Council meeting\n\n\n\n\n\n\nApr 5, 2026\n\n\nApr 5, 2026\n\n\nApril 9, 2026 Legislative\n\n\nLegislative Committee meeting covering short term rental regulation\n\n\n\n\n\n\nMar 22, 2026\n\n\nMar 22, 2026\n\n\nMarch 23, 2026 - Municipal Budget Explainer\n\n\nHow to read and interpret the City Budget\n\n\n\n\n\n\nMar 15, 2026\n\n\nMar 18, 2026\n\n\nMarch 19, 2026 Legislative\n\n\nLegislative Committee meeting covering short term rentals\n\n\n\n\n\n\nNo matching items\n\n\n\nFranklin Facts\n\n\n\n\n\n\n\n\n\n\nThe Long And Winding Road\n\n\n\nRoads\n\nCapital Improvements\n\n\n\nHow much road footage does Franklin have.\n\n\n\n\n\nFeb 22, 2026\n\n\nSam Jacobson\n\n\n\n\n\n\n\n\n\n\n\n\nHow Much Property Does the City Own?\n\n\n\nZoning\n\nProperty tax\n\n\n\nHow much property does the city own, where is it, and how valuable is it?\n\n\n\n\n\nJan 28, 2026\n\n\nSam Jacobson\n\n\n\n\n\n\n\n\n\n\n\n\nTax Base by Zone\n\n\n\nZoning\n\n\n\nLooking at all the property in the city, how much tax base is in each zoned category.\n\n\n\n\n\nJan 14, 2026\n\n\nSam Jacobson\n\n\n\n\n\nNo matching items\n\n\n\nOther Posts\n\n\n\n\n\n\n\n\n\n\n2026 Budget Visioning Reflection\n\n\n\nReflection\n\n\n\n2026 Budget Visioning Reflection\n\n\n\n\n\nJan 25, 2026\n\n\nSam Jacobson\n\n\n\n\n\nNo matching items"
+    "objectID": "City Council/Committees/20260119_leg.html#old-business",
+    "href": "City Council/Committees/20260119_leg.html#old-business",
+    "title": "Jan 27, 2026 Legislative",
+    "section": "Old Business",
+    "text": "Old Business\n\nPermit process review\n\nThis item deals with the permit process issues identified in January. Currently, permits to use city land/facilties go through a review by various department heads and the City Manager. In January, the Mayor was added to this group of people. Also in January, the City Manager recommended this come back to legislative as the permit process did not have a place in the charter.\n\n\n\nWinter parking ordinance\n\nIn November of last year, there was a winter parking forum with various proposed changes kicked to legislative. My memory is that these were still outstanding.\n\n\n\nEconomic development committee\n\nCouncilor Johnston recalled a discussion to establish an economic development city committee. This discussion was before the legislative committee approximately 1 year ago, when Councilor Johnston was working with Councilor Zinke. This agenda item seeks to figure out where that left off.\n\n\n\nHuman Resources (HR) position description\n\nIn the 2026 budget, the City Council included money for a part time HR position, as there currently is not an HR person in the city. This position has not been posted because the City Council kicked a position description for the HR position to the legislative committee. This agenda item will confirm the status of the position description.",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "Jan 27, 2026 Legislative"
+    ]
   },
   {
-    "objectID": "Franklin Facts/20260114_zone_tax_val.html",
-    "href": "Franklin Facts/20260114_zone_tax_val.html",
-    "title": "Tax Base by Zone",
+    "objectID": "City Council/Committees/20260119_leg.html#new-business",
+    "href": "City Council/Committees/20260119_leg.html#new-business",
+    "title": "Jan 27, 2026 Legislative",
+    "section": "New Business",
+    "text": "New Business\n\nTax cap referral\n\nDuring the budget workshop meeting on January 20, 2026, Councilor Warner wanted to understand the how the charter defines raising money via taxes or bonds to pay for capital needs. He was concerned that one council’s actions might encumber the following council and requested referral to the legislative committee.\n\n\n\nEnumerating changes to charter and code\n\nCouncilor Warner raised this agenda item via email. I am unsure to what he is referring.\n\n\n\nChanges to ordinance approval process\n\nDuring the January 20, 2026 City Council workshop, the City Manager asked that the process for ordinance changes be reviewed.",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "Jan 27, 2026 Legislative"
+    ]
+  },
+  {
+    "objectID": "City Council/Committees/20260405_leg.html#agenda-breakdown",
+    "href": "City Council/Committees/20260405_leg.html#agenda-breakdown",
+    "title": "April 9, 2026 Legislative",
+    "section": "Agenda Breakdown",
+    "text": "Agenda Breakdown\n\n1. Minute Approval\nBrenda Demers drafted minutes from the March 19, 2026 meeting, which I expect to be approved with minimal changes.\n\n\n2. Short Term Rentals (STRs)\nDirector Chunn will present an updated STR ordinance draft based on the discussion at the March 19 meeting. These will be posted as soon as possible.\nDrafts presented at the March 19 Meeting (note these have not been updated)\n\nDraft STR Ordinance\nDraft STR Regulation\n\nCurrently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO).\nAt the March 19 meeting, the committee continued discussing a permit process for STRs. Key changes from the last meeting include:\n\nSeptic inspections may be completed by a certified inspector in addition to NH department of environmental services (NHDES).\nShould there be an insurance requirement as part of the certificate?\nFine collection (leins)?\nExpand certificates to include condos\nAllow property managers to qualify as owner-in-residence (OIR)\nIncrease the number fo days for OIR\nStiffen penalties for unaddressed violations\nChanging parking to require at least one parking spot\n\n\nHow Sam Sees It:\nDuring the March 19 meeting, Director Chunn presented a strong first draft. We discussed a series of changes, and I expect to have a draft complete ready to bring to the entire council in May.\n\n\n\n3. Other Business\nAs part of February 26 Legislative meeting, Councilor Warner requested to share his opinion and research on the tax cap portion of the charter at this meeting. We will not be discussing it in depth.",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "April 9, 2026 Legislative"
+    ]
+  },
+  {
+    "objectID": "City Council/Committees/20260304_police.html",
+    "href": "City Council/Committees/20260304_police.html",
+    "title": "Mar 4, 2026 Police",
     "section": "",
-    "text": "Zoning and the connection to the tax base\nDuring the election campaign, most people I talked to were concerned with their taxes. Residents want to know how much money is being raised, where it is being spent, and why taxes never seem to go down.\nI believe that in a tax-capped city like ours, residential tax relief comes through growth, specifically growth in the commercial tax base.\nI pulled tax records from our AxisGIS geographic information system for the city and combined it with zoning data to get a sense of where our current tax base is coming from. These data are not perfect, but I believe they are good enough for a good-faith discussion.\nThe table below shows where our tax base comes from. I’m assuming all property is taxed equally, at the last municipal rate 0.01763 , or $17.63 per $1000. I also assume that city property and conservation land is taxed. There are areas that are not zoned in this dataset, and some of these properties have been reassessed since I pulled this data.\n\n\n\n\n\n\n\n\n\nWe have close to 3500 properties on the tax rolls, which generate about 19 million dollars in revenue for the city. That is a lot of money and a good reminder of the scale of the city’s operation.\nThe FY26 budgeted revenues adopted by the council are $20,402,954. While this analysis does not match exactly ($582,748 difference), at a high level, it shows that our dataset is still close enough to draw some conclusions.\nThe difference between the budgeted revenues and the estimated tax revenues is a limitation in using publicly available data, not mismanagement by the city.\n\n\nResidential Taxes Contribute the Majority of City Taxes\nSplitting the estimated tax value of Franklin’s properties by zone shows where the majority of the tax revenue lies.\n\n\n\n\n\n\n\n\n\nWe can show these data graphically as well.\n\n\n\n\n\n\n\n\n\nThis table shows that the majority of the city’s revenue is paid by the residents of the city. This should not be a surprise. We are responsible for funding our community.\nOne way to offset the residential tax burden is to grow the commercial tax base. In the chart above, the combined commercial and industrial tax contribution is less than 5%. This is not an argument to build factories on every square inch of space in the city.\nIt is also worth noting that the tax value of conservation land throughout the city is more than 10%. This underscores our community’s investment in conservation. I believe this is good, it preserves the natural beauty of Franklin for future generations.\n\n\nIndustrial/Commercial Properties Pay the Most Tax Per Property\nOne other way to look at these data is to calculate the average tax per property for each zone category. To calculate this, divide the total tax value in a given zone type by the number of properties in that zone type. This assumes that every property in a given zone type is equal – it is not. Future posts may explore a more representative tax-by-zone calculation. The chart below shows the average tax by zone type.\n\n\n\n\n\n\n\n\n\nThis chart shows that industrial and high- and low-density commercial properties already contribute more tax on average than an individual residential property. It also shows that, on average, properties in the lake protection district (around Webster Lake) are taxed a bit higher than other residential properties, but not by much. Finally, this chart shows that multi-family housing properties are, on average, taxed relatively low.\nPutting all of this information together suggests that small increases to the number industrial and commercial properties could have a meaningful impact on city revenues.\nAs we head into budget season and budget visioning, a robust understanding of taxes – the main source of revenue for the city – is key for council and public decision making. Below is an interactive zoning map. If you’d like to talk about these data, calculations, or conclusions, feel free to email me at sjacobson@franklinnh.gov.\n\n\nInteractive Zoning Map",
+    "text": "Location: Franklin Public Library\n\n\nDate: March 4, 2026\n\n\nTime: 5:30 PM\n\n\nAgenda\nBelow is what we intend to discuss.\n\nReview minutes from the February 4 meeting.\nFollow up discussion on pay scales\nOther business\n\n\nHow Sam Sees It:\nI expect the big point of discussion this meeting will be pay scales. At the last meeting, the Chief presented a plan to change the pay scales of the entire department in an effort to retain officers. Members of the Committee and City Manager wanted to see additional backup that the department could afford to change pay scales mid year while staying within budget. To make this change, the Chief of Police wanted to close open positions, an approach that may work in the short term but can lead to burnout via under-staffing. As shown in the fire department, under-staffing can lead to excessive overtime, which may cost more than hiring additional officers. Additionally, solely changing pay scales in the police department may trigger resentment between other departments.\nI’m hopeful we’ll have some additional budget backup provided to discuss, so that the Police committee can make a strong recommendation to the broader council. Right now, I understand the need to raise pay to retain officers, but am not convinced we can afford to.",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "Mar 4, 2026 Police"
+    ]
+  },
+  {
+    "objectID": "City Council/Committees/20260119_police.html",
+    "href": "City Council/Committees/20260119_police.html",
+    "title": "Feb 4, 2026 Police",
+    "section": "",
+    "text": "Location: Franklin Public Library\n\n\nDate: February 4, 2026\n\n\nTime: 6:00 PM\n\n\nAgenda\nBelow is what we intend to discuss. Prior to the meeting, the committee will tour the police station.\n\nChair Appointment\nSet meeting schedule\nOther Business\n\nDetail rate\nStaffing\nPay\nUpcoming union contract negotiations",
+    "crumbs": [
+      "City Council",
+      "Committees",
+      "Feb 4, 2026 Police"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260221_road_network_length.html",
+    "href": "Franklin Facts/20260221_road_network_length.html",
+    "title": "The Long And Winding Road",
+    "section": "",
+    "text": "Talk to any person in town and they will tell you that the roads need to be repaired. The state of Franklin’s roads represent years of underinvestment, but how big is the problem we are talking about? The best place to look for the answer to this question is Franklin’s Capital Improvement Plan (CIP). The most recent plan (drafted in 2024) identifies 21 roads that are in need of repair. This includes places like Davis street, Prospect street and Cheney Hill. Note that the CIP identifies other capital needs as well; for example fire trucks and building repairs.",
     "crumbs": [
       "City Council",
       "Franklin Facts",
-      "Tax Base by Zone"
+      "The Long And Winding Road"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260221_road_network_length.html#all-roads-lead-to-franklin",
+    "href": "Franklin Facts/20260221_road_network_length.html#all-roads-lead-to-franklin",
+    "title": "The Long And Winding Road",
+    "section": "All Roads Lead to …Franklin",
+    "text": "All Roads Lead to …Franklin\nThe city of Franklin is fairly small, only 29.1 square miles. and yet it has hundreds of roads. Open Street Map (OSM) is an open-source, community-editable map. It’s kind of like wikipedia for place information and is used by both private and public entities as a source of geographical information.\nPulling data from OSM we can get a sense for how many roads are in the city and what kinds of roads they are (paved, dirt etc). I’m focusing on surface type for this blog as it is speaks more to the maintenance need. Future posts may look at speed limits for traffic safety, walking paths through the city for non-car based travel or other interesting transit questions.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nhighway\nNumber of Roads\nTotal Road Length (miles)\n\n\n\n\n\nresidential\n230\n43.60\n\n\n\nunclassified\n49\n20.92\n\n\n\ntertiary\n16\n15.01\n\n\n\nsecondary\n12\n14.30\n\n\n\ntrunk\n50\n6.29\n\n\n\nprimary\n16\n4.34\n\n\nTotal\n—\n373\n104.46\n\n\n\n\n\n\n\nThe map and table above show the distribution of roads by type:\n\nPrimary Roads - Highways. Example: Route 3 coming into town.\nSecondary Roads - Lesser traveled highways. Example: State Route 127.\nTertiary Roads - Main roads that connect portions of the City. Example: Prospect Street.\nTrunk Roads - Main travel roads through the city. Example: Central Street.\nResidential Roads - Neighborhood streets. Example. Beech Street.\nUnclassified- Not currently classified in OSM.\n\nMost of the roads in Franklin are residential however the primary and trunk roads are probably most heavily traveled.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Long And Winding Road"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260221_road_network_length.html#the-scale-of-franklins-roads",
+    "href": "Franklin Facts/20260221_road_network_length.html#the-scale-of-franklins-roads",
+    "title": "The Long And Winding Road",
+    "section": "The Scale of Franklin’s Roads",
+    "text": "The Scale of Franklin’s Roads\nFranklin has more than 350 roads, totaling more than 100 miles of roadway. This demonstrates the scale of the maintenance burden in the city. Some maintenance of the higher level roads (e.g. Primary) may fall to the state. I don’t have a true cost of road repair by this classification system, but 100 miles of anything is going ot be expensive. Another thing to keep in mind is that these expenses are recurring - roads are “consumed” by the traffic on them. The city needs to be budgeting for routine upkeep across the entire network.\nOSM also provides the surface type of the road. The material a road is made from impacts how much it can be used, who can use it, it’s lifespan, and how much it takes to repair or replace it. These data are even less well documented than the road type, but it helps outline the scale of the Franklin’s roads.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsurface\nNumber of Roads\nTotal Road Length (miles)\n\n\n\n\n\nasphalt\n257\n80.77\n\n\n\nunpaved\n24\n8.47\n\n\n\nMissing Description\n92\n15.22\n\n\nTotal\n—\n373\n104.46\n\n\n\n\n\n\n\nThis suggests that the city has at least 80.77 miles of road to repave. This will take time, money and concerted effort. The time to start is now!",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Long And Winding Road"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260408_industrial_tif.html",
+    "href": "Franklin Facts/20260408_industrial_tif.html",
+    "title": "The Value of the Industrial Park TIF",
+    "section": "",
+    "text": "A TIF district is a tool in the city’s toolbox for reserving taxes from certain areas for use in those areas. A portion of the tax raised from properties in a TIF stay in the district boundaries instead of going into the general fund of the city.\nThe city establishes a baseline value of the properties in the TIF, increases in value above the baseline get separated out for use in the TIF. For example, the baseline value of a TIF might be assessed at $500,000. A developer makes some improvements (like repairing a dilapidated building), triggering a reassessment, and the next year the value is $600,000. Some or all of the difference in baseline is set aside for use in the TIF. In this example, 40% of the tax improvement in a TIF might stay in the TIF while 60% might go into the general fund. This allows targeted development and tries to compound improvements in a particular area of the city.\nTIF’s provide certainty to developers, companies, and individual investors that they will be able to capture some of the growth they generate. The cost of a TIF is a loss of general fund revenue (i.e. higher burden on non-TIF members to provide taxes to the city).\nTIF’s have different structures, but have common pieces including an administrator or board that administers the money in the TIF, a plan or reason for the TIF’s creation, and a termination process.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Value of the Industrial Park TIF"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260408_industrial_tif.html#what-is-tax-increment-financing-tif",
+    "href": "Franklin Facts/20260408_industrial_tif.html#what-is-tax-increment-financing-tif",
+    "title": "The Value of the Industrial Park TIF",
+    "section": "",
+    "text": "A TIF district is a tool in the city’s toolbox for reserving taxes from certain areas for use in those areas. A portion of the tax raised from properties in a TIF stay in the district boundaries instead of going into the general fund of the city.\nThe city establishes a baseline value of the properties in the TIF, increases in value above the baseline get separated out for use in the TIF. For example, the baseline value of a TIF might be assessed at $500,000. A developer makes some improvements (like repairing a dilapidated building), triggering a reassessment, and the next year the value is $600,000. Some or all of the difference in baseline is set aside for use in the TIF. In this example, 40% of the tax improvement in a TIF might stay in the TIF while 60% might go into the general fund. This allows targeted development and tries to compound improvements in a particular area of the city.\nTIF’s provide certainty to developers, companies, and individual investors that they will be able to capture some of the growth they generate. The cost of a TIF is a loss of general fund revenue (i.e. higher burden on non-TIF members to provide taxes to the city).\nTIF’s have different structures, but have common pieces including an administrator or board that administers the money in the TIF, a plan or reason for the TIF’s creation, and a termination process.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Value of the Industrial Park TIF"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260408_industrial_tif.html#franklins-tif-districts",
+    "href": "Franklin Facts/20260408_industrial_tif.html#franklins-tif-districts",
+    "title": "The Value of the Industrial Park TIF",
+    "section": "Franklin’s TIF districts",
+    "text": "Franklin’s TIF districts\nIn Franklin, we had two TIFs active as of November 2025. The first is the Franklin Falls Mixed use TIF district, also known as the Downtown TIF. The second is the Industrial park TIF, which was closed on December 1, 2025. The page 38 of the meeting packet of the December 2025 CIty council meeting contains information about the Industrial TIF. Below is a map showing the location of the two TIF districts. Note that in the language of zoning, an overlay is an area that groups properties and what I call the Downtown TIF is the Downtown Revitalization Overlay District and what I call the Industrial Park TIF is the Franklin Business Park TIF,\n\n\n\n\n\n\n\nThe two TIF’s have different goals. The Industrial park TIF is intended to set money aside for costs related to the operation of the industrial park, notably road repair. Because the industrial park roads see heavy truck and machinery traffic their roads are likely to be in worse shape than residential streets. Likewise, the value and continued operation of the industrial park is tied to their connection to the road network - if a business cant receive deliveries, then it cannot operate. Because the city of Franklin has historically underfunded it’s road repair, the TIF allows tenant companies to direct some of their tax money towards the roads that run through the Industrial park and that they need to survive and grow. The city sees the benefit of increased property tax revenue as well.\nThe downtown TIF is intended to grow downtown business and storefronts.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Value of the Industrial Park TIF"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260408_industrial_tif.html#industrial-tif-financials",
+    "href": "Franklin Facts/20260408_industrial_tif.html#industrial-tif-financials",
+    "title": "The Value of the Industrial Park TIF",
+    "section": "Industrial TIF Financials",
+    "text": "Industrial TIF Financials\nWe can see how much money the industrial TIF generated for its tenants by looking at the packet mentioned above.\n\n\n\n\n\n\n\n\n\nThe chart above shows the Industrial park TIF generated on average, about $56,000/year. Half of this was reserved for the TIF ($28,000) and half went to the City. Furthermore, over the 13 years that we have data, the TIF generated $369,769. As mentioned above, in December 2025 the Industrial TIF was closed and the remaining TIF balance was moved into the Capital Improvements (CIP) fund. Going forward, the money that was set aside for the industrial park TIF will now be put into the general fund of the City providing (marginal) residential tax relief.\nThe tradeoff here is that the roads in the industrial park are treated just like any road in the city.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Value of the Industrial Park TIF"
+    ]
+  },
+  {
+    "objectID": "Franklin Facts/20260408_industrial_tif.html#a-note-on-assessed-value",
+    "href": "Franklin Facts/20260408_industrial_tif.html#a-note-on-assessed-value",
+    "title": "The Value of the Industrial Park TIF",
+    "section": "A note on Assessed Value",
+    "text": "A note on Assessed Value\nPart of the way the city changes the distribution of tax around the city is through reassessments. As mentioned above, a reassessment can be triggered by changes to a property (i.e. building something new) or thought the passage of time. Periodically, the city is reassessed as a whole to account for properties that have not been improved and to change which properties are taxed more based on market value and other factors. Assessment as a whole is beyond the scope of this post, however it is interesting to look at the assessed value of industrial TIF properties and how the value of the properties in the TIF work with the tax cap.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAs the charts above show, the TIF assessed value of the properties in the Industrial TIF have grown $12,568,651, almost doubling since 2013. The tax revenue put into the TIF (half of the total tax value) from these properties has increase from ~$5,000 to ~$50,000. This indicates real growth. It also shows the impact of the tax cap - as revenues go up (growth in the industrial park) the tax rate goes down. This limits the ability of the city to capture that growth and return even more value to the taxpayer.",
+    "crumbs": [
+      "City Council",
+      "Franklin Facts",
+      "The Value of the Industrial Park TIF"
     ]
   }
 ]
