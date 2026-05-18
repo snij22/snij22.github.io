@@ -44,10 +44,13 @@ I anticipate we will discuss both pieces and come to a recommendation for the ci
 This is an opportunity for the members of the legislative committee to present changes to the [city charter](https://ecode360.com/FR1572/home) to bring to the broader council for consideration to place on the ballot in October. I've received the following from members: 
 - Revision to C-32 "Tax Cap" - submitted by Councilor Warner
 
+
+
 #### How Sam Sees It: 
 I'd like to submit my own thoughts for consideration by the legislative committee: 
-- Revision to C-32 "Tax Cap":
-- Strike "capital" from C-32 part B. This would allow the Franklin city council to authorize spending above the budget limitation by a 2/3rds vote of the council.
+
+1. Revision to C-32 "Tax Cap":
+    - Strike "capital" from C-32 part B. This would allow the Franklin city council to authorize spending above the budget limitation by a 2/3rds vote of the council.
     - This empowers the city council to actually control budget spending. 
         - Currently, the amount the city can spend is tied to how much was spent the previous year.
         - Currently, there are 2 exceptions: bond payments and capital expenditures.
@@ -56,10 +59,12 @@ I'd like to submit my own thoughts for consideration by the legislative committe
     - Increased council flexibility gives voters more of a say in how their dollars are spent. Currently, councilors can't determine an appropriate tax rate; it is set for them. 
 
 Global revisions: 
-- Change Board of Education to School Board. This affects the following charter sections: 
+
+2. Change Board of Education to School Board. This affects the following charter sections: 
     - C-13
     - C-14
-- Reduce the gendered lanugage in the charter (e.g. councilmen to councilor) as we have multiple women serving on the council. This affects the following sections: 
+
+3. Reduce the gendered language in the charter (e.g. councilmen to councilor) as we have multiple women serving on the council. This affects the following sections: 
     - C-8
     - C-9
     - C-15
