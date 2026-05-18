@@ -10,7 +10,7 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.9.37</generator>
-<lastBuildDate>Thu, 21 May 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 17 May 2026 00:00:00 GMT</lastBuildDate>
 <item>
   <title>May 21, 2026 Legislative</title>
   <dc:creator>Sam Jacobson</dc:creator>
@@ -113,36 +113,7 @@
   <category>Committee</category>
   <category>Legislative</category>
   <guid>https://www.franklinfacts.org/City Council/Committees/20260521_leg.html</guid>
-  <pubDate>Thu, 21 May 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>May 19, 2026 - City Manager review</title>
-  <dc:creator>Sam Jacobson</dc:creator>
-  <link>https://www.franklinfacts.org/City Council/Workshops/20260519_cm_review.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="location-franklin-public-library" class="level1">
-<h1>Location: Franklin Public Library</h1>
-</section>
-<section id="date-may-19-2026" class="level1">
-<h1>Date: May 19, 2026</h1>
-</section>
-<section id="time-600-pm" class="level1">
-<h1>Time: 6:00 PM</h1>
-<p>Agenda: Not posted as of 5/17/26</p>
-<p>Packet: Not posted as of 5/17/26</p>
-<p>This workshop is a review of the City manager’s review process and chance to provide feedback on performance.</p>
-
-
-</section>
-
- ]]></description>
-  <category>Workshop</category>
-  <guid>https://www.franklinfacts.org/City Council/Workshops/20260519_cm_review.html</guid>
-  <pubDate>Tue, 19 May 2026 00:00:00 GMT</pubDate>
+  <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>May 20, 2026 Parks and Recreation</title>
@@ -190,6 +161,35 @@
   <category>Committee</category>
   <category>Parks &amp; Rec</category>
   <guid>https://www.franklinfacts.org/City Council/Committees/20260520_pr.html</guid>
+  <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>May 19, 2026 - City Manager review</title>
+  <dc:creator>Sam Jacobson</dc:creator>
+  <link>https://www.franklinfacts.org/City Council/Workshops/20260519_cm_review.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="date-may-19-2026" class="level1">
+<h1>Date: May 19, 2026</h1>
+</section>
+<section id="time-600-pm" class="level1">
+<h1>Time: 6:00 PM</h1>
+<p>Agenda: Not posted as of 5/17/26</p>
+<p>Packet: Not posted as of 5/17/26</p>
+<p>This workshop is a review of the City manager’s review process and chance to provide feedback on performance. I expect most of it will be non-public.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>Workshop</category>
+  <guid>https://www.franklinfacts.org/City Council/Workshops/20260519_cm_review.html</guid>
   <pubDate>Sun, 17 May 2026 00:00:00 GMT</pubDate>
 </item>
 <item>
