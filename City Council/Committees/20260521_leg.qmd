@@ -2,7 +2,7 @@
 title: "May 21, 2026 Legislative"
 description: "Legislative Committee meeting covering short term rental regulation and proposed charter changes"
 categories: [Committee, Legislative]
-date: 5/21/2026
+date: 5/17/2026
 date-modified: 5/17/2026
 author: Sam Jacobson
 ---
