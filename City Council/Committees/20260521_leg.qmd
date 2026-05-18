@@ -1,0 +1,72 @@
+---
+title: "May 21, 2026 Legislative"
+description: "Legislative Committee meeting covering short term rental regulation and proposed charter changes"
+categories: [Committee, Legislative]
+date: 5/17/2026
+date-modified: 5/17/2026
+author: Sam Jacobson
+---
+
+
+# Location: Franklin Public Library
+
+# Date: May 20, 2026
+
+# Time: 6:00 PM
+
+# Rough Agenda
+Below is what we plan to discuss: 
+
+1. Approve minutes from April 9 meeting
+    - [Minutes](https://www.franklinnh.gov/legislative-committee) are located at the bottom right of the linked page. 
+2. Short term rentals (STRs)
+3. Proposed changes to charter
+4. Other business
+
+
+## Agenda Breakdown
+
+### 1. Minute Approval
+Brenda Demers drafted minutes from the March 19 and April 9 meetings, which I expect to approve with minimal changes. 
+
+#### How Sam Sees it: 
+Councilor Johnston was absent from the April meeting; he ought to abstain from voting. 
+
+### 2. Short Term Rentals (STRs)
+At the April 9 meeting, there was discussion on the draft STR ordinance, resulting in a third draft. Only the  materials from the [first draft](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/proposed_franklin_str_ordinance_-_draft_1_-_march_2026.pdf) are available on the website at this time. I am working with Director Chunn to post the updated drafts. 
+
+Also at the April 9 meeting, a resident, Stuart Trachy, volunteered to draft "lighter touch" STR regulations for the legislative committee to review. 
+
+#### How Sam Sees It: 
+I anticipate we will discuss both pieces and come to a recommendation for the city council or council agenda report for the next city council meeting.
+
+### 3. Proposed Charter Changes
+This is an opportunity for the members of the legislative committee to present changes to the [city charter](https://ecode360.com/FR1572/home) to bring to the broader council for consideration to place on the ballot in October. I've received the following from members: 
+- Revision to C-32 "Tax Cap" - submitted by Councilor Warner
+
+#### How Sam Sees It: 
+I'd like to submit my own thoughts for consideration by the legislative committee: 
+- Revision to C-32 "Tax Cap":
+- Strike "capital" from C-32 part B. This would allow the Franklin city council to authorize spending above the budget limitation by a 2/3rds vote of the council.
+    - This empowers the city council to actually control budget spending. 
+        - Currently, the amount the city can spend is tied to how much was spent the previous year.
+        - Currently, there are 2 exceptions: bond payments and capital expenditures.
+        - As written, the cap does not allow the council to respond to costs that rise faster than the national cost of living index (e.g. gas, healthcare, insurance).
+        - As written, councilors can't vote to raise the tax rate to bring in more revenue to the city, resulting in fewer teachers, firefighters, summer programs amongst others. 
+    - Increased council flexibility gives voters more of a say in how their dollars are spent. Currently, councilors can't determine an appropriate tax rate; it is set for them. 
+
+Global revisions: 
+- Change Board of Education to School Board. This affects the following charter sections: 
+    - C-13
+    - C-14
+- Reduce the gendered lanugage in the charter (e.g. councilmen to councilor) as we have multiple women serving on the council. This affects the following sections: 
+    - C-8
+    - C-9
+    - C-15
+    - C-24 
+    - C-25
+    - C-46
+    - C-51
+
+### 4. Other Business
+None planned at this time. 
