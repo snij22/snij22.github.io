@@ -3,7 +3,7 @@ title: "May 19, 2026  - City Manager review"
 description: "This is a non-public meeting to review the City Manager's performance"
 categories: Workshop
 date: 5/17/2026
-date-modified: 5/17/2026
+date-modified: 5/18/2026
 author: Sam Jacobson
 ---
 
@@ -13,8 +13,10 @@ author: Sam Jacobson
 
 # Time: 6:00 PM
 
-Agenda: Not posted as of 5/17/26
+[Agenda](https://www.franklinnh.gov/city-council-mayor/agenda/city-council-meeting-agenda-14)
 
-Packet: Not posted as of 5/17/26
+Packet: No packet for this meeting
 
 This workshop is a review of the City manager's review process and chance to provide feedback on performance. I expect most of it will be non-public. 
+
+This meeting will also provide an update from the Muster committee. 
