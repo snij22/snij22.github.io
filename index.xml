@@ -10,7 +10,65 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Sun, 31 May 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Sun, 07 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>June 08, 2026 - Budget Workshop 1: Schools</title>
+  <dc:creator>Sam Jacobson</dc:creator>
+  <link>https://www.franklinfacts.org/City Council/Workshops/20260607_budget_school.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="date-june-07-2026" class="level1">
+<h1>Date: June 07, 2026</h1>
+</section>
+<section id="time-600-pm" class="level1">
+<h1>Time: 6:00 PM</h1>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-06-08_city_council_meeting_agenda.pdf">Agenda</a></p>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-06-08_cc_packet.pdf">Packet</a></p>
+<hr>
+<p>This is the start of the budget review process in the City. Typically these are more casual workshops, however this is meeting as the city council will be voting on painting crosswalks.</p>
+<p>Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <a href="mailto:sjacobson@franklinnh.gov" class="email">sjacobson@franklinnh.gov</a> if you would like to discuss further.</p>
+<hr>
+<section id="agenda-items" class="level2">
+<h2 class="anchored" data-anchor-id="agenda-items">Agenda Items</h2>
+</section>
+<section id="painting-crosswalks" class="level2">
+<h2 class="anchored" data-anchor-id="painting-crosswalks">1. Painting crosswalks</h2>
+<ul>
+<li>Summary:
+<ul>
+<li>The city wants to paint crosswalks throughout downtown as may have worn away.</li>
+<li>Money for this comes from the capital reserve funds. ### How Sam Sees It:</li>
+</ul></li>
+<li>We should paint the crosswalks in the city. It is a safety hazard.</li>
+</ul>
+</section>
+<section id="budget-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="budget-presentations">2. Budget Presentations</h2>
+<p>Throughout the month of June, the City Council will be discussing the City Manager’s proposed budget line-by-line. This is a chance for the City Council to see where the City Manager wants to spend money.</p>
+<p>This meeting will cover the following:</p>
+<ul>
+<li>School</li>
+<li>Clerk’s office</li>
+<li>Finance office</li>
+<li>Welfare office</li>
+</ul>
+<p>I plan on writing department specific pieces later this month.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Workshop</category>
+  <guid>https://www.franklinfacts.org/City Council/Workshops/20260607_budget_school.html</guid>
+  <pubDate>Sun, 07 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>June 1, 2026 City Council</title>
   <dc:creator>Sam Jacobson</dc:creator>
@@ -4773,48 +4831,6 @@
   <category>Committee</category>
   <category>Police</category>
   <guid>https://www.franklinfacts.org/City Council/Committees/20260119_police.html</guid>
-  <pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Jan 28,2026 Parks and Recreation</title>
-  <dc:creator>Sam Jacobson</dc:creator>
-  <link>https://www.franklinfacts.org/City Council/Committees/20260119_pr.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="location-bessie-rowell-community-center" class="level1">
-<h1>Location: Bessie Rowell Community Center</h1>
-</section>
-<section id="date-january-28-2026" class="level1">
-<h1>Date: January 28, 2026</h1>
-</section>
-<section id="time-530-pm" class="level1">
-<h1>Time: 5:30 PM</h1>
-</section>
-<section id="rough-agenda" class="level1">
-<h1>Rough Agenda</h1>
-<p>As of Tuesday Jan 20, Councilor Hoppe finalized the legislative committee meeting agenda. Below is what we plan to discuss:</p>
-<ol type="1">
-<li>Chair Appointment</li>
-<li>Set 2026 meeting schedule</li>
-<li>Parks and rec director replacement</li>
-</ol>
-<ul>
-<li>Director Alpers is leaving for another opportunity in mid February. The council will need to work with the City Manager to find a replacement.</li>
-</ul>
-<ol start="4" type="1">
-<li>FY2027 Budget Update</li>
-</ol>
-
-
-</section>
-
- ]]></description>
-  <category>Committee</category>
-  <category>Parks &amp; Rec</category>
-  <guid>https://www.franklinfacts.org/City Council/Committees/20260119_pr.html</guid>
   <pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
