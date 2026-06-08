@@ -10,7 +10,55 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Sun, 07 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Mon, 08 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>June 11, 2026 Police</title>
+  <dc:creator>Sam Jacobson</dc:creator>
+  <link>https://www.franklinfacts.org/City Council/Committees/20260608_police.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="date-june-11-2026" class="level1">
+<h1>Date: June 11, 2026</h1>
+</section>
+<section id="time-530-pm" class="level1">
+<h1>Time: 5:30 PM</h1>
+</section>
+<section id="agenda" class="level1">
+<h1>Agenda</h1>
+<p>Below is what we intend to discuss.</p>
+<ol type="1">
+<li>Review minutes from the March 4 meeting. Review minutes from the February 4 Police Committee meeting.</li>
+<li>Operational update from Police Chief
+<ul>
+<li>Staffing</li>
+<li>New Hires</li>
+<li>Regional Special Operations</li>
+<li>Future Grant Opportunities</li>
+</ul></li>
+<li>Late items</li>
+</ol>
+<p><a href="https://www.franklinnh.gov/police-department/police-committee">Previous meeting minutes</a> can be found on the police committee section of the city website.</p>
+<section id="how-sam-sees-it" class="level3">
+<h3 class="anchored" data-anchor-id="how-sam-sees-it">How Sam Sees It:</h3>
+<p>I expect this meeting to be relatively routine with discussion focused on the operational updates from the police chief. At the last meeting we discussed changing pay scales to retain and attract new officers and I’m eager to see if that is bearing fruit. I am also appreciative of the enhanced public communications the police department (PD) appears to be doing.</p>
+<p>I’d like to hear a bit more of a preview of the PD budget for next year, and if there are any surprises the police committee should be aware of.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Committee</category>
+  <category>Police</category>
+  <guid>https://www.franklinfacts.org/City Council/Committees/20260608_police.html</guid>
+  <pubDate>Mon, 08 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>June 08, 2026 - Budget Workshop 1: Schools</title>
   <dc:creator>Sam Jacobson</dc:creator>
@@ -377,7 +425,7 @@
 <li>Director update</li>
 </ol>
 <ul>
-<li>I do not know wha tthe director will provide as part of his update. I hope a portion of it is budgetary in nature.</li>
+<li>I do not know what the director will provide as part of his update. I hope a portion of it is budgetary in nature.</li>
 </ul>
 <ol start="3" type="1">
 <li>Fee schedule for FY2027 discussion</li>
@@ -4790,48 +4838,6 @@
   <category>Reflection</category>
   <guid>https://www.franklinfacts.org/Other Posts/20250125_budget_workshop_reflection.html</guid>
   <pubDate>Sun, 25 Jan 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>Feb 4, 2026 Police</title>
-  <dc:creator>Sam Jacobson</dc:creator>
-  <link>https://www.franklinfacts.org/City Council/Committees/20260119_police.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="location-franklin-public-library" class="level1">
-<h1>Location: Franklin Public Library</h1>
-</section>
-<section id="date-february-4-2026" class="level1">
-<h1>Date: February 4, 2026</h1>
-</section>
-<section id="time-600-pm" class="level1">
-<h1>Time: 6:00 PM</h1>
-</section>
-<section id="agenda" class="level1">
-<h1>Agenda</h1>
-<p>Below is what we intend to discuss. Prior to the meeting, the committee will tour the police station.</p>
-<ol type="1">
-<li>Chair Appointment</li>
-<li>Set meeting schedule</li>
-<li>Other Business
-<ul>
-<li>Detail rate</li>
-<li>Staffing</li>
-<li>Pay</li>
-<li>Upcoming union contract negotiations</li>
-</ul></li>
-</ol>
-
-
-</section>
-
- ]]></description>
-  <category>Committee</category>
-  <category>Police</category>
-  <guid>https://www.franklinfacts.org/City Council/Committees/20260119_police.html</guid>
-  <pubDate>Mon, 19 Jan 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
