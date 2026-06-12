@@ -21,6 +21,12 @@ listing:
    sort: date desc
    feed: true
 
+ - id: FY27_budget
+   contents: Other Posts/FY2027_budget_review/FY2027_Budget_TOC.qmd
+   categories: true
+   sort: date desc
+   feed: true  
+
  - id: misc
    contents: Other Posts
    categories: true
@@ -30,6 +36,10 @@ listing:
 
 # City Council
 :::{#cc}
+:::
+
+# 2027 Budget Hub
+:::{#FY27_budget}
 :::
 
 # Franklin Facts

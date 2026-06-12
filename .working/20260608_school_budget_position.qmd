@@ -8,9 +8,3 @@ format: html
 ### School
 The School budget is large and represents ~$20M of cost for the city. The school generates about $13M in revenue each year from Federal, State and other grant sources. The remainder of the costs ~$7M are covered by local taxes.  
 
-### City Clerk
-There is a ~$20k increase in wages for the clerks that I'd like explained
-
-### Welfare
-After reviewing the City Manager's proposed 
-### Finance 

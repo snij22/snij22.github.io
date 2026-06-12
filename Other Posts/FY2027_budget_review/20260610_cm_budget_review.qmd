@@ -1,0 +1,24 @@
+---
+title: "FY2027 School Budget "
+description: "Discussion of the FY2027 proposed City Manager's office Budget"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/10/2026
+author: Sam Jacobson
+---
+
+
+This is part of my review of the FY2027 Budget and covers the City Manager's office.
+
+
+# FY2027 Proposed Expenses 
+- Total City Manager's Office: $58875.6
+    - 2 Full time employees
+        - $208,673 is wages
+    - Contracted HR, payroll, trust services: $143,240
+    
+
+
+### Questions
+- How much is the PFAS monitoring at the fire station? Right now it is rolled under nuisance abatement, but it will be an ongoing expense (as far as I can tell)
+- What is the breakdown of the New account# costs? HR should only be ~70k.

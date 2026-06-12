@@ -1,0 +1,26 @@
+---
+title: "FY2027 Budget Landing page "
+description: "Overall FY 2027 budget thoughts and links to specific budget sections"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/12/2026
+author: Sam Jacobson
+---
+
+## Introduction
+This is part of my review of the FY2027 Budget. We will have presentations and discussions about each of these budgets department by department, line by line. My goal is to work in the open here, so that you can see the evolution of where I (Sam Jacobson) think individual lines should move and to put the whole budget into context. 
+
+Here is a link to the [FY2027 City manager's proposed budget](FY27_budget_docs/FY2027%20City%20Manager%20Budget%20Proposal.pdf)
+
+
+## Links
+- [Revenues](20260610_revenue_budget_review.qmd)
+- [School](20260610_school_budget_review.qmd)
+- [City Manager's Office](20260610_cm_budget_review.qmd)
+- [Fire](20260610_fire_budget_review.qmd)
+- [Police](20260610_police_budget_review.qmd)
+- [Municipal Services](20260610_msd_budget_review.qmd)
+- [Parks and Recreation](20260610_parks_budget_review.qmd)
+- [Other](20260610_other_budget_review.qmd)
+
+I will continue to update this page as I review the sections of the budget and receive answers during the various budget workshops. 

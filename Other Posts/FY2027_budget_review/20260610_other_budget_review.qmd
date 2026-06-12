@@ -1,0 +1,68 @@
+---
+title: "FY2027 Other Budget "
+description: "Discussion of the FY2027 proposed Finance, Welfare, Clerks, Library, and other departments' Budgets"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/10/2026
+author: Sam Jacobson
+---
+
+
+This is part of my review of the FY2027 Budget and is a catch all for various small departments that execute specific City functions. These typically do not drive large costs, but are key ways residents interact with the city. 
+
+
+### City Clerk & Elections
+- Summary
+    - Total budgeted cost Clerk: $266,165
+    - Total budgeted cost Elections: $26,519
+    - 3 full time employees 
+    - Largest YOY changes are wages (~$20k increase) 
+
+
+#### Questions
+- What is the reason for the wage increase? Cost of Living? 
+- What is the One4all config reduction from last year (~11k)?
+
+### Finance & Assessing
+- Summary
+    - Total Budgeted cost Finance: $395,342
+        - 3 full time employees
+        - $68k budgeted for audits, with 55k encumbered from previous year
+    - Total Budgeted cost Assessing: $79,804
+        - 1 full time employee last year, removed for this year.
+        - Assessing contract is $64k
+
+#### Questions
+- Audit backup says that audit total is $75k, but later on says a single audit is 5k. No audit money was spent this year, so there should be $55k (2025) + $50k (2026) + $68k (2027 proposed) = 173k in audit money set aside. I don't understand why the rate went up. 
+- Last year the finance office included money for a part time HR position (I believe it was 65k) that was not spent. The presented drop in Finance's budget (20%), reflects that difference. Why was the HR position not filled? 
+- Are the expenditures this year in line with the budget? I think they are ~20k over expected once you remove  the unfilled HR position and adjust the adopted for the time of year (e.g. 3 quarters of expenditure).
+- Why are we reducing a full time assessor? 
+
+### Welfare
+- Summary
+    - Total Budgeted cost: $72,419
+    - 1 Part time employee
+    - Direct assistance Total: $50,000
+        - Food vouchers: $2,000
+        - Rent Vouchers: $40,000
+        - Medication Vouchers: $1,500
+        - Utilities Vouchers: $5,000
+        - Misc: 1,500
+
+#### Questions
+- The 2026 actuals across all direct assistance categories are lower than budgeted (~20k vs. 66.5k budget). CM reduced the direct assistance, 25% - should we be reducing even more to reflect our actual usage? 
+
+
+### Information Technology (IT)
+
+- 18k for advanced cyber security
+- 24k for Security in fo an d event management
+
+### Legal
+Placeholder for budget discussion
+### Planning and Zoning
+Placeholder for budget discussion
+
+### Other
+
+- Insurance is increased 15%. 

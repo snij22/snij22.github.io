@@ -1,0 +1,56 @@
+---
+title: "FY2027 City Revenue "
+description: "Discussion of the FY2027 proposed City Revenues"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/10/2026
+author: Sam Jacobson
+---
+
+
+This is part of my review of the FY2027 Budget. Revenues represent money coming into the city and pay for various city functions. Property taxes alone make up about half of revenues, however there are other  significant inputs to city revenue including fees for service, state grant money brought in via education, and federal grant programs. 
+
+Growing revenue is one way to to preserve services, thus stewarding revenue sources is critical for maintaining city functions. 
+
+
+### FY2027 Proposed Revenues
+- Summary
+    - Total proposed 2027 revenue: $39,979,760
+        - Total tax revenue:  20,997,771
+            - Property taxes are expected to increase 3.5%
+            - Property taxes generate 52% of City revenue
+        - Total non-tax revenue: 18,981,989
+    - Total Proposed 2027 Service income: $2,227,550
+        - Services as a category up 35% as a category YoY
+            - Exteranal ambulance services +53% ( 50k)
+            - Ambulance billing + 12% (76k)
+            - Dispatch fees + 10% (10k)
+            - Rec fees up 87% (7k)
+            - Summer program fee up 43% (75k)
+    - Total State/Federal: $1,460,174
+        - Down 78% mostly driven by the use of the congressional direct spend on the Whitewater park
+    - Total School revenue: $12,056,573
+        - Down 7% YOY driven mostly by a reduction in state adequacy aid
+        - School and property taxes together make approximately $33M (82%) of City Revenues for FY27
+    - Total water revenues: $2,270,558
+        - Proposed water rate: $8.22/100 cubic feet
+        - Up from $7.68/100 cubic feet previous year
+        - Water revenues up 0.5% YOY
+        - Water rate supports administration of water and sewer along with capital/operating expenses
+    - Total Sewer revenues: $2,468,068
+        - Proposed Sewer rate: $11.64/100 cubic feet
+        - Same rate as previous year
+        - Sewer revenues down 4% YOY
+
+
+
+
+#### Questions
+- Budgeted revenues for FY26 are $5.5M under actuals through 4/30. This is more than I would expect at this point in the budget cycle.  Why? 
+- Total revenues are budgeted to drop 11%. Why? 
+- Police detail revenues are spit out and low relative to actuals. Why? 
+- Why is the operating 21st century grant at 33% of expenditure? timing? 
+    - The percentage on this line looks wrong.
+- What are the 2025 resolutions (7-25,9-25,13-25)?
+- What is the FY 2025 Sewer rate? 
+- Why did solid waste fees drop  this year? 

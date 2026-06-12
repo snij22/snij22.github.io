@@ -1,0 +1,11 @@
+---
+title: "FY2027 Parks and Recreation Budget "
+description: "Discussion of the FY2027 proposed Parks and Recreation Budget"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/10/2026
+author: Sam Jacobson
+---
+
+
+Placeholder for budget discussion

@@ -1,0 +1,38 @@
+---
+title: "FY2027 Fire Budget "
+description: "Discussion of the FY2027 proposed Fire Budget"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/10/2026
+author: Sam Jacobson
+---
+
+
+This is part of my review of the FY2027 Budget and covers the fire department.
+
+# FY2027 Proposed Expenses 
+- Total Fire department: $3,642,049
+    - Fire suppression (firefighters and EMTs): $2,538,981
+        - 16 Positions budgeted
+            - 1 Open
+        - 1.19M is wages
+        - 219k is overtime (18% wages)
+    - Fire Administration: $587,101
+        - 3 Full time Employees
+    - Code Enforcement: $187,391
+        - 1 Full time, 2 part time 
+            - Full time position is open
+    - EMS services: $164,675
+        - 26k for overtime
+        - most of this is capital related expenses for Emergency services (Cardiac Monitor Service, disposable medical supplies, ambulance service etc. )
+    - Dispatch: $97,000
+        - Lakes region mutual aid
+    - Fire Station: $61,000
+    - Emergency Admin: $5,918
+
+
+## Questions
+-  Why are EMTs listed under fire suppression? 
+- 01-2-202-40210-000 Suppression Health & Dental Ins line has incorrect account detail applied. 
+- 13% increase in administrative salaries is significant while the increase for suppression is 8.8% (with the inclusion of another firefighter). Why? 
+

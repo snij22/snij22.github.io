@@ -1,0 +1,44 @@
+---
+title: "FY2027 Police Budget "
+description: "Discussion of the FY2027 proposed Police Budget"
+categories: Budget
+date: 06/10/2026
+date-modified: 06/12/2026
+author: Sam Jacobson
+---
+
+This is part of my review of the FY2027 Budget and covers the Police department. It's been updated wit a couple answers received at the police committee meeting on 6/11/26.
+
+# FY2027 Proposed Expenses 
+- Total Police Department: $4,413,906
+    - Police station: $50,935
+    - Dispatch: $596,872
+        - 5 Full time employees
+        - Software: 37k
+    - Patrol: $2,527,901
+        - 10 Filled positions, 4 open
+            - $1.2M is wages
+            - 195k is overtime (16% wages, additional 2% OT is grant funded - Violence against women)
+                - OT is similar to Fire department
+        - 52k in equipment
+        - 50k in vehicle maintenance
+    - Investigation/Prosecution: $541,191
+        - 4 full time employees
+            - Wages are: $343,136
+        - removed an open detective position
+    - Police Admin: $697,008
+        - Full time employees
+            - $418,863 is wages
+
+
+## Questions
+- 2factor authentication included in the software line (2.4k), this appears to be a duplicate service of CM duo - 2 factor authentication. is it? If so, why? 
+- What is IMC software ($35k)?
+    - IMC software is an arrest database used by the police department PD. 
+- Why are we holding 4 positions open? Suggest budgeting 2 and then reassessing next year. I'm not sure we could train that many officers if hired or that we could find 4 qualified candidates.  
+- How many patrol vehicles do we have? Budget includes 50k for vehicle maintenance.  
+- Investigation supplies are budgeted below 2026 expenditures. How will this impact service? 
+- Why does PD have separate Zoom workplace subscription? 
+- How much is a uniform? currently budgeting $5,500 for 3 uniforms annually.
+- Why is police more expensive than fire?
+    - Police has an older/more experienced department than fire. There are more people at higher ranks in the police department than in the fire department. 
