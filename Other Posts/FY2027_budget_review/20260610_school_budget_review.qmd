@@ -3,7 +3,7 @@ title: "FY2027 School Budget "
 description: "Discussion of the FY2027 proposed School Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 06/12/2026
 author: Sam Jacobson
 ---
 
