@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0a6b7249c26820e032cb0bd839ff02b1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-9b4c0c00a18649d042f46f3949950a7d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-061daf549fde10e5f23240f70a3828df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,6 +117,34 @@ ul.task-list li input[type="checkbox"] {
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-ff'] = new List('listing-ff', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-FY27_budget .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-FY27_budget'] = new List('listing-FY27_budget', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -428,6 +456,12 @@ window.Quarto = {
  <span class="menu-text">June 08, 2026 - Budget Workshop 1: Schools</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./City Council/Workshops/20260610_budget_police_fire.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">June 10, 2026 - Budget Workshop 2: Fire, Police, City Manager</span></a>
+  </div>
+</li>
       </ul>
   </li>
       </ul>
@@ -482,6 +516,71 @@ window.Quarto = {
  <span class="menu-text">2026 Budget Visioning Reflection</span></a>
   </div>
 </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
+ <span class="menu-text">FY2027 Budget Review</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_cm_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 School Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_fire_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Fire Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_msd_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Municipal Services Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_other_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Other Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_parks_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Parks and Recreation Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_police_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Police Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 City Revenue</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/20260610_school_budget_review.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 School Budget</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FY2027 Budget Landing page</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -495,11 +594,12 @@ window.Quarto = {
    
   <ul>
   <li><a href="#city-council" id="toc-city-council" class="nav-link active" data-scroll-target="#city-council">City Council</a></li>
+  <li><a href="#budget-hub" id="toc-budget-hub" class="nav-link" data-scroll-target="#budget-hub">2027 Budget Hub</a></li>
   <li><a href="#franklin-facts" id="toc-franklin-facts" class="nav-link" data-scroll-target="#franklin-facts">Franklin Facts</a></li>
   <li><a href="#other-posts" id="toc-other-posts" class="nav-link" data-scroll-target="#other-posts">Other Posts</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(28)</span></div><div class="category" data-category="Q2FwaXRhbCUyMEltcHJvdmVtZW50cw==">Capital Improvements <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n">City Council Meeting <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Q29tbWl0dGVl">Committee <span class="quarto-category-count">(12)</span></div><div class="category" data-category="TGVnaXNsYXRpdmU=">Legislative <span class="quarto-category-count">(5)</span></div><div class="category" data-category="UGFya3MlMjAlMjYlMjBSZWM=">Parks &amp; Rec <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UG9saWNl">Police <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHJvcGVydHklMjB0YXg=">Property tax <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVmbGVjdGlvbg==">Reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Um9hZHM=">Roads <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGF4JTIwQ2Fw">Tax Cap <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VElG">TIF <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya3Nob3A=">Workshop <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Wm9uaW5n">Zoning <span class="quarto-category-count">(2)</span></div></div><div class="quarto-margin-footer"><div class="margin-footer-item">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(39)</span></div><div class="category" data-category="QnVkZ2V0">Budget <span class="quarto-category-count">(10)</span></div><div class="category" data-category="Q2FwaXRhbCUyMEltcHJvdmVtZW50cw==">Capital Improvements <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n">City Council Meeting <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Q29tbWl0dGVl">Committee <span class="quarto-category-count">(12)</span></div><div class="category" data-category="TGVnaXNsYXRpdmU=">Legislative <span class="quarto-category-count">(5)</span></div><div class="category" data-category="UGFya3MlMjAlMjYlMjBSZWM=">Parks &amp; Rec <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UG9saWNl">Police <span class="quarto-category-count">(3)</span></div><div class="category" data-category="UHJvcGVydHklMjB0YXg=">Property tax <span class="quarto-category-count">(1)</span></div><div class="category" data-category="UmVmbGVjdGlvbg==">Reflection <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Um9hZHM=">Roads <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VGF4JTIwQ2Fw">Tax Cap <span class="quarto-category-count">(1)</span></div><div class="category" data-category="VElG">TIF <span class="quarto-category-count">(1)</span></div><div class="category" data-category="V29ya3Nob3A=">Workshop <span class="quarto-category-count">(6)</span></div><div class="category" data-category="Wm9uaW5n">Zoning <span class="quarto-category-count">(2)</span></div></div><div class="quarto-margin-footer"><div class="margin-footer-item">
 <style type="text/css">@import url("https://assets.mlcdn.com/fonts.css?version=1767876");</style>
     <style type="text/css">
     /* LOADER */
@@ -1436,7 +1536,23 @@ Description
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1780926599477" data-listing-date-modified-sort="1780876800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="June 11, 2026 Police" data-listing-filename-sort="20260608_police.qmd">
+<tr data-index="0" data-categories="V29ya3Nob3A=" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104152" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="118" data-listing-title-sort="June 10, 2026  - Budget Workshop 2: Fire, Police, City Manager" data-listing-filename-sort="20260610_budget_police_fire.qmd">
+<td>
+<span class="listing-date">Jun 10, 2026</span>
+</td>
+<td>
+<span class="listing-date-modified">Jun 10, 2026</span>
+</td>
+<td>
+<a href="./City Council/Workshops/20260610_budget_police_fire.html" class="title listing-title">June 10, 2026 - Budget Workshop 2: Fire, Police, City Manager</a>
+</td>
+<td>
+<span class="listing-description">This is a Council meeting to discuss budgets: Fire, Police and the City Manager’s office.</span>
+</td>
+
+</tr>
+
+<tr data-index="1" data-categories="Q29tbWl0dGVlJTJDUG9saWNl" data-listing-date-sort="1780876800000" data-listing-file-modified-sort="1781293104151" data-listing-date-modified-sort="1780876800000" data-listing-reading-time-sort="1" data-listing-word-count-sort="175" data-listing-title-sort="June 11, 2026 Police" data-listing-filename-sort="20260608_police.qmd">
 <td>
 <span class="listing-date">Jun 8, 2026</span>
 </td>
@@ -1452,7 +1568,7 @@ Description
 
 </tr>
 
-<tr data-index="1" data-categories="V29ya3Nob3A=" data-listing-date-sort="1780790400000" data-listing-file-modified-sort="1780926599478" data-listing-date-modified-sort="1780790400000" data-listing-reading-time-sort="1" data-listing-word-count-sort="182" data-listing-title-sort="June 08, 2026  - Budget Workshop 1: Schools" data-listing-filename-sort="20260607_budget_school.qmd">
+<tr data-index="2" data-categories="V29ya3Nob3A=" data-listing-date-sort="1780790400000" data-listing-file-modified-sort="1781293104152" data-listing-date-modified-sort="1780790400000" data-listing-reading-time-sort="1" data-listing-word-count-sort="182" data-listing-title-sort="June 08, 2026  - Budget Workshop 1: Schools" data-listing-filename-sort="20260607_budget_school.qmd">
 <td>
 <span class="listing-date">Jun 7, 2026</span>
 </td>
@@ -1468,7 +1584,7 @@ Description
 
 </tr>
 
-<tr data-index="2" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1780185600000" data-listing-file-modified-sort="1780926599477" data-listing-date-modified-sort="1780185600000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1501" data-listing-title-sort="June 1, 2026 City Council" data-listing-filename-sort="20260601_meeting .qmd">
+<tr data-index="3" data-categories="Q2l0eSUyMENvdW5jaWwlMjBNZWV0aW5n" data-listing-date-sort="1780185600000" data-listing-file-modified-sort="1781293104151" data-listing-date-modified-sort="1780185600000" data-listing-reading-time-sort="8" data-listing-word-count-sort="1501" data-listing-title-sort="June 1, 2026 City Council" data-listing-filename-sort="20260601_meeting .qmd">
 <td>
 <span class="listing-date">May 31, 2026</span>
 </td>
@@ -1484,24 +1600,46 @@ Description
 
 </tr>
 
-<tr data-index="3" data-categories="Q29tbWl0dGVlJTJDUGFya3MlMjAlMjYlMjBSZWM=" data-listing-date-sort="1778976000000" data-listing-file-modified-sort="1780926599477" data-listing-date-modified-sort="1779062400000" data-listing-reading-time-sort="2" data-listing-word-count-sort="264" data-listing-title-sort="May 20, 2026 Parks and Recreation" data-listing-filename-sort="20260520_pr.qmd">
-<td>
-<span class="listing-date">May 17, 2026</span>
-</td>
-<td>
-<span class="listing-date-modified">May 18, 2026</span>
-</td>
-<td>
-<a href="./City Council/Committees/20260520_pr.html" class="title listing-title">May 20, 2026 Parks and Recreation</a>
-</td>
-<td>
-<span class="listing-description">Third meeting of the Parks and Recreation Committee</span>
-</td>
-
-</tr>
-
 </tbody>
 </table>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="budget-hub" class="level1">
+<h1>2027 Budget Hub</h1>
+<div id="listing-FY27_budget" class="quarto-listing quarto-listing-container-default">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781222400000" data-listing-reading-time-sort="1" data-listing-word-count-sort="109">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title" data-anchor-id="budget-hub">
+<a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">FY2027 Budget Landing page</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+<p>Overall FY 2027 budget thoughts and links to specific budget sections</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
@@ -1509,7 +1647,7 @@ Description
 <h1>Franklin Facts</h1>
 <div id="listing-ff" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="VElGJTJDVGF4JTIwQ2Fw" data-listing-date-sort="1775606400000" data-listing-file-modified-sort="1780926599480" data-listing-date-modified-sort="1775606400000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1338">
+<div class="quarto-post image-right" data-index="0" data-categories="VElGJTJDVGF4JTIwQ2Fw" data-listing-date-sort="1775606400000" data-listing-file-modified-sort="1781293104155" data-listing-date-modified-sort="1775606400000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1338">
 <div class="thumbnail"><a href="./Franklin Facts/20260408_industrial_tif.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="Franklin Facts/20260408_industrial_tif_files/figure-html/tif financials-1.png"  class="thumbnail-image card-img"/></p>
@@ -1541,7 +1679,7 @@ Sam Jacobson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="Um9hZHMlMkNDYXBpdGFsJTIwSW1wcm92ZW1lbnRz" data-listing-date-sort="1771718400000" data-listing-file-modified-sort="1780926599480" data-listing-date-modified-sort="1771718400000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1004">
+<div class="quarto-post image-right" data-index="1" data-categories="Um9hZHMlMkNDYXBpdGFsJTIwSW1wcm92ZW1lbnRz" data-listing-date-sort="1771718400000" data-listing-file-modified-sort="1781293104155" data-listing-date-modified-sort="1771718400000" data-listing-reading-time-sort="6" data-listing-word-count-sort="1004">
 <div class="thumbnail"><a href="./Franklin Facts/20260221_road_network_length.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1573,7 +1711,7 @@ Sam Jacobson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="Wm9uaW5nJTJDUHJvcGVydHklMjB0YXg=" data-listing-date-sort="1769558400000" data-listing-file-modified-sort="1780926599480" data-listing-date-modified-sort="1769558400000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1812">
+<div class="quarto-post image-right" data-index="2" data-categories="Wm9uaW5nJTJDUHJvcGVydHklMjB0YXg=" data-listing-date-sort="1769558400000" data-listing-file-modified-sort="1781293104155" data-listing-date-modified-sort="1769558400000" data-listing-reading-time-sort="10" data-listing-word-count-sort="1812">
 <div class="thumbnail"><a href="./Franklin Facts/20260128_City Property.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
@@ -1605,7 +1743,7 @@ Sam Jacobson
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="Wm9uaW5n" data-listing-date-sort="1768348800000" data-listing-file-modified-sort="1780926599479" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
+<div class="quarto-post image-right" data-index="3" data-categories="Wm9uaW5n" data-listing-date-sort="1768348800000" data-listing-file-modified-sort="1781293104154" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="7" data-listing-word-count-sort="1298">
 <div class="thumbnail"><a href="./Franklin Facts/20260114_zone_tax_val.html" class="no-external">
 
 <p class="card-img-top"><img loading='lazy' src="Franklin Facts/20260114_zone_tax_val_files/figure-html/plot the zones-1.png"  class="thumbnail-image card-img"/></p>
@@ -1643,14 +1781,284 @@ Sam Jacobson
 <h1>Other Posts</h1>
 <div id="listing-misc" class="quarto-listing quarto-listing-container-default">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="UmVmbGVjdGlvbg==" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1780926599480" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
-<div class="thumbnail"><a href="./Other Posts/20250125_budget_workshop_reflection.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_school_budget_review.html" class="no-external">
 
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title" data-anchor-id="other-posts">
+<a href="./Other Posts/FY2027_budget_review/20260610_school_budget_review.html" class="no-external">FY2027 School Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_school_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed School Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_school_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="100">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_cm_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_cm_budget_review.html" class="no-external">FY2027 School Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_cm_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed City Manager’s office Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_cm_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_parks_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_parks_budget_review.html" class="no-external">FY2027 Parks and Recreation Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_parks_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed Parks and Recreation Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_parks_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="3" data-listing-word-count-sort="562">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html" class="no-external">FY2027 City Revenue</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed City Revenues</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781222400000" data-listing-reading-time-sort="3" data-listing-word-count-sort="426">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_police_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_police_budget_review.html" class="no-external">FY2027 Police Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_police_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed Police Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_police_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="3" data-listing-word-count-sort="477">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_other_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_other_budget_review.html" class="no-external">FY2027 Other Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_other_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed Finance, Welfare, Clerks, Library, and other departments’ Budgets</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_other_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="2" data-listing-word-count-sort="259">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_fire_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_fire_budget_review.html" class="no-external">FY2027 Fire Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_fire_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed Fire Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_fire_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781049600000" data-listing-reading-time-sort="1" data-listing-word-count-sort="4">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/20260610_msd_budget_review.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/20260610_msd_budget_review.html" class="no-external">FY2027 Municipal Services Budget</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/20260610_msd_budget_review.html" class="no-external">
+<p>Discussion of the FY2027 proposed Municipal Services Department Budget</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/20260610_msd_budget_review.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="8" data-categories="QnVkZ2V0" data-listing-date-sort="1781049600000" data-listing-file-modified-sort="1781293104156" data-listing-date-modified-sort="1781222400000" data-listing-reading-time-sort="1" data-listing-word-count-sort="109">
+<div class="thumbnail"><a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">FY2027 Budget Landing page</a>
+</h3>
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('QnVkZ2V0'); return false;">Budget</div>
+
+</div>
+<div class="delink listing-description"><a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+<p>Overall FY 2027 budget thoughts and links to specific budget sections</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="./Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html" class="no-external">
+<div class="listing-date">
+Jun 10, 2026
+</div>
+<div class="listing-author">
+Sam Jacobson
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="9" data-categories="UmVmbGVjdGlvbg==" data-listing-date-sort="1769299200000" data-listing-file-modified-sort="1781293104155" data-listing-date-modified-sort="1769299200000" data-listing-reading-time-sort="4" data-listing-word-count-sort="678">
+<div class="thumbnail"><a href="./Other Posts/20250125_budget_workshop_reflection.html" class="no-external">
+
+<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
 <a href="./Other Posts/20250125_budget_workshop_reflection.html" class="no-external">2026 Budget Visioning Reflection</a>
 </h3>
 <div class="listing-categories">
