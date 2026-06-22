@@ -10,7 +10,52 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.9.38</generator>
-<lastBuildDate>Wed, 10 Jun 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 19 Jun 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>June 22, 2026 - Budget Workshop 3: Municipal Services, Revenues</title>
+  <dc:creator>Sam Jacobson</dc:creator>
+  <link>https://www.franklinfacts.org/City Council/Workshops/20260619_budget_municipal_revenue.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="date-june-22-2026" class="level1">
+<h1>Date: June 22, 2026</h1>
+</section>
+<section id="time-600-pm" class="level1">
+<h1>Time: 6:00 PM</h1>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-06-22_workshop_agenda.pdf">Agenda</a></p>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/pages/fy2027_city_manager_budget_proposal.pdf">Packet/Manager’s Proposed Budget</a></p>
+<hr>
+<p>This is the third meeting of the budget review process in the City. This will be a workshop meeting.</p>
+<p>Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <a href="mailto:sjacobson@franklinnh.gov" class="email">sjacobson@franklinnh.gov</a> if you would like to discuss further.</p>
+<p>Check out the <a href="../../Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html">Budget hub</a> for department specific run-downs.</p>
+<hr>
+<section id="agenda-items" class="level2">
+<h2 class="anchored" data-anchor-id="agenda-items">Agenda Items</h2>
+</section>
+<section id="budget-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="budget-presentations">1. Budget Presentations</h2>
+<p>Throughout the month of June, the City Council will be discussing the City Manager’s proposed budget line-by-line. This is a chance for the City Council to see where the City Manager wants to spend money.</p>
+<p>This meeting will cover the following:</p>
+<ul>
+<li>Municipal Services</li>
+<li>Revenues</li>
+</ul>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>Workshop</category>
+  <guid>https://www.franklinfacts.org/City Council/Workshops/20260619_budget_municipal_revenue.html</guid>
+  <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>June 10, 2026 - Budget Workshop 2: Fire, Police, City Manager</title>
   <dc:creator>Sam Jacobson</dc:creator>
@@ -102,7 +147,7 @@
 
 
 <p>This is part of my review of the FY2027 Budget and covers the School. The school board presented their <a href="FY27_budget_docs/combined_school_budget.pdf">budget</a> on 6/8/26 to the City Council. The school board previously shared a <a href="FY27_budget_docs/SAU18 Budget Guide L Cass 26-27.pdf">budget explainer</a> that I have found useful as the School budget is formatted a bit differently than the City’s budget.</p>
-<p>The school budget is about as large as the city budget (both about $20M in expesnses ), and therefore is presented separately. The school board (9 elected members; 3 from each ward) developed budget in a similar process to the City Council.</p>
+<p>The school budget is about as large as the city budget (both about $20M in expenses ), and therefore is presented separately. The school board (9 elected members; 3 from each ward) developed budget in a similar process to the City Council.</p>
 <section id="fy2027-proposed-revenues" class="level1">
 <h1>FY2027 Proposed Revenues</h1>
 <ul>
@@ -246,9 +291,39 @@
 
 
 
-<p>Placeholder for budget discussion</p>
+<p>This is part of my review of the FY2027 Budget and covers the parks and recreation department.</p>
+<section id="fy2027-proposed-expenses" class="level1">
+<h1>FY2027 Proposed Expenses</h1>
+<ul>
+<li>Total recreation: $1,220,759
+<ul>
+<li>3 full time staff, 1 part time
+<ul>
+<li>Director wages: $98,781</li>
+<li>Full time/part time staff wages: $159,177</li>
+<li>Seasonal staff wages: $300,019</li>
+</ul></li>
+<li>Summer rec supported by the 21st century grant: $200,000
+<ul>
+<li>$45,000 for bus rental</li>
+</ul></li>
+<li>$757,000 of the parks and rec budget is wages</li>
+</ul></li>
+<li>Some expenses offset totally or partially by revenue</li>
+</ul>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ul>
+<li>To what extent did former director Alpers prepare this budget?</li>
+<li>How many seasonal staff are you budgeting for?</li>
+<li>Why is there a 49% change in workers comp this year?</li>
+<li>01-5-211-40299-000 Recreation Admin Mileage Reimb ($500) does not match the description (water samples etc. )</li>
+<li>Since revenue is a key portion of the parks budget, how are revenues looking this year? Are we generally tracking above or below our projections?</li>
+</ul>
 
 
+</section>
+</section>
 
  ]]></description>
   <category>Budget</category>
@@ -284,7 +359,7 @@
 <ul>
 <li>Services as a category up 35% as a category YoY
 <ul>
-<li>Exteranal ambulance services +53% ( 50k)</li>
+<li>External ambulance services +53% ( 50k)</li>
 <li>Ambulance billing + 12% (76k)</li>
 <li>Dispatch fees + 10% (10k)</li>
 <li>Rec fees up 87% (7k)</li>
@@ -348,7 +423,7 @@
 
 
 
-<p>This is part of my review of the FY2027 Budget and covers the Police department. It’s been updated wit a couple answers received at the police committee meeting on 6/11/26.</p>
+<p>This is part of my review of the FY2027 Budget and covers the Police department. It’s been updated with a couple answers received at the police committee meeting on 6/11/26.</p>
 <section id="fy2027-proposed-expenses" class="level1">
 <h1>FY2027 Proposed Expenses</h1>
 <ul>
@@ -393,18 +468,32 @@
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ul>
-<li>2factor authentication included in the software line (2.4k), this appears to be a duplicate service of CM duo - 2 factor authentication. is it? If so, why?</li>
+<li>2factor authentication included in the software line (2.4k), this appears to be a duplicate service of CM duo - 2 factor authentication. is it? If so, why?
+<ul>
+<li>no clear answer provided.</li>
+</ul></li>
 <li>What is IMC software ($35k)?
 <ul>
 <li>IMC software is an arrest database used by the police department PD.</li>
 </ul></li>
 <li>Why are we holding 4 positions open? Suggest budgeting 2 and then reassessing next year. I’m not sure we could train that many officers if hired or that we could find 4 qualified candidates.<br>
 </li>
-<li>How many patrol vehicles do we have? Budget includes 50k for vehicle maintenance.<br>
-</li>
-<li>Investigation supplies are budgeted below 2026 expenditures. How will this impact service?</li>
-<li>Why does PD have separate Zoom workplace subscription?</li>
-<li>How much is a uniform? currently budgeting $5,500 for 3 uniforms annually.</li>
+<li>How many patrol vehicles do we have? Budget includes 50k for vehicle maintenance.
+<ul>
+<li>13 cars in in the fleet. As patrol vehicles cycle out of regular service, moved into ‘fleet service’ for things like details where wear and tear is likely to be less.</li>
+</ul></li>
+<li>Investigation supplies are budgeted below 2026 expenditures. How will this impact service?
+<ul>
+<li>This is related to one time expenses incurred in 2026 for two programs, rather than a true reduction in expenses. This should not impact levels of investigative service.</li>
+</ul></li>
+<li>Why does PD have separate Zoom workplace subscription?
+<ul>
+<li>This allows the PD to save recordings of videos privately (relative to other departments)</li>
+</ul></li>
+<li>How much is a uniform? currently budgeting $5,500 for 3 uniforms annually.
+<ul>
+<li>No clear justification provided. Traditional allotment.</li>
+</ul></li>
 <li>Why is police more expensive than fire?
 <ul>
 <li>Police has an older/more experienced department than fire. There are more people at higher ranks in the police department than in the fire department.</li>
@@ -444,8 +533,14 @@
 <section id="questions" class="level4">
 <h4 class="anchored" data-anchor-id="questions">Questions</h4>
 <ul>
-<li>What is the reason for the wage increase? Cost of Living?</li>
-<li>What is the One4all config reduction from last year (~11k)?</li>
+<li>What is the reason for the wage increase? Cost of Living?
+<ul>
+<li>All members in the clerks office have been reclassified on the pay scale. The clerk/tax collector has been moved to a department head, and the deputy has been moved from the equivalent of a library paige to a level commensurate with her responsibilities.</li>
+</ul></li>
+<li>What is the One4all config reduction from last year (~11k)?
+<ul>
+<li>This was a one time cost incurred as part of the elections. The ongoing cost is maintenance of the voting machines.</li>
+</ul></li>
 </ul>
 </section>
 </section>
@@ -504,17 +599,54 @@
 <h3 class="anchored" data-anchor-id="information-technology-it">Information Technology (IT)</h3>
 <ul>
 <li>18k for advanced cyber security</li>
-<li>24k for Security in fo an d event management</li>
+<li>24k for Security in event management</li>
 </ul>
 </section>
 <section id="legal" class="level3">
 <h3 class="anchored" data-anchor-id="legal">Legal</h3>
-<p>Placeholder for budget discussion ### Planning and Zoning Placeholder for budget discussion</p>
+<ul>
+<li>Total cost $138,100
+<ul>
+<li>Increased 48% as a department, driven by doubling of solicitor costs.</li>
+<li>How can we control these costs?</li>
+</ul></li>
+</ul>
+</section>
+<section id="planning-and-zoning" class="level3">
+<h3 class="anchored" data-anchor-id="planning-and-zoning">Planning and Zoning</h3>
+<ul>
+<li>Total expenses: $260,816
+<ul>
+<li>two employees</li>
+</ul></li>
+</ul>
+</section>
+<section id="economic-development" class="level3">
+<h3 class="anchored" data-anchor-id="economic-development">Economic Development</h3>
+<ul>
+<li>$5,000 for professional services</li>
+</ul>
+<section id="questions-3" class="level4">
+<h4 class="anchored" data-anchor-id="questions-3">Questions</h4>
+<ul>
+<li>Why is there no budget for the TAP grant (Trestle view project)?</li>
+</ul>
+</section>
+</section>
+<section id="debt-service" class="level3">
+<h3 class="anchored" data-anchor-id="debt-service">Debt Service</h3>
+<ul>
+<li>overall decreases from last year</li>
+<li>Why did we not pay for the scale last year?</li>
+</ul>
 </section>
 <section id="other" class="level3">
 <h3 class="anchored" data-anchor-id="other">Other</h3>
 <ul>
-<li>Insurance is increased 15%.</li>
+<li>Insurance is increased 15%.
+<ul>
+<li>This seems like a large increase, and may be related to adding the Proulx center flood insurance.</li>
+</ul></li>
 </ul>
 
 
@@ -576,9 +708,15 @@
 <section id="questions" class="level2">
 <h2 class="anchored" data-anchor-id="questions">Questions</h2>
 <ul>
-<li>Why are EMTs listed under fire suppression?</li>
+<li>Why are EMTs listed under fire suppression?
+<ul>
+<li>Firefighters are trained as EMTs as part of their certification by choice in Franklin. This is higher standard of care than is legally necessary but is generally good to have as firefighters typically deal with EMT-related situations. Cross training helps with staffing as well.</li>
+</ul></li>
 <li>01-2-202-40210-000 Suppression Health &amp; Dental Ins line has incorrect account detail applied.</li>
-<li>13% increase in administrative salaries is significant while the increase for suppression is 8.8% (with the inclusion of another firefighter). Why?</li>
+<li>13% increase in administrative salaries is significant while the increase for suppression is 8.8% (with the inclusion of another firefighter). Why?
+<ul>
+<li>Cost of living + additional responsibilities taken on by administrative assistant and other positions in admin. Not an unreasonable increase for the chief, more an increase in staffing in the administrative area.</li>
+</ul></li>
 </ul>
 
 
@@ -599,9 +737,66 @@
 
 
 
-<p>Placeholder for budget discussion</p>
+<p>This is part of my review of the FY2027 Budget and covers the Municipal Services department (MSD).</p>
+<section id="fy2027-proposed-expenses" class="level1">
+<h1>FY2027 Proposed Expenses</h1>
+<ul>
+<li>MSD administration: $170,887
+<ul>
+<li>3 employees</li>
+<li>includes CDL and other training for staff</li>
+</ul></li>
+<li>Road maintenance: $925,891
+<ul>
+<li>Wages: $279,913</li>
+<li>4 filled positions, 2 open positions</li>
+<li>Road repair: $300,000</li>
+</ul></li>
+<li>Snow removal: $200,000</li>
+<li>Drainage: $198,150
+<ul>
+<li>Most of this is contracted to others and is related to road maintenance.</li>
+</ul></li>
+<li>Traffic Lighting: $123,000</li>
+<li>Mechanical Garage: $482,858
+<ul>
+<li>2 people</li>
+<li>Wages: $129,774</li>
+<li>Overtime: $25,738
+<ul>
+<li>Attributed to aging city equipment</li>
+</ul></li>
+<li>Parts: $130,000</li>
+</ul></li>
+<li>Building and Grounds: $496,796
+<ul>
+<li>5 people</li>
+<li>Wages: $255,811</li>
+</ul></li>
+<li>Trash Pickup (Casella Contract): $341,740
+<ul>
+<li>year 2 of a 5 year contract</li>
+</ul></li>
+<li>Transfer Station
+<ul>
+<li>Transfer station pays for itself via tipping costs</li>
+<li>3 workers</li>
+<li>Wages: $179,046</li>
+<li>River street landfill maintenance: $25,000</li>
+</ul></li>
+</ul>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions</h2>
+<ul>
+<li>Why is the medical insurance up 20% for the admin?</li>
+<li>Sand and gravel increased this year, despite last year coming in under budget. Why the increase?</li>
+<li>Why was there such an overage in the transfer station Mach and equip (01-3-238-40740-000) this year?</li>
+<li>Outside of DOT mandated maintenance, I don’t see anything budgeted for road maintenance. Why?</li>
+</ul>
 
 
+</section>
+</section>
 
  ]]></description>
   <category>Budget</category>
@@ -1653,81 +1848,6 @@
  ]]></description>
   <category>City Council Meeting</category>
   <guid>https://www.franklinfacts.org/City Council/Meetings/20260406_meeting.html</guid>
-  <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>April 9, 2026 Legislative</title>
-  <dc:creator>Sam Jacobson</dc:creator>
-  <link>https://www.franklinfacts.org/City Council/Committees/20260405_leg.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<section id="location-franklin-public-library" class="level1">
-<h1>Location: Franklin Public Library</h1>
-</section>
-<section id="date-april-6-2026" class="level1">
-<h1>Date: April 6, 2026</h1>
-</section>
-<section id="time-600-pm" class="level1">
-<h1>Time: 6:00 PM</h1>
-</section>
-<section id="rough-agenda" class="level1">
-<h1>Rough Agenda</h1>
-<p>Below is what we plan to discuss:</p>
-<ol type="1">
-<li>Approve minutes from March 19 meeting
-<ul>
-<li><a href="https://www.franklinnh.gov/legislative-committee">Minutes</a> are located at the bottom right of the linked page.</li>
-</ul></li>
-<li>Short term rentals (STRs)</li>
-<li>Other business</li>
-</ol>
-<section id="agenda-breakdown" class="level2">
-<h2 class="anchored" data-anchor-id="agenda-breakdown">Agenda Breakdown</h2>
-<section id="minute-approval" class="level3">
-<h3 class="anchored" data-anchor-id="minute-approval">1. Minute Approval</h3>
-<p>Brenda Demers drafted minutes from the March 19, 2026 meeting, which I expect to be approved with minimal changes.</p>
-</section>
-<section id="short-term-rentals-strs" class="level3">
-<h3 class="anchored" data-anchor-id="short-term-rentals-strs">2. Short Term Rentals (STRs)</h3>
-<p>Director Chunn will present an updated STR ordinance draft based on the discussion at the March 19 meeting. These will be posted as soon as possible.</p>
-<p>Drafts presented at the March 19 Meeting (note these have not been updated)</p>
-<ul>
-<li><p><a href="../../City Council/files/20260316_draft_STR_ordinance.pdf">Draft STR Ordinance</a></p></li>
-<li><p><a href="../../City Council/files/20260316_draft_STR_regulation.pdf">Draft STR Regulation</a></p></li>
-</ul>
-<p>Currently, the city does not regulate STRs. STRs are typically single family homes used for a portion of time in a way that was not really contemplated or zoned, for example AirBnBs or Vacation Rentals By Owner (VRBO).</p>
-<p>At the March 19 meeting, the committee continued discussing a permit process for STRs. Key changes from the last meeting include:</p>
-<ol type="1">
-<li>Septic inspections may be completed by a certified inspector in addition to NH department of environmental services (NHDES).</li>
-<li>Should there be an insurance requirement as part of the certificate?</li>
-<li>Fine collection (leins)?</li>
-<li>Expand certificates to include condos</li>
-<li>Allow property managers to qualify as owner-in-residence (OIR)</li>
-<li>Increase the number fo days for OIR</li>
-<li>Stiffen penalties for unaddressed violations</li>
-<li>Changing parking to require at least one parking spot</li>
-</ol>
-<section id="how-sam-sees-it" class="level4">
-<h4 class="anchored" data-anchor-id="how-sam-sees-it">How Sam Sees It:</h4>
-<p>During the March 19 meeting, Director Chunn presented a strong first draft. We discussed a series of changes, and I expect to have a draft complete ready to bring to the entire council in May.</p>
-</section>
-</section>
-<section id="other-business" class="level3">
-<h3 class="anchored" data-anchor-id="other-business">3. Other Business</h3>
-<p>As part of February 26 Legislative meeting, Councilor Warner requested to share his opinion and research on the tax cap portion of the charter at this meeting. We will not be discussing it in depth.</p>
-
-
-</section>
-</section>
-</section>
-
- ]]></description>
-  <category>Committee</category>
-  <category>Legislative</category>
-  <guid>https://www.franklinfacts.org/City Council/Committees/20260405_leg.html</guid>
   <pubDate>Sun, 05 Apr 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
