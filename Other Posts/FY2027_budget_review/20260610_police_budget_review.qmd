@@ -3,11 +3,11 @@ title: "FY2027 Police Budget "
 description: "Discussion of the FY2027 proposed Police Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/12/2026
+date-modified: 06/19/2026
 author: Sam Jacobson
 ---
 
-This is part of my review of the FY2027 Budget and covers the Police department. It's been updated wit a couple answers received at the police committee meeting on 6/11/26.
+This is part of my review of the FY2027 Budget and covers the Police department. It's been updated with a couple answers received at the police committee meeting on 6/11/26.
 
 # FY2027 Proposed Expenses 
 - Total Police Department: $4,413,906
@@ -33,12 +33,17 @@ This is part of my review of the FY2027 Budget and covers the Police department.
 
 ## Questions
 - 2factor authentication included in the software line (2.4k), this appears to be a duplicate service of CM duo - 2 factor authentication. is it? If so, why? 
+    - no clear answer provided. 
 - What is IMC software ($35k)?
     - IMC software is an arrest database used by the police department PD. 
 - Why are we holding 4 positions open? Suggest budgeting 2 and then reassessing next year. I'm not sure we could train that many officers if hired or that we could find 4 qualified candidates.  
-- How many patrol vehicles do we have? Budget includes 50k for vehicle maintenance.  
+- How many patrol vehicles do we have? Budget includes 50k for vehicle maintenance. 
+    - 13 cars in in the fleet. As patrol vehicles cycle out of regular service, moved into 'fleet service' for things like details where wear and tear is likely to be less. 
 - Investigation supplies are budgeted below 2026 expenditures. How will this impact service? 
+    - This is related to one time expenses incurred in 2026 for two programs, rather than a true reduction in expenses. This should not impact levels of investigative service. 
 - Why does PD have separate Zoom workplace subscription? 
+    - This allows the PD to save recordings of videos privately (relative to other departments)
 - How much is a uniform? currently budgeting $5,500 for 3 uniforms annually.
+    - No clear justification provided. Traditional allotment. 
 - Why is police more expensive than fire?
     - Police has an older/more experienced department than fire. There are more people at higher ranks in the police department than in the fire department. 

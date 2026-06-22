@@ -3,7 +3,7 @@ title: "FY2027 Fire Budget "
 description: "Discussion of the FY2027 proposed Fire Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 06/19/2026
 author: Sam Jacobson
 ---
 
@@ -33,6 +33,8 @@ This is part of my review of the FY2027 Budget and covers the fire department.
 
 ## Questions
 -  Why are EMTs listed under fire suppression? 
+    - Firefighters are trained as EMTs as part of their certification by choice in Franklin. This is higher standard of care than is legally necessary but is generally good to have as firefighters typically deal with EMT-related situations. Cross training helps with staffing as well. 
 - 01-2-202-40210-000 Suppression Health & Dental Ins line has incorrect account detail applied. 
-- 13% increase in administrative salaries is significant while the increase for suppression is 8.8% (with the inclusion of another firefighter). Why? 
+- 13% increase in administrative salaries is significant while the increase for suppression is 8.8% (with the inclusion of another firefighter). Why?
+    - Cost of living + additional responsibilities taken on by administrative assistant and other positions in admin. Not an unreasonable increase for the chief, more an increase in staffing in the administrative area.   
 

@@ -3,9 +3,45 @@ title: "FY2027 Municipal Services Budget "
 description: "Discussion of the FY2027 proposed Municipal Services Department Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 06/21/2026
 author: Sam Jacobson
 ---
 
 
-Placeholder for budget discussion
+This is part of my review of the FY2027 Budget and covers the Municipal Services department (MSD). 
+
+# FY2027 Proposed Expenses 
+
+- MSD administration: $170,887
+    - 3 employees
+    - includes CDL and other training for staff
+- Road maintenance: $925,891
+    - Wages: $279,913
+    - 4 filled positions, 2 open positions
+    - Road repair: $300,000
+- Snow removal: $200,000
+- Drainage: $198,150
+    - Most of this is contracted to others and is related to road maintenance.
+- Traffic Lighting: $123,000
+- Mechanical Garage: $482,858
+    - 2 people
+    - Wages: $129,774
+    - Overtime: $25,738
+        - Attributed to aging city equipment
+    - Parts: $130,000
+- Building and Grounds: $496,796
+    - 5 people
+    - Wages: $255,811
+- Trash Pickup (Casella Contract): $341,740
+    - year 2 of a 5 year contract
+- Transfer Station
+    - Transfer station pays for itself via tipping costs
+    - 3 workers
+    - Wages: $179,046
+    - River street landfill maintenance: $25,000
+
+## Questions
+- Why is the medical insurance up 20% for the admin? 
+- Sand and gravel increased this year, despite last year coming in under budget. Why the increase? 
+- Why was there such an overage in the transfer station Mach and equip (01-3-238-40740-000) this year? 
+- Outside of DOT mandated maintenance, I don't see anything budgeted for road maintenance. Why? 

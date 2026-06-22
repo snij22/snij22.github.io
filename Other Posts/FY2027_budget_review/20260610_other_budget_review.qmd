@@ -3,7 +3,7 @@ title: "FY2027 Other Budget "
 description: "Discussion of the FY2027 proposed Finance, Welfare, Clerks, Library, and other departments' Budgets"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 06/19/2026
 author: Sam Jacobson
 ---
 
@@ -21,7 +21,9 @@ This is part of my review of the FY2027 Budget and is a catch all for various sm
 
 #### Questions
 - What is the reason for the wage increase? Cost of Living? 
+    - All members in the clerks office have been reclassified on the pay scale. The clerk/tax collector has been moved to a department head, and the deputy has been moved from the equivalent of a library paige to a level commensurate with her responsibilities. 
 - What is the One4all config reduction from last year (~11k)?
+    - This was a one time cost incurred as part of the elections. The ongoing cost is maintenance of the voting machines. 
 
 ### Finance & Assessing
 - Summary
@@ -56,13 +58,30 @@ This is part of my review of the FY2027 Budget and is a catch all for various sm
 ### Information Technology (IT)
 
 - 18k for advanced cyber security
-- 24k for Security in fo an d event management
+- 24k for Security in event management
 
 ### Legal
-Placeholder for budget discussion
+- Total cost $138,100
+    - Increased 48% as a department, driven by doubling of solicitor costs.
+    - How can we control these costs? 
+
+
 ### Planning and Zoning
-Placeholder for budget discussion
+- Total expenses: $260,816
+    - two employees
+
+### Economic Development
+- $5,000 for professional services
+
+#### Questions
+- Why is there no budget for the TAP grant (Trestle view project)?
+  
+### Debt Service
+- overall decreases from last year
+- Why did we not pay for the scale last year? 
+
 
 ### Other
 
-- Insurance is increased 15%. 
+- Insurance is increased 15%.
+    - This seems like a large increase, and may be related to adding the Proulx center flood insurance. 
