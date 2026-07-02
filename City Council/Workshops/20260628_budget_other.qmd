@@ -1,9 +1,9 @@
 ---
-title: "July 2, 2026  - Budget Workshop 6: ???"
+title: "June 30, 2026  - Budget Workshop 5: ???"
 description: "This is a Council meeting to discuss budgets."
 categories: Workshop
 date: 06/28/2026
-date-modified: 06/28/2026
+date-modified: 07/02/2026
 author: Sam Jacobson
 ---
 
@@ -13,14 +13,15 @@ author: Sam Jacobson
 
 # Time: 6:00 PM
 
-Agenda: Not posted yet
+Agenda: 
 
 [Packet/Manager's Proposed Budget](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/pages/fy2027_city_manager_budget_proposal.pdf)
 
 [School Board Proposed Budget](../../Other%20Posts/FY2027_budget_review/FY27_budget_docs/combined_school_budget.pdf)
+
 ------------------------------------------------------------------------
 
-This is the sixth meeting of the budget review process in the City. This will be a workshop meeting.
+This is the fifth meeting of the budget review process in the City. This will be a workshop meeting.
 
 Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further.
 
@@ -33,4 +34,14 @@ Check out the [Budget hub](../../Other%20Posts/FY2027_budget_review/FY2027_Budge
 ## 1. Budget Presentations
 Throughout the month of June, the City Council will be discussing the City Manager's proposed budget line-by-line. This is a chance for the City Council to see where the City Manager wants to spend money. 
 
-This departments covered at this meeting have not been announced yet.
+This meeting covers the following departments:
+
+- City manager
+- Finance
+- Planning nad zoning
+- Parks and recreation
+- Welfare
+- Legal
+- IT
+- Health
+- Debt service 
