@@ -5,7 +5,7 @@ categories: Workshop
 date: 06/28/2026
 date-modified: 07/02/2026
 author: Sam Jacobson
-------
+---
 
 # Location: Franklin Public Library
 
