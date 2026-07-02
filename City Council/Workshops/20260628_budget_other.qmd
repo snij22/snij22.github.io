@@ -1,11 +1,11 @@
 ---
-title: "June 30, 2026  - Budget Workshop 5: ???"
-description: "This is a Council meeting to discuss budgets."
+title: "June 30, 2026  - Budget Workshop 5: Other City departments"
+description: "This is a Council meeting to discuss budgets focused on the departments and sections not yet covered in workshops."
 categories: Workshop
 date: 06/28/2026
 date-modified: 07/02/2026
 author: Sam Jacobson
----
+------
 
 # Location: Franklin Public Library
 
