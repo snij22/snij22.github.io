@@ -1,0 +1,56 @@
+---
+title: "July 7, 2026  - Budget Workshop 6: Council Line movements"
+description: "This is a Council meeting to discuss the overall city budget and specific line movements."
+categories: Workshop
+date: 07/05/2026
+date-modified: 07/05/2026
+author: Sam Jacobson
+---
+
+# Location: Franklin Public Library
+
+# Date: July 7, 2026
+
+# Time: 6:00 PM
+
+Agenda: 
+
+[Packet/Manager's Proposed Budget](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/pages/fy2027_city_manager_budget_proposal.pdf)
+
+[School Board Proposed Budget](../../Other%20Posts/FY2027_budget_review/FY27_budget_docs/combined_school_budget.pdf)
+
+------------------------------------------------------------------------
+
+This is the sixth meeting of the budget review process in the City. This will be a workshop meeting.
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further.PLease note I will be attending via phone due to a prior work commitment. 
+
+Check out the [Budget hub](../../Other%20Posts/FY2027_budget_review/FY2027_Budget_TOC.qmd) for department specific run-downs. 
+
+------------------------------------------------------------------
+## Agenda Items
+
+
+## 1. Budget Discussion
+Throughout the month of June, the City Council reviewed the City Manager's proposed budget line-by-line. This is a chance for the City Council to see where the City Manager wants to spend money. 
+
+I plan to update this more as the day arrives, but I'd like to see the following changes to specific lines in the budget
+
+- Fund the school board approved budget (Cost $2.25M) using a combination of money moved within the budget (see below) and direct funding based on state and federal mandated programs
+    - Approximate additional tax need ($1.8M) 
+    - Approximate moves within the budget ($400k)
+- Close two open positions at the police department (saves ~$270k) (01-2-103-40110-000)
+    - These positions have not been filled, nor do I think the department has enough qualified candidates to fill these positions
+    - Two patrol positions would remain open to alleviate staffing/overtime issues. 
+    - The department currently has 5 sergeants, and 4 patrol officers. This feels lopsided to me.  
+- Reduce city manager's contingency line from 100k to 60k ($40k ) (01-1-302-40898-000)
+    - The city manager has access to the fund balance and council approval if needed to address incidental costs
+    - FY26 (last year) 30k budgeted, and at least 80k spent. 
+- Reduce 'New account/Contracted service' from $143,240 to $93,240 (saves 50k)
+    - This money is to support contracted HR services which should be less than the council approved last year (65k) and adds payroll services. 
+    - This is a contracted service so cost control should be straightforward.
+    - I'd like to see the city try this service out without committing this many resources to it. 
+- Reduce general legal (01-1-531-40320-000) from $115,000 to $75,000 (save 40k)
+    - FY 26 legal services operated without a retainer, which drives up cost.
+    - FY 27 I'd like to see a retainer agreement which should reduce costs
+    - The City's transparency initiatives should reduce the city's need for legal advice.  

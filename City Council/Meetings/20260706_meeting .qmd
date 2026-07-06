@@ -46,43 +46,106 @@ Below are my preliminary thoughts and initial positions going into the meeting. 
 
 ## 3. 2023 Tax Lien properties
 - Summary:
+    - Owners of 35 properties have not paid their property taxes since 4/11/2024
+        - 1 land
+        - 10 land and building
+        - 23 Mobile homes in park
+        - 1 mobile home park land
+    - [link to list of lien properties](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2023_tax_lien-deed_prop.pdf) 
+    - The tax collector typically works with th owners in hardship
+    - Total outstanding balance is ~$63,000 ranging from $400-$9,000 on individual properties
 
 ### How Sam Sees It: 
+- Tax deeding property is not the first action of the city. 
+- Tax deeding a property typically means removing it from the rolls, which represents lost revenue for the city. 
+- Property owners have to pay their taxes to support city functions that they get the benefits of. 
+- The city should deed these properties and work to get them to paying owners. 
 
+#### Questions
+- Is this a typical number of tax deed properties?
 
 
 ## 4. Authorize Fire engine purchase (split between two years)
--   Summary: 
-    
+- Summary
+    - The fire department (FD) is budgeting for a new engine to replace one of two active engines in the city. 
+    - The full price is ~$1.1M and the FD proposes to buy it in sections; ~$550,000 in Fiscal year (FY) 2028 and ~$550,000 in Fiscal year (FY) 2029.
+    - The engine set to be replaced is difficult to service and was out of operation for maintenance reasons for more than 50 days this year.  
 
-### How Sam Sees It:
+### How Sam Sees It: 
+- I appreciate the FD budgeting this across two years and I'd like to hear if they have any revenue streams to cover it. 
+- This is the prime application of a capital improvement exemption from the tax cap. I'd consider voting to exempt the cost from the tax cap calculation in 2028. 
+- Since we can plan for this cost, we should budget for it. 
+
 
 ## 5. Update Wetlands Ordinance
-- Summary:
+- Summary
+    - City of Franklin (75 ft setback) is more protective than the state (50 ft setback) regarding septic systems near wetlands. 
+    - The proposed revision allows septic systems 25 feet closer to wetlands than now. 
 
-
-### How Sam Sees It:
+### How Sam Sees It: 
+- I think we can change our statute to match the state, providing we highlight that in other cases (e.g. surface water bodies) the largest setback (75 ft) still applies.
+    - For instance, installing a septic system near webster lake still needs a 75 ft setback, even if this change is accepted. 
+- I think section 300-8 suggests that the more stringent rule applies (i.e. Franklin's rule would apply)
 
 ## 6. Stiffen penalties for junkyards
-- Summary:
+- Summary
+    - Currently the city can charge up to $100/day for code violations. 
+    - The state allows up to $550/day for code violations.
+    - The suggested change would link city penalties to the relevant state code and make fines for code violations larger. 
 
-
-### How Sam Sees It:
+### How Sam Sees It: 
+- I think this makes sense, especially in the extreme cases of years of non-compliance (evidenced by 528 Prospect street).
+- There is still discretion in the ordinance based on the severity of the fine.
 
 
 ## 7. Land sale on East Bow Street
 - Summary
+   - The owner of 102 East Bow Street has made an offer of $3,000 for 0.13 acres of vacant city land abutting their property. 
+   - This property generated ~$600 in taxes last year that could be returned to the rolls; however merging properties is not necessarily additive. More or less than that might be captured from the new value of the property. 
+   - Abutters have been notified as of the previous (June 1) city council meeting; no additional bids have been received.  
 
-### How Sam Sees It:
+
+
+### How Sam Sees It: 
+- $3,000 still seems low
+- I'd like to hear if the City Manager has engaged in any negotiations with the bidder. 
+
 
 
 ## 8. Amateur radio club lease
 - Summary
+    - The city leases a radio repeater antenna to the amateur radio club
+    - The city has leased this property since 1987
+    - Proposed (continuation) lease is
+        - $1/year
+        - 5 years term
+        - Limited use without additional city input
+        - Club responsible for upkeep and utilities
+        - City indemnified and club must retain insurance
+
+
 
 ### How Sam Sees It: 
-
+- This appears to be a well written lease, with reasonable terms
+- The $1 annual payment seems low, and I'd like to know why it is so low. 
 
 ## 8. Other business
 - Council appointments
 - Ward 1 election moderator
-- Late items
+    - Only one applicant. 
+
+### Late items
+
+#### Council to put a charter commission on October 2026 Ballot
+- Summary: 
+    - A charter commission is a group that rewrites the Franklin city charter
+    - This is in contrast to making amendments/additions piecemeal
+    - The charter commission process is essentially as follows (outlined in RSA 49): 
+        1. Charter commission is voted on a ballot
+        2. Members of the charter commission develop a draft charter to place on the ballot the following year.
+        3. The new charter, if approved, takes place the following year.
+
+#### How Sam Sees It: 
+- I think it is too late to put the charter commission question on the October 2026 ballot.
+- I'm in favor of a belt and suspenders approach; let's develop a charter commission and submit edits to the charter as possible/practicable.
+- If the commission vote fails, e'll still have needed edits to the charter. 
