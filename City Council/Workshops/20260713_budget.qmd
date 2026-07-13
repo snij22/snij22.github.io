@@ -1,0 +1,60 @@
+---
+title: "July 13, 2026 - Budget Workshop 7: Council Line Movements Continued"
+description: "This is a Council meeting to discuss the overall city budget and specific line movements."
+categories: Workshop
+date: 07/12/2026
+date-modified: 07/12/2026
+author: Sam Jacobson
+---
+
+# Location: Franklin Public Library
+
+# Date: July 13, 2026
+
+# Time: 6:00 PM
+
+[Packet/Manager's Proposed Budget](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/pages/fy2027_city_manager_budget_proposal.pdf)
+
+[School Board Proposed Budget](../../Other%20Posts/FY2027_budget_review/FY27_budget_docs/combined_school_budget.pdf)
+
+------------------------------------------------------------------------
+
+This is the seventh meeting of the budget review process in the City. This will be a workshop meeting.
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further. Please note I will be attending via phone due to a prior work commitment. 
+
+Check out the [Budget hub](../../Other%20Posts/FY2027_budget_review/FY2027_Budget_TOC.qmd) for department specific run-downs. 
+
+------------------------------------------------------------------
+## Agenda Items
+## 1. Budget Discussion
+Throughout the month of June, the City Council reviewed the City Manager's proposed budget line-by-line. This is a chance for the City Council to see where the City Manager wants to spend money. 
+
+
+### How Sam Sees It
+
+At the meeting on 7/7, there were two main budget moves: 
+1. Councilor Warner cobbled 15k from MSD road maintenance lines to fund an assessment study focused on valuing commercial property. 
+2. Moves by Councilor Carrier and myself to try to get more money to the school. Below is a shortlist of what we attempted. The [draft minutes](../files/2026-07-07_draft_minutes_0.pdf) provide a complete record of motions and votes. 
+
+1. Fund services outside the tax cap
+- Reason: This retains levels of service for the city departments, however residents would have to fund the school. Note the tax cap remains in place under these methods as the council cannot unilaterally break the tax cap. 
+    - Method 1: Funding for required services (special ed) (using Section 32A of the City Charter)
+    - Method 2: Funding for reduced state grant revenue (downshifting). This is the 2% revenue line change in section 32A of the charter. 
+2. Shifting money underneath the tax cap
+- Reason: This reduces city services and/or increases liability for the city but reduces tax burden on residents.  
+    - Method 1: Directly change the budgetary split between city and school
+    - Method 2: Reduce money from the City Manager's contingency budget
+    - Method 3: Reduce money for open positions (police)
+    - Method 4: Reduce, not eliminate, new contracted service in city manager's office (payroll, trust services) 
+
+Councilor Carrier and I made repeated motions to move different amounts of money using the above methods. The council **cannot** fund individual line items; we must fund a bottom line budget number for the school. The school board directs how that money is spent. Nevertheless we tried the following: 
+
+- $2.25 million to meet the school board approved budget; or
+- $1 million dollars to offset some of the special ed costs; or 
+- $278,000 to fund athletics; or 
+- $58,000 for adult education. 
+
+All of this was rejected by the broader council.
+
+I am stuck. The majority of this council has rejected using **any** method to move **any** amount of money to the school. At the same time, this council has not affirmed a final budget number for the school. As presented by the school board, funding at the traditional budget amount eliminates more than 16 positions, arts, athletics and potentially increases liability for the city.

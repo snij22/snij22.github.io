@@ -1,5 +1,5 @@
 ---
-title: "May 19, 2026  - City Manager review"
+title: "May 19, 2026 - City Manager review"
 description: "This is a non-public meeting to review the City Manager's performance"
 categories: Workshop
 date: 5/17/2026

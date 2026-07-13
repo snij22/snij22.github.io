@@ -1,5 +1,5 @@
 ---
-title: "June 10, 2026  - Budget Workshop 2: Fire, Police, City Manager"
+title: "June 10, 2026 - Budget Workshop 2: Fire, Police, City Manager"
 description: "This is a Council meeting to discuss budgets: Fire, Police and the City Manager's office."
 categories: Workshop
 date: 06/10/2026

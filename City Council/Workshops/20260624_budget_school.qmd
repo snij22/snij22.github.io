@@ -1,5 +1,5 @@
 ---
-title: "June 25, 2026  - Budget Workshop 4: School"
+title: "June 25, 2026 - Budget Workshop 4: School"
 description: "This is a Council meeting to discuss budgets: a return of the school budget."
 categories: Workshop
 date: 06/24/2026

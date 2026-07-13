@@ -1,5 +1,5 @@
 ---
-title: "June 22, 2026  - Budget Workshop 3: Municipal Services, Revenues"
+title: "June 22, 2026 - Budget Workshop 3: Municipal Services, Revenues"
 description: "This is a Council meeting to discuss budgets: municipal services and city revenues."
 categories: Workshop
 date: 06/19/2026
