@@ -3,7 +3,7 @@ title: "FY2027 School Budget "
 description: "Discussion of the FY2027 proposed City Manager's office Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 07/14/2026
 author: Sam Jacobson
 ---
 
@@ -21,4 +21,7 @@ This is part of my review of the FY2027 Budget and covers the City Manager's off
 
 ### Questions
 - How much is the PFAS monitoring at the fire station? Right now it is rolled under nuisance abatement, but it will be an ongoing expense (as far as I can tell)
+    - No answer provided
+    - Most of this line is junkyard abatement
 - What is the breakdown of the New account# costs? HR should only be ~70k.
+    - No breakdown provided but mulitple services are supported by the proposed value. The contracted service is atomic - we can only have HR or HR and payroll etc. 

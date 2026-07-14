@@ -3,7 +3,7 @@ title: "FY2027 Parks and Recreation Budget "
 description: "Discussion of the FY2027 proposed Parks and Recreation Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/21/2026
+date-modified: 07/14/2026
 author: Sam Jacobson
 ---
 
@@ -22,7 +22,11 @@ This is part of my review of the FY2027 Budget and covers the parks and recreati
 
 ## Questions
 - To what extent did former director Alpers prepare this budget? 
+    - Not asked. 
 - How many seasonal staff are you budgeting for? 
+    - 35 seasonal employees. 
 - Why is there a 49% change in workers comp this year? 
+    - Worker reclassification. 
 - 01-5-211-40299-000 Recreation Admin Mileage Reimb ($500) does not match the description (water samples etc. )
 - Since revenue is a key portion of the parks budget, how are revenues looking this year? Are we generally tracking above or below our projections? 
+    - On track for this year. 

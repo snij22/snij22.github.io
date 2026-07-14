@@ -3,7 +3,7 @@ title: "FY2027 Other Budget "
 description: "Discussion of the FY2027 proposed Finance, Welfare, Clerks, Library, and other departments' Budgets"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/19/2026
+date-modified: 07/14/2026
 author: Sam Jacobson
 ---
 
@@ -53,6 +53,7 @@ This is part of my review of the FY2027 Budget and is a catch all for various sm
 
 #### Questions
 - The 2026 actuals across all direct assistance categories are lower than budgeted (~20k vs. 66.5k budget). CM reduced the direct assistance, 25% - should we be reducing even more to reflect our actual usage? 
+    - No. 
 
 
 ### Information Technology (IT)
@@ -64,6 +65,7 @@ This is part of my review of the FY2027 Budget and is a catch all for various sm
 - Total cost $138,100
     - Increased 48% as a department, driven by doubling of solicitor costs.
     - How can we control these costs? 
+        - Use a retainer, rather than paying by the hour. 
 
 
 ### Planning and Zoning
@@ -75,10 +77,12 @@ This is part of my review of the FY2027 Budget and is a catch all for various sm
 
 #### Questions
 - Why is there no budget for the TAP grant (Trestle view project)?
+    - This is a grant that is essentially encumbered and supports the engineering and planning portions of the trestle bridge project. 
   
 ### Debt Service
 - overall decreases from last year
 - Why did we not pay for the scale last year? 
+    - No answer provided. 
 
 
 ### Other

@@ -3,7 +3,7 @@ title: "FY2027 City Revenue "
 description: "Discussion of the FY2027 proposed City Revenues"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/10/2026
+date-modified: 07/14/2026
 author: Sam Jacobson
 ---
 
@@ -47,10 +47,17 @@ Growing revenue is one way to to preserve services, thus stewarding revenue sour
 
 #### Questions
 - Budgeted revenues for FY26 are $5.5M under actuals through 4/30. This is more than I would expect at this point in the budget cycle.  Why? 
+    - Not asked, but likely related to grant spending
 - Total revenues are budgeted to drop 11%. Why? 
+    - Mostly due to grant funding. 
 - Police detail revenues are spit out and low relative to actuals. Why? 
+    - Better tracking for admin fees and to hold money aside for police specific equipment (e.g. this money should stay within the police department)
 - Why is the operating 21st century grant at 33% of expenditure? timing? 
     - The percentage on this line looks wrong.
+    - Timing
 - What are the 2025 resolutions (7-25,9-25,13-25)?
+    - Clerical error
 - What is the FY 2025 Sewer rate? 
+    - Clerical Error
 - Why did solid waste fees drop  this year? 
+    - Not asked. 

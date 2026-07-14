@@ -3,7 +3,7 @@ title: "FY2027 Municipal Services Budget "
 description: "Discussion of the FY2027 proposed Municipal Services Department Budget"
 categories: Budget
 date: 06/10/2026
-date-modified: 06/21/2026
+date-modified: 07/14/2026
 author: Sam Jacobson
 ---
 
@@ -42,6 +42,10 @@ This is part of my review of the FY2027 Budget and covers the Municipal Services
 
 ## Questions
 - Why is the medical insurance up 20% for the admin? 
+    - Personal election. 
 - Sand and gravel increased this year, despite last year coming in under budget. Why the increase? 
+    - This include fuel and delivery costs. 
 - Why was there such an overage in the transfer station Mach and equip (01-3-238-40740-000) this year? 
+    - Last year there was a machine purchased. 
 - Outside of DOT mandated maintenance, I don't see anything budgeted for road maintenance. Why? 
+    - City manager relayed there is no money in the money for road maintenance. 
