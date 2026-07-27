@@ -1,0 +1,92 @@
+---
+title: "July 29, 2026 - Public Hearing on FY27 Budget"
+description: "This is a public hearing on the FY27 Budget."
+categories: Workshop
+date: 07/27/2026
+date-modified: 07/27/2026
+author: Sam Jacobson
+---
+
+# Location: Franklin Elks Lodge
+
+# Date: July 29, 2026
+
+# Time: 6:00 PM
+
+[Agenda](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-07-29_agenda_0.pdf)
+
+[Packet](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-07-29_combined_packet.pdf)
+
+------------------------------------------------------------------------
+
+This is a public hearing on the Fiscal Year 2027 (FY27) budget. 
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further.
+
+If you would like to submit comment directly, you may do so via the [city website](https://franklin-service-requests-39a5.vercel.app/?page=public-input).
+
+Check out the [Budget hub](../../Other%20Posts/FY2027_budget_review/FY2027_Budget_TOC.qmd) for department specific run-downs. 
+
+------------------------------------------------------------------
+## Agenda Items
+## 1. FY27 Budget Summary
+
+Summary: 
+
+- Likely this is a discussion/response to the public hearing.  
+
+#### How Sam Sees It: 
+This is a precursor to resolution 2-27 below. 
+
+## 2. Resolution 02-27: Approving the FY 27 Budget
+
+Summary: 
+
+- Approves the budget as discussed over the months of June and July.
+- Major changes include: 
+    - Underfunding the School Board approved budget by $2.2 million dollars.
+        - Cuts sports
+        - Cuts a middle school nurse
+        - Cuts a kindergarten teacher
+        - Cuts a custodian
+        - Cuts maintenance budget at each school
+        - See [budget hub](../../Other%20Posts/FY2027_budget_review/FY2027_Budget_TOC.qmd) for more details. 
+    - Creation of sticker program for curbside trash pickup.
+        - On average, $100 for each trash can for curbside pick up.
+    - 7% increase in water rate.
+    - $40,000 decrease in legal funding.
+    - Special ~$100 assessment for ambulance (see below).
+    - Reductions in personal protective equipment and certifications in Municipal services. 
+
+#### How Sam Sees It: 
+I think this budget does not adequately fund the school district. I've tried repeatedly without success to shift money from obvious sources (City Manager's contingency fund) and less obvious sources (open police positions) within the city budget to help the school. The majority of this Council is not willing to provide for the children in the public schools. 
+
+## 3. Resolution 03-27: Direct Spending for the ambulance
+
+Summary: 
+
+- Authorizes $466,289 to buy an ambulance.
+- Utilizes city charter (section 32-B) to pay capital expenses outside of tax cap.
+- Opens ~$60,000 for the next 5 years in budget space under the tax cap for operational expenses.  
+- Estimated cost for a taxpayer is $0.37 per mill of assessed home value. 
+    - On a $300,000 house, this is should be $111 on the december tax bill. 
+
+#### How Sam Sees It: 
+
+- This saves money on interest payments in the longer term.
+- This opens up budget for operational expense and is an appropriate use of Charter section C32-B. 
+- I'd like to see the City budgeting and setting aside money for this and similar capital projects to lessen individual tax bills. 
+- The $60,000 in savings is going to pay the Eversource litigation liability. This liability was paid in 2026 by this council taking money from the restricted fund balance. Taking money from the fund balance must be replaced, and this Council starts each year for the next 4 years, $60,000 behind.
+    - Councilor Johnston worked to close the industrial park TIF, taking the ~$350,000 and moving it into the general roads account instead of using it to pay for the eversource liability. Money in the industrial park TIF was collected from the commercial properties in the industrial park. Effectively, the tax payers are paying for the Eversource litigation liability instead of commercial property owners. I think this is foolish. 
+
+## 4. Resolution 02-27: Override previous council action to buy ambulance
+
+Summary: 
+
+- In 2024, the City Council voted to buy the ambulance using debt.
+- Payments are not required until the ambulance is received (i.e. in 2027). 
+- This City Council voted in 2026 to buy the ambulance outright. 
+- This motion clarifies the history of the motions shifting form debt to outright purchase. 
+
+#### How Sam Sees It: 
+- This is a housekeeping motion following the current council's desires. 

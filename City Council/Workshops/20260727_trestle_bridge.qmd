@@ -1,0 +1,48 @@
+---
+title: "July 27, 2026 - Public Hearing on Trestle Bridge"
+description: "This is a public hearing on the trestle bridge project."
+categories: Workshop
+date: 07/27/2026
+date-modified: 07/27/2026
+author: Sam Jacobson
+---
+
+# Location: Franklin Elks Lodge
+
+# Date: July 27, 2026
+
+# Time: 6:00 PM
+
+[Agenda](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-07-27_agenda_0.pdf)
+
+[Packet](https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-07-27_packet_combined_0.pdf)
+
+------------------------------------------------------------------------
+
+This is a public hearing on the trestle bridge project. 
+
+Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further.
+
+If you would like to submit comment directly, you may do so via the [city website](https://franklin-service-requests-39a5.vercel.app/?page=public-input)
+
+------------------------------------------------------------------
+## Agenda Items
+## 1. Trestle Bridge Project
+
+Summary: 
+    - The city of Franklin has an 80/20 match from the state to address the structural issues on the trestle bridge and turn it into a walkable structure. This means if the city pays 1 Million dollars, the state pays 4 Million dollars. 
+    - If the city pays 0 dollars, the state pays 0 dollars.
+    - In the past, the city council voted to accept this grant and replace the trestle. The engineers proposed the following options: 
+        1. Rebuild using existing timbers and foundations as much as possible.
+        2. Rebuild using all new timbers and new foundations following the same bridge design.
+        3. Rebuild using engineered wood product ("glulam") following the same bridge design.
+        4. Rebuild using steel following a modern bridge design. 
+        5. Demolish the trestle.
+    - Each option costs about 1 million dollars to the city. 
+    - Using more modern methods (e.g. concrete foundations) is easier to contract out and more certain to estimate costs.
+    - Maintenance costs generally go down as the materials become more engineered (wood costs more to maintain than glulam which costs more than steel)
+
+#### How Sam Sees It: 
+I'm most in favor of option 2 above - rebuilding using timbers and modern methods for foundations. I think this retains the character of the bride, while being keeping costs reasonable. Critically, the current timbers are decaying, so reuse feels like a lot of work with little payout. Using modern methods (e.g. concrete foundations) is likely more stable and easier to contract out, likely reducing costs. 
+
+Maintenance costs may be higher, but I think this retains the character of the bridge for decades to come. Not acting on this grant will almost certainly make it more difficult to win grants from this state agency in the future. This project will hit the FY28 budget (not this year) so the council has time to raise/think about where to find the money to pay for this. 
