@@ -4,7 +4,7 @@ description: How have new construction and inflation adjustments contributions t
 categories: Tax Cap
 format: html
 date: 08/02/2026
-date-modified: 08/02/2026
+date-modified: 08/03/2026
 execute:
   echo: false
   warning: false
@@ -23,7 +23,7 @@ dat <- readxl::read_excel(here::here(".data/cpiu_pick_up_comparison.xlsx")) %>%
 **Tax relief for property owners comes from growing, not stagnation.**
 
 ## Franklin's Tax Cap
-Franklin is a community with a tax cap (technically it is a budget limitation). The tax cap is located in section C-32 of the City charter. It has multiple parts, however at it's simplest level it restricts the amount of money the city can budget in a given year. Each year, the city looks at how much it spent last year multiplies it by an estimate of inflation published by the US department of labor (Consumer Price Index Urban [CPIU]) and adds the value of new construction ("pickups"). This budget is used to pay for the services the city provides including: 
+Franklin is a community with a tax cap (technically it is a budget limitation). The tax cap is located in section C-32 of the City charter. It has multiple parts, however at it's simplest level it restricts the amount of money the City can raise from property taxes in a given year. Each year, the City looks at how much it spent last year multiplies it by an estimate of inflation published by the US department of labor (Consumer Price Index Urban [CPIU]) and adds the value of new construction ("pickups"). This budget is used to pay for the services the city provides including: 
 
 - Education
 - Police
@@ -49,7 +49,7 @@ dat %>%
 
 ```
 
-This amount that the city of franklin can collect in property taxes is shown graphically below. Note that Franklin budgets on a fiscal year that runs from July 1 to June 30, so fiscal year (FY) 2027 means the budget from July 1 2026 to June 30 2027. Note too that actual spent values in a given year will differ from this based on grants, transfers and other sources of revenue for the city. 
+This amount that the city of Franklin can collect in property taxes is shown graphically below. Note that Franklin budgets on a fiscal year that runs from July 1 to June 30, so fiscal year (FY) 2027 means the budget from July 1 2026 to June 30 2027. Note too that actual spent values in a given year will differ from this based on grants, debt, transfers, and other sources of revenue for the city. 
 
 ```{r total taxes plot}
 
@@ -68,13 +68,13 @@ dat %>%
 ```
 
 
-Perhaps surprisingly, Franklin's taxes keep growing, even though there is a tax cap in place. Overall, the property taxes have grown from $10,081,532 in FY2006 to $20,997,771 in FY 27. This means over 21 years taxes have about increased $10,916,239 or about $519,000/year. Most of that increase is due to inflation, some of that increase is due to growth in the city. As part of te budget, the finance office includes a budget cover sheet showing this calculation. This sheet is reviewed and approved by the state department of revenue (DRA). 
+Perhaps surprisingly, Franklin's taxes keep growing, despite a tax cap in place. Overall, property taxes have grown from $10,081,532 in FY2006 to $20,997,771 in FY 27. This means over 21 years the Franklin budget has increased $10,916,239 or about $519,000/year. Most of that increase is due to inflation, some of that increase is due to growth in the City. As part of the budget, the finance office includes a budget cover sheet showing this calculation. This sheet is reviewed and approved by the New Hampshire department of revenue (DRA). 
 
 ### Consumer Price Index - Urban
-The CPI-U is the consumer price index - urban and calculates the percentage change in the cost of goods year to year (i.e. inflation). It is set at the federal level and includes things like the changes in milk and eggs. It does not include things like the cost of health insurance  or the cost of workers compensation. The CPI-U is developed as an individual or family's index of inflation, thus it is not really appropriate for a city with employees like Franklin. Nonetheless, the charter defines and demands the use of the CPIU as the maximum increase of tax year to year.
+The CPIU is the consumer price index - urban and calculates the percentage change in the cost of goods year to year (i.e. inflation). It is set at the federal level and includes things like the changes in milk and eggs. It does not include things like the cost of health insurance  or the cost of pension obligations. The CPI-U is developed as an individual or family's index of inflation, thus it is not really appropriate for a city with employees like Franklin. Nonetheless, the charter defines and demands the use of the CPIU as the maximum increase of tax year to year.
 
 ### Pickups
-Pickups are new construction that occurred over the course of the year. Imagine a new building that is built on a vacant lot; this is a new addition to the tax rolls and therefore represents growth in the city. That new property is taxed, and the value of those taxes are pickups. Pickups can also include improvements rather than whole new building. 
+Pickups are new construction that occurred over the course of the year. Imagine a new building that is built on a vacant lot; this is a new addition to the tax rolls and therefore represents growth in the city. That new property is taxed, and the value of those taxes are pickups. Pickups can also include improvements rather than a whole new building. 
 
 
 ```{r cpiu and pickups}
@@ -95,9 +95,9 @@ dat %>%
 
 ```
 
-This chart shows how much money is added to the total allowable tax to be collected by from inflation (red) and pickups (blue). Every year, costs increase as shown by the presence of the red bar in the figure. Times when inflation is extremely low (FY2010, 2009-2010) or extremely high (FY21, 2020-2021) represent macro economic forces acting on Franklin (housing crash and covid-19 respectively). Typically the CPIU increases the city budget by ~$300,000. 
+This chart shows how much money is added to the total allowable tax to be collected by from inflation/CPIU (red) and pickups (blue). Every year, the budget increases; either due to inflation (red) or new construction (blue). Times when inflation is extremely low (FY2010, 2009-2010) or extremely high (FY21, 2020-2021) represent macro economic forces acting on Franklin (2008 housing crash and covid-19 respectively). Typically the CPIU increases the city budget by ~$300,000. 
 
-Pickups are more variable, typically lower than the CPIU and more within Franklin's control.While they track macroeconomic trends, in some cases they defy them. Franklin increases pickups when individuals and/or businesses choose to move to Franklin or when residents improve their homes. Budgets where pickups exceed the CPIU suggest growth in excess of inflation is occurring. This provides real tax relief for property taxpayers in Franklin. 
+Pickups are more variable, typically lower than the CPIU and more within Franklin's control. While they track macroeconomic trends, in some cases they defy them. Franklin increases pickups when individuals and/or businesses choose to move to Franklin or when residents improve their homes. Budgets where pickups exceed the CPIU suggest growth in excess of inflation is occurring. This can provide real tax relief for property taxpayers in Franklin and/or maintain services.  
 
 A final way to look at this is as a percentage of the overall budget - how much are each of these revenue increase items impacting the overall city's ability to spend? 
 
