@@ -10,7 +10,104 @@
 <atom:link href="https://www.franklinfacts.org/index.xml" rel="self" type="application/rss+xml"/>
 <description>Facts from Franklin NH</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Sun, 02 Aug 2026 00:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 06 Aug 2026 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>August 10, 2026 - Public Hearing on Charter Changes</title>
+  <dc:creator>Sam Jacobson</dc:creator>
+  <link>https://www.franklinfacts.org/City Council/Workshops/20260810_.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<section id="location-franklin-public-library" class="level1">
+<h1>Location: Franklin Public Library</h1>
+</section>
+<section id="date-august-10-2026" class="level1">
+<h1>Date: August 10, 2026</h1>
+</section>
+<section id="time-600-pm" class="level1">
+<h1>Time: 6:00 PM</h1>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/agendas/2026-08-10_agenda-tentative.pdf">Agenda</a></p>
+<p>No packet has been provided for this hearing</p>
+<hr>
+<p>This is a public hearing on two proposed changes to the Franklin city charter. It is a requirement of the charter amendment process described in <a href="https://law.justia.com/codes/new-hampshire/title-iii/chapter-49-b/section-49-b-5/">RSA 49</a>. The basic process is as follows:</p>
+<ol type="1">
+<li>A charter amendment is proposed and passed by the City Council
+<ul>
+<li>The proposed amendments were crafted in the legislative committee in April and May and brought to the full Council on June 1.</li>
+</ul></li>
+<li>The proposed amendment is discussed in a public hearing.
+<ul>
+<li>The hearing scheduled for August 10th is that hearing.</li>
+<li>If there are substantive changes, a new hearing is held.</li>
+</ul></li>
+<li>The proposed amendment is sent to the NH Secretary of State, Department of Revenue Administration and Attorney General for review.
+<ul>
+<li>They may require changes, which sends this back to step 1.</li>
+<li>If approved, it goes to the city council for action.</li>
+</ul></li>
+<li>The Council votes to put it on the ballot (i.e.&nbsp;in an October election) for a vote from all registered voters.</li>
+</ol>
+<p>Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <a href="mailto:sjacobson@franklinnh.gov" class="email">sjacobson@franklinnh.gov</a> if you would like to discuss further. I am currently traveling for work, and likely will not be able to participate in this meeting fully.</p>
+<p>If you would like to submit comment directly, you may do so via the <a href="https://franklin-service-requests-39a5.vercel.app/?page=public-input">city website</a>.</p>
+<hr>
+<section id="agenda-items" class="level2">
+<h2 class="anchored" data-anchor-id="agenda-items">Agenda Items</h2>
+</section>
+<section id="school-board-rename" class="level2">
+<h2 class="anchored" data-anchor-id="school-board-rename">1. School Board Rename</h2>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-08-10_notice_website.pdf">Text of amendment</a></p>
+<p>Summary:</p>
+<ul>
+<li>The charter is inconsistent in how it refers to the elected body that oversees the schools. This replaces “board of education” with “school board”.</li>
+</ul>
+<section id="how-sam-sees-it" class="level4">
+<h4 class="anchored" data-anchor-id="how-sam-sees-it">How Sam Sees It:</h4>
+<ul>
+<li>This is a simple, non-consequential change to the charter. I see this as a way to test how to actually change the charter. Franklin has not changed its charter voluntarily for years, perhaps decades.</li>
+<li>This may help residents navigate the charter (i.e.&nbsp;easier searching for a colloquial phrase than a legal one from the 1960’s).</li>
+</ul>
+</section>
+</section>
+<section id="neutralizing-gender-bias" class="level2">
+<h2 class="anchored" data-anchor-id="neutralizing-gender-bias">2. Neutralizing Gender Bias</h2>
+<p><a href="https://www.franklinnh.gov/sites/g/files/vyhlif601/f/uploads/2026-08-10_notice_website.pdf">Text of amendment</a></p>
+<p>Summary:</p>
+<ul>
+<li>Removes gendered language throughout the charter
+<ul>
+<li>For example the charter assumes that the city manager is a man or that the mayor is a man in certain provisions.</li>
+</ul></li>
+</ul>
+<section id="how-sam-sees-it-1" class="level4">
+<h4 class="anchored" data-anchor-id="how-sam-sees-it-1">How Sam Sees It:</h4>
+<ul>
+<li>I see this as a more significant proposal. Women have led and will hopefully continue leading this community and our governing documents should recognize them.</li>
+<li>While this does not substantively change city operation (we’ve had a woman serve as mayor under this biased charter), the bias in the charter is noticeable.</li>
+<li>It provides further practice for making charter changes.</li>
+</ul>
+</section>
+</section>
+<section id="discussion-of-the-public-hearing" class="level2">
+<h2 class="anchored" data-anchor-id="discussion-of-the-public-hearing">3. Discussion of the public hearing</h2>
+<p>Summary: - Following the public hearing the council needs to refer the proposed amendments (assuming there are no changes) to the clerk for filing with the state.</p>
+<section id="how-sam-sees-it-2" class="level4">
+<h4 class="anchored" data-anchor-id="how-sam-sees-it-2">How Sam Sees It:</h4>
+<ul>
+<li>This is procedural, but important to react to public input.</li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+ ]]></description>
+  <category>Workshop</category>
+  <guid>https://www.franklinfacts.org/City Council/Workshops/20260810_.html</guid>
+  <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
+</item>
 <item>
   <title>August 03, 2026 City Council</title>
   <dc:creator>Sam Jacobson</dc:creator>
@@ -2097,51 +2194,6 @@
  ]]></description>
   <category>Budget</category>
   <guid>https://www.franklinfacts.org/Other Posts/FY2027_budget_review/20260610_parks_budget_review.html</guid>
-  <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
-</item>
-<item>
-  <title>FY2027 School Budget</title>
-  <dc:creator>Sam Jacobson</dc:creator>
-  <link>https://www.franklinfacts.org/Other Posts/FY2027_budget_review/20260610_cm_budget_review.html</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>This is part of my review of the FY2027 Budget and covers the City Manager’s office.</p>
-<section id="fy2027-proposed-expenses" class="level1">
-<h1>FY2027 Proposed Expenses</h1>
-<ul>
-<li>Total City Manager’s Office: $58875.6
-<ul>
-<li>2 Full time employees
-<ul>
-<li>$208,673 is wages</li>
-</ul></li>
-<li>Contracted HR, payroll, trust services: $143,240</li>
-</ul></li>
-</ul>
-<section id="questions" class="level3">
-<h3 class="anchored" data-anchor-id="questions">Questions</h3>
-<ul>
-<li>How much is the PFAS monitoring at the fire station? Right now it is rolled under nuisance abatement, but it will be an ongoing expense (as far as I can tell)
-<ul>
-<li>No answer provided</li>
-<li>Most of this line is junkyard abatement</li>
-</ul></li>
-<li>What is the breakdown of the New account# costs? HR should only be ~70k.
-<ul>
-<li>No breakdown provided but mulitple services are supported by the proposed value. The contracted service is atomic - we can only have HR or HR and payroll etc.</li>
-</ul></li>
-</ul>
-
-
-</section>
-</section>
-
- ]]></description>
-  <category>Budget</category>
-  <guid>https://www.franklinfacts.org/Other Posts/FY2027_budget_review/20260610_cm_budget_review.html</guid>
   <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
 </item>
 </channel>
