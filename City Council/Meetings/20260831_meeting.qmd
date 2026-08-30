@@ -165,7 +165,7 @@ Below are my preliminary thoughts and initial positions going into the meeting. 
     - See [previous post](../Workshops/20260810_charter_amendment_rename.qmd) for more information. 
 
 ### How Sam See's it: 
-- THis is a straightforward charter change with limited impact. It is a test on how to actually change the charter, while we have time to change it. 
+- This is a straightforward charter change with limited impact. It is a test on how to actually change the charter, while we have time to change it. 
     - Changing the charter is like working a muscle, you have to start slow. 
 
 ## 14. Proposed Charter Amendments - Neutralizing Gender Bias
