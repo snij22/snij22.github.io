@@ -2,14 +2,17 @@
   {
     "listing": "/index.html",
     "items": [
+      "/City Council/Workshops/20260906_roberts_rules.html",
+      "/City Council/Committees/20260906_leg.html",
+      "/City Council/Committees/20260906_police.html",
       "/City Council/Meetings/20260831_meeting.html",
       "/City Council/Committees/20260819_pr.html",
       "/City Council/Committees/20260820_leg.html",
       "/City Council/Committees/20260723_leg.html",
       "/City Council/Workshops/20260810_charter_amendment_rename.html",
       "/City Council/Meetings/20260803_meeting.html",
-      "/City Council/Workshops/20260729_budget_hearing.html",
       "/City Council/Workshops/20260727_trestle_bridge.html",
+      "/City Council/Workshops/20260729_budget_hearing.html",
       "/City Council/Workshops/20260720_budget.html",
       "/City Council/Workshops/20260714_budget.html",
       "/City Council/Workshops/20260713_budget.html",
@@ -50,14 +53,14 @@
       "/Franklin Facts/20260128_City Property.html",
       "/Franklin Facts/20260114_zone_tax_val.html",
       "/Other Posts/FY2027_budget_review/FY2027_Budget_TOC.html",
-      "/Other Posts/FY2027_budget_review/20260610_parks_budget_review.html",
-      "/Other Posts/FY2027_budget_review/20260610_cm_budget_review.html",
-      "/Other Posts/FY2027_budget_review/20260610_police_budget_review.html",
       "/Other Posts/FY2027_budget_review/20260610_other_budget_review.html",
-      "/Other Posts/FY2027_budget_review/20260610_fire_budget_review.html",
       "/Other Posts/FY2027_budget_review/20260610_revenue_budget_review.html",
       "/Other Posts/FY2027_budget_review/20260610_school_budget_review.html",
+      "/Other Posts/FY2027_budget_review/20260610_cm_budget_review.html",
+      "/Other Posts/FY2027_budget_review/20260610_police_budget_review.html",
+      "/Other Posts/FY2027_budget_review/20260610_parks_budget_review.html",
       "/Other Posts/FY2027_budget_review/20260610_msd_budget_review.html",
+      "/Other Posts/FY2027_budget_review/20260610_fire_budget_review.html",
       "/Other Posts/20250125_budget_workshop_reflection.html"
     ]
   }
