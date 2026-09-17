@@ -3,7 +3,7 @@ title: "September 17, 2026 Legislative"
 description: "Legislative Committee meeting covering charter changes, winter parking and trash ordinance"
 categories: [Committee, Legislative]
 date: 09/06/2026
-date-modified: 09/06/2026
+date-modified: 09/17/2026
 author: Sam Jacobson
 ---
 
