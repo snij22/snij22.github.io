@@ -3,7 +3,7 @@ title: "September 14, 2026 - Robert's rules workshop"
 description: "This is workshop to review Robert's rules of order"
 categories: Workshop
 date: 09/06/2026
-date-modified: 09/06/2026
+date-modified: 09/13/2026
 author: Sam Jacobson
 ---
 
@@ -13,8 +13,7 @@ author: Sam Jacobson
 
 # Time: 6:00 PM
 
-No Agenda posted as of September 6th. 
 
-Packet: No packet for this meeting
+[Agenda/Packet](https://www.franklinnh.gov/AgendaCenter/ViewFile/Agenda/_09142026-195)
 
 This workshop will review Robert's rules of order. 
