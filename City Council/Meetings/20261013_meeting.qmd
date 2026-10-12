@@ -3,7 +3,7 @@ title: "October 13, 2026 City Council"
 description: "Preview of topics for 10/13/2026 City Council meeting"
 categories: City Council Meeting
 date: 10/09/2026
-date-modified: 10/11/2026
+date-modified: 10/12/2026
 author: Sam Jacobson
 ---
 
@@ -20,7 +20,9 @@ This is a special City Council meeting, starting with the canvass of the votes, 
 
 Below are my preliminary thoughts and initial positions going into the meeting. Please email me at <sjacobson@franklinnh.gov> if you would like to discuss further. 
 
-There will be public hearings on agenda items 2 through 9 prior to Council discussion. 
+
+There will be public hearings on agenda items 2 through 9 prior to Council discussion. You can also submit public comment before the meeting or if you cannot be present on the [city website](https://franklin-service-requests-39a5.vercel.app/?page=public-input).
+
 
 ## Agenda Items
 
